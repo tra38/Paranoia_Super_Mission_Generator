@@ -267,7 +267,7 @@ class MissionGenerator
 
       unusual_object "All-surface black marker pen", "Beach umbrella", "Treasonous yet seductive Old Reckoning recorded music", "Weird new R&D toy for Junior Citizen creches—twisty cube-thingy puzzle", "Tin of weatherproofing wax", "Stapler (clearance RED)","Tin of weatherproofing wax", "3.3-meter pole","Bottle of foaming handsoap","Box of plastic building blocks","Bungee cord","Cheese grater","Globe","Hand buzzer","High-Frequency whistle","Laser pointer","Magnet","Musical instrument","Old Reckoning encylopedia volume","Pencil sharpener","Rolodex with Old Reckoning names"
 
-      valuable_object "Aerosol paint stripper", "Certificate for free clone backup", "Collectible six-pack of ‘B2’ - Bubble Beverage", "Combination for a security lock", "Deluxe PDC with enhanced infrared-light camera, shoots accurately in total darkness", "Dossier about {secret_society} (written by {random_target}", "Flybot authorization dongle", "Front-row tickets to Championship FunBall game", "Geiger counter", "High-clearance ME Card", "High-clearance laser barrel", "Large-denomination plasticred", "Old Reckoning atlas, dated 2097", "Old R&D File: *Mutant Power Origins*", "Packet of freeze-dried fruit", "Bucket of Paint", "Blackmail material on {random_target}", "Radiation-sensitive badge", "Signed photo of Tella-O-MLY-1", "Treason file on {random_target}"
+      valuable_object "Aerosol paint stripper", "Certificate for free clone backup", "Collectible six-pack of ‘B2’ - Bubble Beverage", "Combination for a security lock", "Deluxe PDC with enhanced infrared-light camera, shoots accurately in total darkness", "Dossier about {secret_society} (written by {random_target})", "Flybot authorization dongle", "Front-row tickets to Championship FunBall game", "Geiger counter", "High-clearance ME Card", "High-clearance laser barrel", "Large-denomination plasticred", "Old Reckoning atlas, dated 2097", "Old R&D File: *Mutant Power Origins*", "Packet of freeze-dried fruit", "Bucket of Paint", "Blackmail material on {random_target}", "Radiation-sensitive badge", "Signed photo of Tella-O-MLY-1", "Treason file on {random_target}"
 
         # From https://github.com/anticoders/fake-words/blob/master/index.js
       syllabe 'the','ing','er','a','ly','ed','i','es','re','tion','in','e','con','y','ter','ex','al','de','com','o','di','en','an','ty','ry','u',
@@ -281,7 +281,7 @@ class MissionGenerator
 
       experimental_object "Project {codename}, type: {item_description} (GM Note: {item_secret})"
 
-      item_description "Behavior modifier (hypnosis devices, pheromone emitters, subsonic/ supersonic irritants)", "Communications, unusual type (telepathy gun, telephone that attaches miles-long wire to body of recipient, holographic mime projector, tight-beam loudspeaker)", "Mobility enabler (skates, boots, motorized shopping cart, vehicle, jet pack, propeller helmet, frictionless shoe soles)", "Sensor (detects something hitherto  undetectable or inconvenient to detect)", "Economic (credit license analyzer, plasticred duplicator, IR market activity scanner)"
+      item_description "Behavior modifier (hypnosis devices, pheromone emitters, subsonic/supersonic irritants)", "Communications, unusual type (telepathy gun, telephone that attaches miles-long wire to body of recipient, holographic mime projector, tight-beam loudspeaker)", "Mobility enabler (skates, boots, motorized shopping cart, vehicle, jet pack, propeller helmet, frictionless shoe soles)", "Sensor (detects something hitherto  undetectable or inconvenient to detect)", "Economic (credit license analyzer, plasticred duplicator, IR market activity scanner)"
 
       item_secret "Only affects imaginary targets", "Occasionally explodes", "Gradually poisons/irradiates user", "Turns on/off inappropriately", "Enrages citizens against user", "Excessive use constitutes treason", "Intelligent; neurotic or frightened", "Picks up targets it’s not supposed to, who don’t like being picked up", "Gradually mutates user"
 
@@ -473,7 +473,38 @@ class MissionGenerator
         "The Computer has decreed a new holiday with odd customs and practices. Please provide security for the festivities being held at {@building_name}. Wait, you don't know what are the odd customs and practices being practiced today? Oh well, learn on the job.",
         "A mysterious command makes all autopilot vehicles home in on {@building_name}, threatening terrible harm en route; we suspect that {random_target} wants a traffic jam there.",
         "Someone is flooding the AlphaNet network with viruses; we trace the viruses to terminals located in {@building_name}. Investigate the issue, but we suspect {random_target} is responsible.",
-        "A deadly pathogen is eating through the population, and we suspect {random_target} is responsible. Capture and interrogate them to find out the cure. (GM Note: The PCs are infected with the pathogen the moment their clone backups are decanted.)"
+        "A deadly pathogen is eating through the population, and we suspect {random_target} is responsible. Capture and interrogate them to find out the cure. (GM Note: The PCs are infected with the pathogen the moment their clone backups are decanted.)",
+        "You have been accussed of destroying Building {building_name} ({public_location.indefinite_article}), a crime worthy of Erasure of your entire clone line. {official_thugs} will escort you to the nearest termination booth. Thank you for your cooperation. (GM Note: {@overdog_name} is actually responsible for the destruction and the  PCs are being framed for the crime as part of a coverup. If the PCs wants to *not* get terminated and instead to clear their name, then {@underdog_name} will help out by texting where they need to go for the Outfitting and R&D phases.)"
+
+      complication "A service group feud between {two_rival_groups} have spun out of control in {@sector_name}. Assassination and drive-by shootings are commonplace, and the sector is close to civil war.",
+                  "A major malfunction has rendered {@sector_name} uninhabitable; the local environment kills an unprotected citizen in minutes if not seconds.",
+                  "{random_target} believes (accurately?) that the PCs are assassins sent to kill them. They tries to kill the PCs first.",
+                  "Waste disposal is breaking down; garbage is backing up in the hallways and will soon flood {@sector_name}.",
+                  "Surplus Armed Forces weaponry floods the IR market. Supporters of {random_target} happily display their new armaments in {@sector_name}.",
+                  "{random_target} is suffering from a bout of extreme paranoia, and is in the process of slaughtering all enemies (real and imaginary).",
+                  "Another Troubleshooter team is operating in the sector. (Their mission: {mission})",
+                  "A minor malfunction in {@building_name} may lead to a major problem. The PCs must fix the malfunction and deal with the problems already created.",
+                  "The INFAREDs in {@sector_name} have gone off their pharmatherapy and are now openly conspiring against The Computer (under the wise leadership of {@underdog_name}).",
+                  "The bureaucracy in {@sector_name} has been subverted by {@overdog_name}'s secret society and are now openly considering secession from the rest of Alpha Complex.",
+                  "The PCs are given enough resources, but not enough time.",
+                  "{random_target} has activated mysterious duplicates or analogues of the PCs (and are using these duplicates/analogues for their own purposes).",
+                  "{service_group} in {@sector_name} is breaking down, forcing all the other service groups to pick up the slack.",
+                  "The PCs are horribly unpopular in {@sector_name} - everyone wants to discredit, destroy, maim or spit on the Troubleshooters.",
+                  "The local CompNode in {@sector_name} has taken an instant disliking to the PCs, and will do whatever in Its power to make the PCs' lives miserable.",
+                  "The local CompNode in {@sector_name} personally like the PCs too well - instantly making other citizens more jealous and suspicious.",
+                  "The PCs lack the competence necessary to deal with this crisis.",
+                  "The PCs' secret societies are planning to betray them and throw their lot in with {random_target}.",
+                  "The effect the PCs are ordered to prevent will be caused by their actions.",
+                  "Alpha Complex works so badly it endangers the PCs’ lives.",
+                  "Alpha Complex works with terrifying efficiency.",
+                  "Alpha Complex is doomed...and not in a good way.",
+                  "The PCs are themselves the greatest threat to Alpha Complex - the other NPCs are trying to put aside their differences to defend the Complex against a common enemy.",
+                  "The Commie Mutant Traitors are losing - and this is a bad thing! Without a common Enemy to unify against, the Complex is about to destroy itself in an orgy of violence and mayhem.",
+                  "The Commie Mutant Traitors are winning - the PCs must take steps to either adapt to the new order or to stop it.",
+                  "{@sector_name} (or if you like, all of Alpha Complex) is just a simulation; nothing is physically real.",
+                  "The PCs suspect that a High Programmer is out to get them."
+
+      two_rival_groups "Armed Forces and Internal Security", "Tech Services and Power Services", "PLC and R&D", "CPU and HPD&MC"
 
       killed "sliced" => 1..4,
               "diced" => 5..8,
@@ -503,6 +534,11 @@ class MissionGenerator
         *Outfitting* - {outfitting}
 
         *R&D Equipment* - {experimental_object}
+
+        *Complications* -
+          1. {$complication}
+          2. {$complication}
+          3. {$complication}
 
         *Mission Debriefing* - {debriefing_room}
 
