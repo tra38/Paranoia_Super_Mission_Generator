@@ -1,5 +1,7 @@
 require 'calyx'
 
+# Name generator is from https://github.com/maetl/calyx/blob/master/examples/faker.rb,
+# which was inspired by https://github.com/stympy/faker
 class NameGenerator
   attr_reader :generator
 

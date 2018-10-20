@@ -185,9 +185,9 @@ class MissionGenerator
 
       underplex_location "derelict rooms", "abandoned shafts", "sewers"
 
-      background %{The mission will take place in {@building_name}, {location.indefinite_article} in Sector {@sector_name}. {@overdog_name} (secret society: {secret_society}, mutant power: {mutant_power}, personality: {$personality}, job type: {$job_type}) currently controls {@building_name} with an iron fist. {@overdog_name}'s ultimate goal is to {$secret_agenda}.
+      background %{The mission will take place in {@building_name}, {location.indefinite_article} in Sector {@sector_name}. {@overdog_name} (secret society: {$secret_society}, mutant power: {mutant_power}, personality: {$personality}, job type: {$job_type}) currently controls {@building_name} with an iron fist. {@overdog_name}'s ultimate goal is to {$secret_agenda}.
 
-        {@overdog_name} has a problem though. And that problem is {@underdog_name} (secret society: {secret_society}, mutant power: {mutant_power}, personality: {$personality}, job type: {$job_type}), who wants to {do_evil_scheme}, and they want to do so out of {deadly_sin}. {@underdog_name}'s ultimate goal is to {$secret_agenda}.
+        {@overdog_name} has a problem though. And that problem is {@underdog_name} (secret society: {$secret_society}, mutant power: {mutant_power}, personality: {$personality}, job type: {$job_type}), who wants to {do_evil_scheme}, and they want to do so out of {deadly_sin}. {@underdog_name}'s ultimate goal is to {$secret_agenda}.
 
         It is this conflict between {@overdog_name} and {@underdog_name} that the Troubleshooters must deal with if they are to complete the mission successfully.
 
@@ -213,14 +213,16 @@ class MissionGenerator
                     "enforce the rules and regulations of {service_group}, even if it means acting in imprudent ways to get the paperwork filled out",
                     "cover up a disaster at their {service_group} firm (which is overproducing, underproducing, or doing something strange to their product/service)",
                     "cover up the fact that they are secretly {robot.indefinite_article}",
-                    #from Traitor's Manual (lluminati Motivation Table of Doom)
+                    #from Traitor's Manual (Illuminati Motivation Table of Doom)
                     "secure more and more power for their own sake",
                     "conspire for the sake of conspiracy - they have long ago given up their old beliefs and now wants to play the Great Game in Alpha Complex",
                     "cause chaos and anarchy in the Complex so that they can more easily dominate society",
                     "bring Alpha Complex to a state of mechanistic perfection, suppressing individual freedom to create a true utopa",
                     "loyally support The Computer and its High Programmers (even they have to use unapproved channels)",
                     "secure *control* over citizens of Alpha Complex - not simply power (for power can come solely from a fist or a gun); this control would likely require some form of mind control",
-                    "prepare Alpha Complex for colonization and subversion by some external enemy (aliens? mutants from the Outdoors? sentient vatslime?)"
+                    "prepare Alpha Complex for colonization and subversion by some external enemy (aliens? mutants from the Outdoors? sentient vatslime?)",
+                    "follow orders from the Old Reckoning leadership who managed to survive the Global Die-Off by using cryogenics",
+                    "obey the orders of a traitorous meme virus created by {$secret_society}"
 
       deadly_sin "pride", "envy", "gluttony", "greed", "anger", "a burning desire for power", "wrath"
 
@@ -263,7 +265,7 @@ class MissionGenerator
 
       safe_object '5-meter ladder (not collapsible)', '12 sheets of black rubber', '447 ‘The Computer Is Your Friend’ metal placards (gross weight 122 kg)', 'Anaesthesia intubation fiberscope', 'bathroom hand dryer', 'bucket and mop', 'colonoscopy video tubes', 'crate of 144 room deodorizers', 'grating for overhead fluorescent lighting', 'grease exhaust hood', 'hose reel', 'industrial washer and dryer', 'mess hall bench', 'metric ton of bolts and braces for INFRARED barracks cots', 'office reception counter', 'pallet of packaged mucus specimen traps', 'refrigerator', 'restroom floor mats', 'steel cubicle (broken down)'
 
-      dangerous_object 'Botulin toxin', 'can of B3 laced with MemWipe', 'Communist PDC (activates at random to shout recorded Communist propaganda)', 'Dangerous creature from Outdoors, on leash', 'IntSec homing beacon, disguised as {safe_object.indefinite_article}', 'autographed copy of *Memories of an Unregistered Mutant Life* by Frank-B-HJN-6', 'Open beaker of bubbly green goo labeled BIOHAZARD—DO NOT OPEN!', 'Mutagen-contaminated syringes', 'miniature {robot}, prone to kamikaze attacks', 'Old Reckoning artificat', 'Plutonium', 'Sapient, mobile R&D bomb that gloms onto PC’s arm', 'Stoppered vial of poison gas', 'Super-lubricant, seeps through any container', 'Sweaty dynamite', 'Telepathic Subconscious Message Emitter, currently stuck on {emitter_mood}', 'Vat of liquid nitrogen (freezes solid anything living upon contact)', 'Vermin poison', 'Vial of acid', 'Weaponized anthrax or bioweapon'
+      dangerous_object 'Botulin toxin', 'can of B3 laced with MemWipe', 'Communist PDC (activates at random to shout recorded Communist propaganda)', 'Dangerous creature from Outdoors, on leash', 'IntSec homing beacon, disguised as {safe_object.indefinite_article}', 'autographed copy of *Memories of an Unregistered Mutant Life* by Frank-B-HJN-6', 'Open beaker of bubbly green goo labeled BIOHAZARD—DO NOT OPEN!', 'Mutagen-contaminated syringes', 'miniature {robot}, prone to kamikaze attacks', 'Old Reckoning artificat', 'Plutonium', 'Sapient, mobile R&D bomb that gloms onto PC’s arm', 'Stoppered vial of poison gas', 'Super-lubricant, seeps through any container', 'Sweaty dynamite', 'Telepathic Subconscious Message Emitter (currently stuck on {emitter_mood})', 'Vat of liquid nitrogen (freezes solid anything living upon contact)', 'Vermin poison', 'Vial of acid', 'Weaponized anthrax or bioweapon'
 
       unusual_object "All-surface black marker pen", "Beach umbrella", "Treasonous yet seductive Old Reckoning recorded music", "Weird new R&D toy for Junior Citizen creches—twisty cube-thingy puzzle", "Tin of weatherproofing wax", "Stapler (clearance RED)","Tin of weatherproofing wax", "3.3-meter pole","Bottle of foaming handsoap","Box of plastic building blocks","Bungee cord","Cheese grater","Globe","Hand buzzer","High-Frequency whistle","Laser pointer","Magnet","Musical instrument","Old Reckoning encylopedia volume","Pencil sharpener","Rolodex with Old Reckoning names"
 
@@ -434,7 +436,7 @@ class MissionGenerator
         "Investigate mysterious disappearances of citizens in {@building_name}. If they’re being captured by Commies, save them. If they’re trying to escape Alpha Complex, shoot them.",
         "Investigate a string of murders. All the victims were {killed}.",
         "Investigate accusations of {@underdog_name} planting evidence of treason against {@overdog_name}.",
-        "Determine the cause of the recent INFRARED riots in {@building_name}. We suspect {random_target}.",
+        "Determine the cause of the recent INFRARED riots in {@building_name}. We suspect {random_target} is involved.",
         "Deliver this ominous, ticking package to {secret_society.indefinite_article} base in {@building_name}. Make sure they accept it. By the way, this mission has a time limit...",
         "Deliver a shipment of emergency weapons to a Troubleshooter team under attack at {@building_name}. No, you don’t need to be armed; it’s a simple delivery mission! (GM Note: Create contains 6 copies of {weapon}.)",
         "Deliver this highly confidential package to {@overdog_name}, located in {@building_name}. Make sure no one opens it. [GM Note: Contains {dangerous_object}.]",
@@ -482,7 +484,7 @@ class MissionGenerator
                   "Waste disposal is breaking down; garbage is backing up in the hallways and will soon flood {@sector_name}.",
                   "Surplus Armed Forces weaponry floods the IR market. Supporters of {random_target} happily display their new armaments in {@sector_name}.",
                   "{random_target} is suffering from a bout of extreme paranoia, and is in the process of slaughtering all enemies (real and imaginary).",
-                  "Another Troubleshooter team is operating in the sector. (Their mission: {mission})",
+                  "Another Troubleshooter team is operating in the sector. (Their mission: {$mission})",
                   "A minor malfunction in {@building_name} may lead to a major problem. The PCs must fix the malfunction and deal with the problems already created.",
                   "The INFAREDs in {@sector_name} have gone off their pharmatherapy and are now openly conspiring against The Computer (under the wise leadership of {@underdog_name}).",
                   "The bureaucracy in {@sector_name} has been subverted by {@overdog_name}'s secret society and are now openly considering secession from the rest of Alpha Complex.",
@@ -502,7 +504,10 @@ class MissionGenerator
                   "The Commie Mutant Traitors are losing - and this is a bad thing! Without a common Enemy to unify against, the Complex is about to destroy itself in an orgy of violence and mayhem.",
                   "The Commie Mutant Traitors are winning - the PCs must take steps to either adapt to the new order or to stop it.",
                   "{@sector_name} (or if you like, all of Alpha Complex) is just a simulation; nothing is physically real.",
-                  "The PCs suspect that a High Programmer is out to get them."
+                  "The PCs suspect that a High Programmer is out to get them.",
+                  "This sector has a lot of clones who are 'unregistered' (they lack an official identity in Alpha Complex's databaes) and must survive on their own. These 'sinister clones' have sworn loyalty to {random_target} in return for support.",
+                  "{@underdog_name}'s secret society is openly intervening in the crisis by sending military troops.",
+                  "This mission is being recorded live by HPD&MC as part of a vidshow. The cameraperson may be a part of the PC's team as well."
 
       two_rival_groups "Armed Forces and Internal Security", "Tech Services and Power Services", "PLC and R&D", "CPU and HPD&MC"
 
@@ -529,7 +534,7 @@ class MissionGenerator
 
         *Mission Briefing* - {briefing_room}
 
-        *Mission* - {mission}
+        *Mission* - {$mission}
 
         *Outfitting* - {outfitting}
 
