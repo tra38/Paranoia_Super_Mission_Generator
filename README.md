@@ -35,7 +35,7 @@ The "background" at the start of the mission is based off the format in most pro
 
 The "Mission Blender" attempted to approximate this "background" material by starting off with the slogan "**PARANOIA** is the **IRRATIONAL** **FEAR** that **SOMEONE is OUT TO GET YOU**", and having you roll on charts to find out certain mission elements that can be associated with the highlighted words. While nice in theory, it felt flat in practice since there was not really much connection between those elements and the main mission itself (requiring me to think hard...and thinking is actually pretty hard).
 
-So instead, for my generator, I created my own "background" template, based off a sterotypical power struggle between a low-clearance "underdog" fighting against a high-clearance citizen (the "overdog"). The rest of the generated mission would refer to this power struggle, providing an overall sort of "unity" to the scheme.
+So instead, for my generator, I created my own "background" template, based off a sterotypical power struggle between a low-clearance "underdog" fighting against a high-clearance citizen (the "overdog"). The rest of the generated mission would refer to this power struggle, providing an overall sort of "unity" to the final output.
 
 The content in the Mission Blender's approximation tables would wind up being reused in other places (for example, as possible generated missions for the player to be on...or as "complications" for the players to encounter).
 
