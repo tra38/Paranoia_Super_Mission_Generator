@@ -47,7 +47,7 @@ Many PARANOIA missions tend to have certain weird scenes, events, and even whole
 
 The vanilla mission blender does not really reflect "complications" except in its approximation of generating "background" material above. What I did is to create a huge table containing possible complications the PCs may face while doing their mission, and then randomly pick possible complications.
 
-The Mission Blender does a good job with Step 1 (as it already generates a goal for PCs to fight for), and with enough generated details, it's usually very eas for GM to manually perform Step 3 (adding details to the generated goal and complications) on their own.
+The Mission Blender does a good job with Step 1 (as it already generates a goal for PCs to fight for), and with enough generated details, it's usually very easy for GM to manually perform Step 3 (adding details to the generated goal and complications) on their own.
 
 ## License and Other Legal Information
 
