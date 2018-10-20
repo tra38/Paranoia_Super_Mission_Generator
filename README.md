@@ -10,4 +10,6 @@
 
 *Software* - MIT License.
 
-*Content* - PARANOIA is a trademark jointly held by Eric Goldberg and Greg Costikyan and used under exclusive license by Mongoose Publishing. All trademarks are © their respective owners. If you wish to have your material removed, receive credit for an idea, or to contribute your own Alternate Alpha Complex to this database, please contact me at igorhorst@gmail.com .
+*Content* - PARANOIA is a trademark jointly held by Eric Goldberg and Greg Costikyan and used under exclusive license by Mongoose Publishing. All trademarks are © their respective owners.
+
+If you wish to have your material removed, receive credit for an idea, or to contribute your own ideas to this generator, please open up a GitHub Issue/Pull Request.
