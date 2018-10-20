@@ -26,7 +26,7 @@ The fake word generator (which I used to come up with random names to objects, i
 
 ## Dev Notes
 
-This program is my take on the famous "Mission Blender". There is already [an online version of the Mission Blender](http://www.highprogrammer.com/cgi-bin/mission_blender) when I started work on this project, but that project required me to "think" how to merge all the randomly-generated items together. What I wanted is a system that automates as much of the mission-generation process possible. Some human effort is still needed at the end of the day (because the goal of a tabletop RPG session is to entertain humans, not bots), but will be used more efficently - curating and refining the generating output.
+This program is my take on the famous "Mission Blender". There is already [an online version of the Mission Blender](http://www.highprogrammer.com/cgi-bin/mission_blender) when I started work on this project, but that project required me to "think" how to merge all the randomly-generated items together. What I wanted is a system that automates as much of the mission-generation process possible. Some human effort is still needed at the end of the day (because the goal of a tabletop RPG session is to entertain humans, not bots), but will be used more efficently - curating and refining the generated output.
 
 The format of the generated mission is usually self-explanatory, but I like to explain two things.
 
