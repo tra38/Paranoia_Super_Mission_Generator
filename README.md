@@ -1,11 +1,13 @@
 ## Paranoia_Super_Mission_Generator
 
-Description pending, but you can ```git clone``` it and run ```ruby main.rb``` in order to run it. It's functioning.
+1. ```git clone``` the repo.
 
-## License
+2. ```bundle install```
 
-The Computer has graciously chosen to open-source this software under the Common Public Attribution License Version 1.0 (CPAL-1.0), [a completely real and valid open-source license](https://opensource.org/licenses/CPAL-1.0) that [is not at all resented by the programmer community](https://opensource.stackexchange.com/questions/2622/is-it-possible-to-stop-the-removal-modification-of-my-projects-logo).
+3. ```ruby main.rb```
 
-If you plan on complying under the CPAL-1.0, please remember when you distribute and redistribute the software to add the Attribution Copyright Notice, the Attribution Phrase, the Attribution URL, and the Graphic Image (if applicable).
+## License and Other Legal Information
 
-Traitors can, of course, use the orthodox MIT license instead and avoid all that legalse nonsense.
+*Software* - MIT License.
+
+*Content* - PARANOIA is a trademark jointly held by Eric Goldberg and Greg Costikyan and used under exclusive license by Mongoose Publishing. All trademarks are © their respective owners. If you wish to have your material removed, receive credit for an idea, or to contribute your own Alternate Alpha Complex to this database, please contact me at igorhorst@gmail.com .
