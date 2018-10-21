@@ -393,7 +393,7 @@ class MissionGenerator
       "Briefing officer is shot just after the PCs arrive and is replaced by a different officer who acts extremely shifty and refuses to answer questions.",
       "Officer has serious coughing fits every few words, disrupting every sentence, and becomes increasingly angry with every request to repeat themselves.",
       "Briefing officer is hiding inside an empty Cold Fun barrel and passes written notes out to the PCs through a small bunghole.",
-      "Officer skims through the entire briefing as if he expects those present to know the details already, then walks out without any questions.",
+      "Officer skims through the entire briefing as if they expects those present to know the details already, then walks out without any questions.",
       "Briefing officer whispers the briefing to the team leader and then expects him to pass it on in the style of Telephone or Chinese Whispers.",
       "Briefing officer wears {armor} and fiddles with an exotic-looking {weapon}; expects attack at any moment.",
       "Given in a transtube, on a recording with a folder of documents; recording self-destructs 5 seconds after stopping.",
@@ -441,7 +441,7 @@ class MissionGenerator
         "Deliver a shipment of emergency weapons to a Troubleshooter team under attack at {@building_name}. No, you don’t need to be armed; it’s a simple delivery mission! (GM Note: Crate contains 6 copies of {weapon}.)",
         "Deliver this highly confidential package to {@overdog_name}, located in {@building_name}. Make sure no one opens it. [GM Note: Contains {dangerous_object}.]",
         "Deliver a shipment that contains multiple versions of a fragile, badly needed {object}. Make sure it gets to {@overdog_name}, located in {@building_name}.",
-        "Capture the highly dangerous traitor {@underdog_name} and transfer them to a far more secure location (Building {building_name}, {location.indefinite_article}). Make sure he doesn’t die; we want to save that for the *Date with Death* vidshow.",
+        "Capture the highly dangerous traitor {@underdog_name} and transfer them to a far more secure location (Building {building_name}, {location.indefinite_article}). Make sure they don't die; we want to save that for the *Date with Death* vidshow.",
         "Deliver {object} to {@overdog_name}. Though the item appears treasonous, rest assured it is perfectly above-board. Perfectly.",
         "Irate citizens, led by {@underdog_name}, are trying to break into {@building_name}. Prevent them from entering until reinforcements arrive.",
         "Guard {@building_name} from {secret_society} trying to subvert the building. Be careful not to subvert the building yourself.",
@@ -465,7 +465,7 @@ class MissionGenerator
         "{@building_name} has been infested with Commies. Demolish it, preferably with the Commies inside.",
         "{official_thugs} located in {@building_name} has been infiltrated by no less than (1d20) Commie traitors. Remove them; ensure they fall in the line of duty, so we can honor them as fallen heroes.",
         "Neutralize {random_target} in {@building_name}.",
-        "Endless waves of assassination attempts will befall {@overdog_name} while he is at {@building_name}; serve as decoys to protect {@overdog_name} as he tries to protect themselves.",
+        "Endless waves of assassination attempts will befall {@overdog_name} while they are at {@building_name}; serve as decoys to protect {@overdog_name} as they try to protect themselves.",
         "An exterior force is planning to conquer Alpha Complex. Intercept the force at {@building_name} and terminate the enemy.",
         "A strange new Food Vat slime is causing antisocial and dangerous activity in consumers of Hot Fun. The Computer needs you to destroy the slime. Its last known location is {@building_name}.",
         "A geological event will destroy significant parts of Alpha Complex (shatter it, open it to the elements, turn it into a cheerily warm volcano, etc.). Keep order in {@building_name} until we can find a way to repair the Complex (or cover up the disaster).",
@@ -478,7 +478,7 @@ class MissionGenerator
         "A deadly pathogen is eating through the population, and we suspect {random_target} is responsible. Capture and interrogate them to find out the cure. (GM Note: The PCs are infected with the pathogen the moment their clone backups are decanted.)",
         "You have been accussed of destroying Building {building_name} ({public_location.indefinite_article}), a crime worthy of Erasure of your entire clone line. {official_thugs} will escort you to the nearest termination booth. Thank you for your cooperation. (GM Note: {@overdog_name} is actually responsible for the destruction and the  PCs are being framed for the crime as part of a coverup. If the PCs wants to *not* get terminated and instead to clear their name, then {@underdog_name} will help out by texting where they need to go for the Outfitting and R&D phases.)"
 
-      complication "A service group feud between {two_rival_groups} have spun out of control in {@sector_name}. Assassination and drive-by shootings are commonplace, and the sector is close to civil war.",
+      complication "A service group feud between {two_rival_groups} have spun out of control in {@sector_name}. Assassinations and drive-by shootings are commonplace, and the sector is close to civil war.",
                   "A major malfunction has rendered {@sector_name} uninhabitable; the local environment kills an unprotected citizen in minutes if not seconds.",
                   "{random_target} believes (accurately?) that the PCs are assassins sent to kill them. They tries to kill the PCs first.",
                   "Waste disposal is breaking down; garbage is backing up in the hallways and will soon flood {@sector_name}.",
@@ -661,7 +661,7 @@ class MissionGenerator
                       :mystics_mission => 11..12,
                       "Help bring more into the fold! Distribute this addictive drug among your team and anyone you meet. Yeah, okay, maybe it mutates them, but what a high!" => 13..14,
                       "For our newest brew we need an ingredient/drug stored in {@building_name}. Steal some and bring it back." => 15..16,
-                      "{random_target} really needs to mellow out... permanently. Give him a hit of this drug so he can see the light, man. Oh, and have some yourself when you want." => 17..18,
+                      "{random_target} really needs to mellow out... permanently. Give him a hit of this drug so they can see the light, man. Oh, and have some yourself when you want." => 17..18,
                       "Seek a new high! Find and steal a substance or technique that makes you feel good. Then tell the gang about it!" => 19..20
 
       pro_tech_mission  "{$generic_mission}" => 1..10,
