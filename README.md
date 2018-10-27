@@ -3,7 +3,7 @@
 ## Table of Contents
 
   - [Instructions](#instructions)
-  - [Itty.Bitty.Site](#itty.bitty.site)
+  - [Itty.Bitty.Site](#ittybittysite)
   - [Credits](#credits)
   - [Dev Notes](#dev-notes)
     - [Background](#background)
