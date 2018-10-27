@@ -18,6 +18,8 @@
 
 You will receive a prompt to "name" your mission. That name will serve as a seed that will be used to generate the mission in question (which will be formatted using Markdown). You can reuse the same seed to get the same mission. (If you don't actually care about replicating the same mission again, you can just randomly smash on the keyboard.)
 
+The generated mission also includes a URL to a website hosted on [https://itty.bitty.site/](https://itty.bitty.site/edit). You can view, edit, and share the (online) mission.
+
 Look at EXAMPLE.md to see how an example generated mission might look like. I recommend generating multiple missions and picking and choosing what elements you want (customizing it to match your own purposes). Secret society missions are pretty generic and will probably require some major customizations (or even to be re-written from scratch) to match the mood and style of your mission.
 
 ## Credits
