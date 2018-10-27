@@ -476,7 +476,29 @@ class MissionGenerator
         "A mysterious command makes all autopilot vehicles home in on {@building_name}, threatening terrible harm en route; we suspect that {random_target} wants a traffic jam there.",
         "Someone is flooding the AlphaNet network with viruses; we trace the viruses to terminals located in {@building_name}. Investigate the issue, but we suspect {random_target} is responsible.",
         "A deadly pathogen is eating through the population, and we suspect {random_target} is responsible. Capture and interrogate them to find out the cure. (GM Note: The PCs are infected with the pathogen the moment their clone backups are decanted.)",
-        "You have been accussed of destroying Building {building_name} ({public_location.indefinite_article}), a crime worthy of Erasure of your entire clone line. {official_thugs} will escort you to the nearest termination booth. Thank you for your cooperation. (GM Note: {@overdog_name} is actually responsible for the destruction and the  PCs are being framed for the crime as part of a coverup. If the PCs wants to *not* get terminated and instead to clear their name, then {@underdog_name} will help out by texting where they need to go for the Outfitting and R&D phases.)"
+        "You have been accussed of destroying Building {building_name} ({public_location.indefinite_article}), a crime worthy of Erasure of your entire clone line. {official_thugs} will escort you to the nearest termination booth. Thank you for your cooperation. (GM Note: {@overdog_name} is actually responsible for the destruction and the  PCs are being framed for the crime as part of a coverup. If the PCs wants to *not* get terminated and instead to clear their name, then {@underdog_name} will help out by texting where they need to go for the Outfitting and R&D phases.)",
+        "A Troubleshooter team has gone rogue and is currently conducting an unauthorized Troubleshooting mission (mission: {$mission}). Stop this mission from succeeding.",
+        "{@underdog_name} is a loyal and competence clone who deserves a promotion! Help them get that promotion.",
+        "Replace the batteries in {@overdog_name}'s equipment.",
+        "Carry around these huge batteries and drain any aunthorized power source you find in {@building_name}.",
+        "Escort {@overdog_name} over to {building_name} ({public_location.indefinite_article}) where we can engage in Sanity Correction.",
+        "Capture (but don't harm) {@overdog_bot_codename}, a bot that has gone frankenstein. The bot just needs some therapy, just all.",
+        "{@building_name} just got destroyed, right after someone field-tested {experimental_object}. Please provide a retrospective field-test report to sastify the R&D techies.",
+        "Water and fertilize a hydroponic garden secretly located in {@building_name}, using this new chemical.",
+        "{@underdog_name} has been 'volunteered' into R&D field-testing, but they are avoiding their duties. It's up to you then. Test {experimental_object} on {@underdog_name}.",
+        "This bot ({robot}) previously belonged to {@overdog_name}. It went frankenstein. We replaced the asimov circuits, so we think we’ve fixed it. Escort it to {@building_name}. Use it heavily. Report.",
+        "Recruit 10 volunteers from {@building_name} for reactor shielding duty.",
+        "Retrieve {@overdog_object_codename} from {@overdog_name}, who won’t return it.",
+        "{@underdog_name} has stolen {experimental_object}, one of R&D less successful projects. Destroy the object. Never, ever try to activate it.",
+        "{@overdog_name} has been demoted and fired from their service firm. Find and notify them.",
+        "Provide support for these trainee Troubleshooters as they complete their mission (mission: {$mission}).",
+        "An Armed Forces wargame has gone horribly wrong. Plant evidence blaming this disater on another service group.",
+        "Erase all evidence proving the {codename} Incident ever happened in {@sector_name}. You know nothing about the Incident? Good, keep it that way. (GM Note: The Incident was the result of a failed Troubleshooting mission - mission: {$mission})",
+        "Retrieve a High Programmer’s collection from {@bulding_name} before it gets damaged.",
+        "Guard a vending machine in {@building_name} until reinforcements can arrive. Do not use the vending machine. Do not let anyone else use the vending machine. Don't ask any questions. (GM Note: Vending machine is currently loyal to {@underdog_name}, and we need to reprogram it to be loyal to {@overdog_name}.)",
+        "Discover the source and meaning of the cryptic graffiti that’s been seen all over {@sector_name} recently.",
+        "Recently, {@overdog_name}'s service firm has been delivering key packages to {service_group} today. Investigate why they are being late. (GM Note: Packages contain multiple versions of {object}.)",
+        "It appears that our secret treason detector in {@building_name} was malfunctioning, and reported everyone as a Commie Mutant Traitor. We need you to investigate the citizens we terminated and find evidence justifying their termination."
 
       complication "A service group feud between {two_rival_groups} have spun out of control in {@sector_name}. Assassinations and drive-by shootings are commonplace, and the sector is close to civil war.",
                   "A major malfunction has rendered {@sector_name} uninhabitable; the local environment kills an unprotected citizen in minutes if not seconds.",
@@ -507,7 +529,40 @@ class MissionGenerator
                   "The PCs suspect that a High Programmer is out to get them.",
                   "This sector has a lot of clones who are 'unregistered' (they lack an official identity in Alpha Complex's databaes) and must survive on their own. These 'sinister clones' have sworn loyalty to {random_target} in return for support.",
                   "{@underdog_name}'s secret society is openly intervening in the crisis by sending military troops.",
-                  "This mission is being recorded live by HPD&MC as part of a vidshow. The cameraperson may be a part of the PC's team as well."
+                  "This mission is being recorded live by HPD&MC as part of a vidshow. The cameraperson may be a part of the PC's team as well.",
+                  "{@building_name} secretly contain {interesting_items} (currently under the control of {random_target}). The Computer does not want them to fall into the wrong hands.",
+                  "The Armed Forces is conducting a march in {@sector_name} (the goal: {march_reason})."
+
+      interesting_items "nuclear warheads",
+                        "warbot parts",
+                        "laser barrels",
+                        "bioweapons",
+                        "secret documents",
+                        "high-clearance generals",
+                        "captured Communists",
+                        "Vulturecrafts",
+                        "ICBMs",
+                        "plasma tanks",
+                        "chemical weapons",
+                        "combat armor parts",
+                        "combat drugs",
+                        "nanotechnology implants",
+                        "experimental genetically engineered monsters",
+                        "secret reports",
+                        "unfilled termination vouchers and airstrike forms",
+                        "Vulture Squadron Warriors"
+
+      march_name "build morale",
+                  "celebrate a victory",
+                  "clear corridors of rioters",
+                  "stress-test new construction",
+                  "distract the population",
+                  "flush out Commies",
+                  "hide from Internal Security snoops",
+                  "move troops to reactor shielding duty",
+                  "honour fallen Hero of the Complex",
+                  "run away from a disaster",
+                  "sightseeing"
 
       two_rival_groups "Armed Forces and Internal Security", "Tech Services and Power Services", "PLC and R&D", "CPU and HPD&MC"
 
