@@ -3,6 +3,7 @@
 ## Table of Contents
 
   - [Instructions](#instructions)
+  - [Itty.Bitty.Site](#itty.bitty.site)
   - [Credits](#credits)
   - [Dev Notes](#dev-notes)
     - [Background](#background)
@@ -16,11 +17,18 @@
 
 3. ```ruby main.rb```
 
-You will receive a prompt to "name" your mission. That name will serve as a seed that will be used to generate the mission in question (which will be formatted using Markdown).
+You will receive a prompt to "name" your mission. That name will serve as a seed that will be used to generate the mission in question (which will be formatted using Markdown). You can copy this generated mission over to a text file for you to view, edit and share to your heart's content.
 
-The generated mission also includes a URL to a website hosted on [https://itty.bitty.site/](https://itty.bitty.site/edit). You can view, edit, and share the generated mission using that URL.
+The generated mission also includes a URL to a website hosted on [https://itty.bitty.site/](https://itty.bitty.site/edit). You can view, edit, and share the generated mission using that URL as well.
 
 Look at EXAMPLE.md to see how an example generated mission might look like. I recommend generating multiple missions and picking and choosing what elements you want (customizing it to match your own purposes). Secret society missions are pretty generic and will probably require some major customizations (or even to be re-written from scratch) to match the mood and style of your mission.
+
+## Itty.Bitty.Site
+The generated URL is very long. This is because the URL actually contains the *generated mission text*, just mostly compressed (think of it like a zip file). itty.bitty.site decompresses the URL, allowing us to see the content.
+
+This feature is actually very cool. It allows us to easily transmit files (just copy and paste the URL). But, it also means that this site only functions properly with browers that can handle long URLs.
+
+According to [this SO answer](https://stackoverflow.com/a/417184), our generated link will function properly for Google Chrome, Firefox, Safari, and Opera (but will not work with Edge or IE11).
 
 ## Credits
 In addition to writing out my own material, I used the following supplements from the PARANOIA XP line:
