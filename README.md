@@ -37,6 +37,7 @@ In addition to writing out my own material, I used the following supplements fro
  - The Traitor's Manual, specifically the "Illuminati Motivation Table of Doom" (provides additional motivation to the NPCs as well as complications to the mission)
  - Criminal Histories (the different "job types" in Alpha Complex)
  - Internal Security (additional missions and locations)
+ - The Thin Green Line (additional missions and complications)
 
 The name generator uses names from an example [email generator built using Calyx](https://github.com/maetl/calyx/blob/master/examples/faker.rb), and the generator itself was inspired by the [Faker](https://github.com/stympy/faker) Ruby gem.
 
