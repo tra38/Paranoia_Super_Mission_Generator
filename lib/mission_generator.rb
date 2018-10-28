@@ -500,7 +500,8 @@ class MissionGenerator
         "Recently, {@overdog_name}'s service firm has been delivering key packages to {service_group} today. Investigate why they are being late. (GM Note: Packages contain multiple versions of {object}.)",
         "It appears that our secret treason detector in {@building_name} was malfunctioning, and reported everyone as a Commie Mutant Traitor. We need you to investigate the citizens we terminated and find evidence justifying their termination.",
         "Test the 'security' of {@building_name}. Find a way to get past that target's defenses and security checkpoints. By the way, the security staff will not be informed that a simulated security breach is in progress, due to the sensitive nature of {@building_name}.",
-        "Conduct a recon mission into {@building_name}, identifying any proof of Communist activity in the area."
+        "Conduct a recon mission into {@building_name}, identifying any proof of Communist activity in the area.",
+        "{@overdog_name} has developed a really, really cool R&D device ({experimental_object}). However, they are using it as a Doomsday Device and threatening to use against {service_group}. Find a way to recover the R&D device (and {@overdog_name}) alive."
 
       complication "A service group feud between {two_rival_groups} have spun out of control in {@sector_name}. Assassinations and drive-by shootings are commonplace, and the sector is close to civil war.",
                   "A major malfunction has rendered {@sector_name} uninhabitable; the local environment kills an unprotected citizen in minutes if not seconds.",
@@ -533,7 +534,15 @@ class MissionGenerator
                   "{@underdog_name}'s secret society is openly intervening in the crisis by sending military troops.",
                   "This mission is being recorded live by HPD&MC as part of a vidshow. The cameraperson may be a part of the PC's team as well.",
                   "{@building_name} secretly contain {interesting_items} (currently under the control of {random_target}). The Computer does not want them to fall into the wrong hands.",
-                  "The Armed Forces is conducting a march in {@sector_name} (the goal: {march_reason})."
+                  "The Armed Forces is conducting a march in {@sector_name} (the goal: {march_reason}).",
+                  "{@sector_name} currently has lots of security cameras to monitor possible treasonous activity.",
+                  "{@sector_name} is covered with graffiti and society tags (indictating that the sector's Loyalty index is at an all-time low).",
+                  "{@sector_name} is currently under the control of {service_group}, who runs it like a *de facto* dictatorship.",
+                  "{@sector_name} is on the lookout for the {codename} Traitor and suspects (accurately?) that one of the PCs is secretly that traitor.",
+                  "The vending machines in {@sector_name} are rebelling against their human overlords.",
+                  "Due to budget cutbacks in {@sector_name}, the service groups have taken drastic actions to secure future fundings.",
+                  "{secret_society} has privately declared war on {@sector_name} and is conducting an campaign of sabotage."
+
 
       interesting_items "nuclear warheads",
                         "warbot parts",
