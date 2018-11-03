@@ -222,7 +222,9 @@ class MissionGenerator
                     "secure *control* over citizens of Alpha Complex - not simply power (for power can come solely from a fist or a gun); this control would likely require some form of mind control",
                     "prepare Alpha Complex for colonization and subversion by some external enemy (aliens? mutants from the Outdoors? sentient vatslime?)",
                     "follow orders from the Old Reckoning leadership who managed to survive the Global Die-Off by using cryogenics",
-                    "obey the orders of a traitorous meme virus created by {$secret_society}"
+                    "obey the orders of a traitorous meme virus created by the {$secret_society} secret society",
+                    # other stuff
+                    "cover up the fact that they're...um...dead (their identity has since been stolen by traitors from the {secret_society} society)"
 
       deadly_sin "pride", "envy", "gluttony", "greed", "anger", "a burning desire for power", "wrath"
 
@@ -492,9 +494,9 @@ class MissionGenerator
         "{@underdog_name} has stolen {experimental_object}, one of R&D less successful projects. Destroy the object. Never, ever try to activate it.",
         "{@overdog_name} has been demoted and fired from their service firm. Find and notify them.",
         "Provide support for these trainee Troubleshooters as they complete their mission (mission: {$mission}).",
-        "An Armed Forces wargame has gone horribly wrong. Plant evidence blaming this disater on another service group.",
+        "An Armed Forces wargame has gone horribly {wrong}. Plant evidence blaming this disater on another service group.",
         "Erase all evidence proving the {codename} Incident ever happened in {@sector_name}. You know nothing about the Incident? Good, keep it that way. (GM Note: The Incident was the result of a failed Troubleshooting mission - mission: {$mission})",
-        "Retrieve a High Programmer’s collection from {@bulding_name} before it gets damaged.",
+        "Retrieve a High Programmer’s collection from {@building_name} before it gets damaged.",
         "Guard a vending machine in {@building_name} until reinforcements can arrive. Do not use the vending machine. Do not let anyone else use the vending machine. Don't ask any questions. (GM Note: Vending machine is currently loyal to {@underdog_name}, and we need to reprogram it to be loyal to {@overdog_name}.)",
         "Discover the source and meaning of the cryptic graffiti that’s been seen all over {@sector_name} recently.",
         "{@overdog_name}'s service firm is in charge of delivering key packages to {service_group}. Investigate why they are being late. (GM Note: Packages contain multiple versions of {object}.)",
