@@ -36,7 +36,7 @@ According to [this SO answer](https://stackoverflow.com/a/417184), our generated
 
 When you run ```ruby railroad.rb```, instead of being prompted for a word prompt, you are prompted for a search term. We will then continually generate missions until we finally find the mission with that search term, and then present that mission to you. Essentially, you are 'railroading' the generator to produce the output you want.
 
-If we cannot generate a mission with your search term within 3 seconds, we stop execution of the code.
+If we cannot generate a mission with your search term within 10 seconds, we simply give up.
 
 Here's an example tutorial for using ```railroad.rb```.
 

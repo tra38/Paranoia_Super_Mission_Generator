@@ -23,7 +23,7 @@ end
 generated_mission = nil
 
 begin
-  Timeout.timeout(3) do
+  Timeout.timeout(10) do
   until (new_regex.match(generated_mission))
     word_prompt = codename_grammar.generate
     generated_mission = Controller.generate(word_prompt)
