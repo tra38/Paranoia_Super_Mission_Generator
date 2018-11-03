@@ -44,7 +44,10 @@ Here's an example tutorial for using ```railroad.rb```.
 
 If you want to know what you can search for, look in ```lib/mission_generator.rb``` for a list of possible stuff that we can generate.
 
-If we cannot generate a mission with your search term within 10 seconds, we simply give up. Either the term is so rare that it's almost impossible to encounter through our "brute force" approach, or we can't actually generate that search term.
+If we cannot generate a mission with your search term within 10 seconds, we simply give up. There's two possible explainations for why we failed:
+
+ - The term is so rare that it's almost impossible to encounter through our "brute force" approach. Note the phrase *almost impossible*, not impossible.  Rerun the program again with your search term, and you might get lucky! (Example: Search for "alex". Most of the time, the search will fail...but very rarely we might succeed in, say, generating a mission with the title "C**alex**pre".)
+ - We can't actually generate that search term, no matter how hard you try. (Example: We do not use the character "¿" anywhere in our program, so if you try searching for it, you are 100% likely to encounter failure.)
 
 ## Credits
 In addition to writing out my own material, I used the following supplements from the PARANOIA XP line:
