@@ -3,6 +3,7 @@ require_relative 'lib/exporter'
 
 # 1. Get the word prompt
 puts "Give me a prompt."
+word = gets.chomp
 
 # 2. Generate the mission using the word prompt that we got from Step 2.
 
