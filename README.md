@@ -36,8 +36,6 @@ According to [this SO answer](https://stackoverflow.com/a/417184), our generated
 
 When you run ```ruby railroad.rb```, instead of being prompted for a word prompt, you are prompted for a search term. We will then continually generate missions until we finally find the mission with that search term, and then present that mission to you. Essentially, you are 'railroading' the generator to produce the output you want.
 
-If we cannot generate a mission with your search term within 10 seconds, we simply give up.
-
 Here's an example tutorial for using ```railroad.rb```.
 
 1. ```ruby railroad.rb```
@@ -45,6 +43,8 @@ Here's an example tutorial for using ```railroad.rb```.
 3. See the generated mission with that search term included!
 
 If you want to know what you can search for, look in ```lib/mission_generator.rb``` for a list of possible stuff that we can generate.
+
+If we cannot generate a mission with your search term within 10 seconds, we simply give up. Either the term is so rare that it's almost impossible to encounter through our "brute force" approach, or we can't actually generate that search term.
 
 ## Credits
 In addition to writing out my own material, I used the following supplements from the PARANOIA XP line:
