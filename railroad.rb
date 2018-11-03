@@ -3,7 +3,7 @@ require 'timeout'
 require_relative 'lib/controller'
 require_relative 'lib/exporter'
 
-puts "Please type in a search term (for advanced searching, use regex syntax...you don't need to add the backslashes, we're already did that for you)."
+puts "Please type in a search term."
 
 user_regex = gets.chomp
 

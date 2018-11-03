@@ -46,8 +46,6 @@ Here's an example tutorial for using ```railroad.rb```.
 
 If you want to know what you can search for, look in ```lib/mission_generator.rb``` for a list of possible stuff that we can generate.
 
-For more advanced functionality, you can use regex. No backslashes are needed;  we'll add them in for you.
-
 ## Credits
 In addition to writing out my own material, I used the following supplements from the PARANOIA XP line:
 
