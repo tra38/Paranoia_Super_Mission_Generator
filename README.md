@@ -30,6 +30,24 @@ This feature is actually very cool. It allows us to easily transmit files (just 
 
 According to [this SO answer](https://stackoverflow.com/a/417184), our generated link will function properly for Google Chrome, Firefox, Safari, and Opera (but will not work with Edge or IE11).
 
+## ```railroad.rb```
+
+```main.rb``` is useful if you want to generate a mission based on a specific title, but you don't care what text is being generated. However, sometimes, you may prefer the opposite: you don't care about the title, but you *do* care what text is being generated. That's where ```railroad.rb``` comes in.
+
+When you run ```ruby railroad.rb```, instead of being prompted for a word prompt, you are prompted for a search term. We will then continually generate missions until we finally find the mission with that search term, and then present that mission to you. Essentially, you are 'railroading' the generator to produce the output you want.
+
+If we cannot generate a mission with your search term within 3 seconds, we stop execution of the code.
+
+Here's an example tutorial for using ```railroad.rb```.
+
+1. ```ruby railroad.rb```
+2. When it prompts for a search term, search for "A Troubleshooter team has gone rogue and is currently conducting an unauthorized Troubleshooting mission"
+3. See the generated mission with that search term included!
+
+If you want to know what you can search for, look in ```lib/mission_generator.rb``` for a list of possible stuff that we can generate.
+
+For more advanced functionality, you can use regex. No backslashes are needed;  we'll add them in for you.
+
 ## Credits
 In addition to writing out my own material, I used the following supplements from the PARANOIA XP line:
 
