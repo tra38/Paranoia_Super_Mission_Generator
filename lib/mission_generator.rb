@@ -565,7 +565,7 @@ class MissionGenerator
                         "unfilled termination vouchers and airstrike forms",
                         "Vulture Squadron Warriors"
 
-      march_name "build morale",
+      march_reason "build morale",
                   "celebrate a victory",
                   "clear corridors of rioters",
                   "stress-test new construction",
