@@ -497,11 +497,12 @@ class MissionGenerator
         "Retrieve a High Programmer’s collection from {@bulding_name} before it gets damaged.",
         "Guard a vending machine in {@building_name} until reinforcements can arrive. Do not use the vending machine. Do not let anyone else use the vending machine. Don't ask any questions. (GM Note: Vending machine is currently loyal to {@underdog_name}, and we need to reprogram it to be loyal to {@overdog_name}.)",
         "Discover the source and meaning of the cryptic graffiti that’s been seen all over {@sector_name} recently.",
-        "Recently, {@overdog_name}'s service firm has been delivering key packages to {service_group} today. Investigate why they are being late. (GM Note: Packages contain multiple versions of {object}.)",
+        "{@overdog_name}'s service firm is in charge of delivering key packages to {service_group}. Investigate why they are being late. (GM Note: Packages contain multiple versions of {object}.)",
         "It appears that our secret treason detector in {@building_name} was malfunctioning, and reported everyone as a Commie Mutant Traitor. We need you to investigate the citizens we terminated and find evidence justifying their termination.",
         "Test the 'security' of {@building_name}. Find a way to get past that target's defenses and security checkpoints. By the way, the security staff will not be informed that a simulated security breach is in progress, due to the sensitive nature of {@building_name}.",
         "Conduct a recon mission into {@building_name}, identifying any proof of Communist activity in the area.",
-        "{@overdog_name} has developed a really, really cool R&D device ({experimental_object}). However, they are using it as a Doomsday Device and threatening to use against {service_group}. Find a way to recover the R&D device (and {@overdog_name}) alive."
+        "{@overdog_name} has developed a really, really cool R&D device ({experimental_object}). However, they are using it as a Doomsday Device and threatening to use against {service_group}. Find a way to recover the R&D device (and {@overdog_name}) alive.",
+        "{official_thugs} (the {codename}) is incredibly popular on the vidshows and beloved by The Computer for their political othrodoxy. They are also super incompetent. Please complete this important mission for them, while letting them take all the credit. (Mission - {$mission})"
 
       complication "A service group feud between {two_rival_groups} have spun out of control in {@sector_name}. Assassinations and drive-by shootings are commonplace, and the sector is close to civil war.",
                   "A major malfunction has rendered {@sector_name} uninhabitable; the local environment kills an unprotected citizen in minutes if not seconds.",
@@ -541,7 +542,8 @@ class MissionGenerator
                   "{@sector_name} is on the lookout for the {codename} Traitor and suspects (accurately?) that one of the PCs is secretly that traitor.",
                   "The vending machines in {@sector_name} are rebelling against their human overlords.",
                   "Due to budget cutbacks in {@sector_name}, the service groups have taken drastic actions to secure future fundings.",
-                  "{secret_society} has privately declared war on {@sector_name} and is conducting an campaign of sabotage."
+                  "{secret_society} has privately declared war on {@sector_name} and is conducting an campaign of sabotage.",
+                  "Most citizens in {@sector_name} are genuinely loyal to The Computer and its regime. They will do whatever it takes to defend it against all forms of treason."
 
 
       interesting_items "nuclear warheads",
