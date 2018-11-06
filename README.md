@@ -9,6 +9,7 @@
   - [Dev Notes](#dev-notes)
     - [Background](#background)
     - [Complications](#complications)
+    - [Floaters](#floaters)
   - [License and Other Legal Information](#license-and-other-legal-information)
 
 ## Instructions
@@ -58,6 +59,7 @@ In addition to writing out my own material, I used the following supplements fro
  - Criminal Histories (the different "job types" in Alpha Complex)
  - Internal Security (additional missions, complications, and locations)
  - The Thin Green Line (additional missions and complications)
+ - Troubleshooters/XP Rulebook (floaters)
 
 The name generator uses names from an example [email generator built using Calyx](https://github.com/maetl/calyx/blob/master/examples/faker.rb), and the generator itself was inspired by the [Faker](https://github.com/stympy/faker) Ruby gem.
 
@@ -89,6 +91,14 @@ Many PARANOIA missions tend to have certain weird scenes, events, and even whole
 The vanilla mission blender does not really reflect "complications" except in its approximation of generating "background" material above. What I did is to create a huge table containing possible complications the PCs may face while doing their mission, and then randomly pick possible complications.
 
 The Mission Blender does a good job with Step 1 (as it already generates a goal for PCs to fight for), and with enough generated details, it's usually very easy for GM to manually perform Step 3 (adding details to the generated goal and complications) on their own.
+
+### Floaters
+
+The *Internal Security* rulebook talks about "floating clues" (clues that players may encounter during the course of gameplay, no matter what they do), and extended that motif to "floating evidence" that players may also encounter during the course of gameplay.
+
+"Floaters" is my generalization of this very concept - players may encounter this type of content during the course of gameplay. No matter what they'll do, they'll stumble upon it. Player freedom is protected (as the context by which they encounter the content will affect how the content 'fits' into the rest of the mission), while reducing the need for the GM to improvise on the fly.
+
+I was inspired by the [Role Playing GM Asssitant](https://rpgsheets.retrofix.net/paranoia_gear/featurelist.html), which included a Mission Blender that displayed some 'random content' (like Random Bureacracies, Random 'PLC Equipment Denials', and Random Bystanders) that GMs can use when dealing with players' schemes and plans.
 
 ## License and Other Legal Information
 
