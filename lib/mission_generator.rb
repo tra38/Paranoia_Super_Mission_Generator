@@ -185,9 +185,11 @@ class MissionGenerator
 
       underplex_location "derelict rooms", "abandoned shafts", "sewers"
 
-      background %{The mission will take place in {@building_name}, {location.indefinite_article} in Sector {@sector_name}. {@overdog_name} (secret society: {$secret_society}, mutant power: {mutant_power}, personality: {$personality}, job type: {$job_type}) currently controls {@building_name} with an iron fist. {@overdog_name}'s ultimate goal is to {$secret_agenda}.
+      character_sheet "secret society: {$secret_society}, mutant power: {mutant_power}, personality: {$personality}, job type: {$job_type}"
 
-        {@overdog_name} has a problem though. And that problem is {@underdog_name} (secret society: {$secret_society}, mutant power: {mutant_power}, personality: {$personality}, job type: {$job_type}), who wants to {do_evil_scheme}, and they want to do so out of {deadly_sin}. {@underdog_name}'s ultimate goal is to {$secret_agenda}.
+      background %{The mission will take place in {@building_name}, {location.indefinite_article} in Sector {@sector_name}. {@overdog_name} ({character_sheet}) currently controls {@building_name} with an iron fist. {@overdog_name}'s ultimate goal is to {$secret_agenda}.
+
+        {@overdog_name} has a problem though. And that problem is {@underdog_name} ({character_sheet}), who wants to {do_evil_scheme}, and they want to do so out of {deadly_sin}. {@underdog_name}'s ultimate goal is to {$secret_agenda}.
 
         It is this conflict between {@overdog_name} and {@underdog_name} that the Troubleshooters must deal with if they are to complete the mission successfully.
 
@@ -596,6 +598,69 @@ class MissionGenerator
 
       official_thugs "A Vulture Squadron", "An Internal Security squad"
 
+      floating_location "Building {$building_name}, {location}. Aligned with {random_target}, controlled by {clearance} supervisor ({character_sheet})."
+
+      room_size "Cubicle" => 1..2,
+                "Cell or refitted closet" => 3..4,
+                "Small office (3-6 workers)" => 5..10,
+                "Normal office (7-30 workers)" => 11..16,
+                "Large office, room for 100 desks" => 17..18,
+                "Real large office, room for 500 desks, multi-tiered (but where are the stairs?)" => 19..19,
+                "Real, real large office. Think the Astrodome with a low ceiling. Citizens at the far end look incredibly small." => 20..20
+
+      room_shape "Square (ho-hum)" => 1..10,
+                  "Circular. Clerks stand behind a circular counter in
+                  the center of the room, surrounded by citizens seeking
+                  service. Clerks feel besieged." => 11..12,
+                  "Triangular" => 13..14,
+                  "Pentacular" => 15..16,
+                  "Hexagonal" => 17..18,
+                  "Octangular" => 19..19,
+                  "A maze of twisty-turny passages, all alike" => 20..20
+
+      office_problem  "Not enough desks. Deskless employees stand by edges
+                      of the room and charge toward any vacated desk. Fights
+                      are frequent, fatalities not unheard of.",
+                      "Too many desks. Way too many desks. Desks piled on
+                      top of each other.",
+                      "No desks. Citizens stand around. Some have a tape
+                      outline on the floor showing where their desk should go. Their files and papers are scattered all over their desk areas, making information retrieval rather difficult.",
+                      "Room is in poor condition. Ceiling sags, cracks in the walls, exposed highvoltage lines, etc. Floor apt to give way at any moment.",
+                      "Wrong security-clearance room. Way too high (maybe INDIGO). Clerks are all standing outside in the corridor expecting to get terminated for low productivity. They scream and scatter when Troubleshooters arrive.",
+                      "One of the ceiling lights flutters and buzzes annoyingly. Can be fixed with a successful electronic engineering roll. Failure means the bulb explodes, showering everyone in the room with sharp pieces of glass shrapnel (damage O4W).",
+                      "Very crowded. Hundreds of citizens are waiting in line, queued up and p’d off. Security clearances vary from INFRARED to GREEN. The line moves slowly. Citizens near the front look as if they haven’t eaten for days.",
+                      "Nobody’s here. No workers, no clients, no nothing. Footsteps echo ominously off the walls, ceiling, and from beneath the floor.",
+                      "Thermostat’s broken. Temperature varies from absolute zero to the boiling point of lead.",
+                      "One clerk, multiple windows. The clerk refuses to help the PCs because the Troubleshooters don’t have something from one of the other windows. When the Troubleshooters shift windows they find the same clerk there (he changed windows also). Clerk keeps sending them from window to window, for approvals, loyalty oaths, etc., until the gag gets old... maybe longer.",
+                      "Secret society stronghold controlled by {secret_society}. They have a prop to indicate their loyalty (Sierra Club might have a hanging fern, Romantics might have fuzzy dice and Pink Floyd records, etc.) Any threatening remarks about the prop would cause every clerk to draw their lasers and start blasting. Service here is 'fast and efficient' compared to the more legal offices.",
+                      "Difficult accessway. Housing Preservation and Development has decided to save credits by making the Troubleshooters stoop, crawl or even slither along on their bellies to reach the clerks inside.",
+                      "Mixed security clearance room. Most of the floor is GREEN, except for not-very-wide-at-all BLACK paths that wind circuitously and eventually lead to the various desks. Trigger-happy Vulture goons armed with laser rifles stand on either side of the paths and yell, ‘Boo!’",
+                      "Lighting malfunction. Either pitch-black darkness or blinding light.",
+                      "Something’s very wrong here: biological contamination, radiation, firefight in progress. Maybe there’s a dead citizen on the floor, and nobody seems to notice him. Citizens in front of the Troubleshooters step over the body as if it weren’t there.",
+                      "Nothing is wrong; office looks very nice and 'normal'."
+
+      worker_clearances "INFRARED" => 1..5,
+                        "RED" => 6..8,
+                        "RED with ORANGE Supervisor" => 9..10,
+                        "RED and ORANGE with YELLOW Supervisor" => 11..13,
+                        "ORANGE and YELLOW" => 14..16,
+                        "ORANGE and YELLOW with one GREEN administrator visiting" => 17..19,
+                        "None. Staffed entirely by clerkbots." => 20..20
+
+      waiting_time "No wait, suspiciously efficient service",
+                    "Five minutes",
+                    "10 minutes",
+                    "Short line of citizens waiting; 30 minutes",
+                    "Medium line of citizens, one hour",
+                    "Long line, two hours",
+                    "Very long line, four hours",
+                    "Very, very long line, eight hours",
+                    "Infinitely long line. Higher-clearance personnel keep cutting in front of the Troubleshooters. Serious Bootlicking, Bribery, Intimidation or Access required to do anything but starve slowly at the end of the line."
+
+      floating_office "Size: {room_size}. Shape: {room_shape}. Problem: {office_problem}. Clearance of Workers: {worker_clearances}. Waiting Time: {waiting_time}."
+
+      floating_excuse ""
+
       start %{
         **{mission_name}**
 
@@ -617,6 +682,18 @@ class MissionGenerator
           3. {$complication}
 
         *Mission Debriefing* - {debriefing_room}
+
+        *Floaters*:
+
+        Locations
+          1. {floating_location}
+          2. {floating_location}
+          3. {floating_location}
+
+        Bureacracy
+          1. {floating_office}
+          2. {floating_office}
+          3. {floating_office}
 
         *Secret Society Missions*:
         Anti-Mutant - {anti_mutant_mission}
