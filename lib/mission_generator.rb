@@ -747,7 +747,7 @@ class MissionGenerator
                         "A seditious complaint form complaining about botulism in the cafeteria.Doubting the perfection of The Computer’s food preparation and handling staff is treason.",
                         "A photo of two clones. The face of one is blurred, but the other might be recognisable as an infamous traitor, if you squint and ignore the fact that said traitor has been dead for the last 84 yearcycles.",
                         "DNA. Well, organic goop anyway.",
-                        "The schematics for a nuclear reactor. Well, maybe it’s an experimental R&D device. Or a warbot. Look, it’s a big incomprehensible blueprint which much have been stolen!",
+                        "The schematics for a nuclear reactor. Well, maybe it’s an experimental R&D device. Or a warbot. Look, it’s a big incomprehensible blueprint which must have been stolen!",
                         "Someone scratched *‘down with The Computer’* into the side of this desk.",
                         "A signed confession, which may or may not be an IntSec plant."
 
