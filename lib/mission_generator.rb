@@ -655,7 +655,7 @@ class MissionGenerator
                     "Long line, two hours",
                     "Very long line, four hours",
                     "Very, very long line, eight hours",
-                    "Infinitely long line. Higher-clearance personnel keep cutting in front of the Troubleshooters. Serious Bootlicking, Bribery, Intimidation or Access required to do anything but starve slowly at the end of the line."
+                    "Infinitely long line. Higher-clearance personnel keep cutting in front of the Troubleshooters. Serious Bootlicking, Bribery, Intimidation or Access required to do anything but starve slowly at the end of the line"
 
       floating_office "Size: {room_size}. Shape: {room_shape}. Problem: {office_problem}. Clearance of Workers: {worker_clearances}. Waiting Time: {waiting_time}."
 
