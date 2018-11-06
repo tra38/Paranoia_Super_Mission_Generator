@@ -401,7 +401,8 @@ class MissionGenerator
       "Briefing officer whispers the briefing to the team leader and then expects him to pass it on in the style of Telephone or Chinese Whispers.",
       "Briefing officer wears {armor} and fiddles with an exotic-looking {weapon}; expects attack at any moment.",
       "Given in a transtube, on a recording with a folder of documents; recording self-destructs 5 seconds after stopping.",
-      "Briefing officer is dead on arrival and no one comes to replace him. May have notes on their body that describe the PCs’ mission."
+      "Briefing officer is dead on arrival and no one comes to replace him. May have notes on their body that describe the PCs’ mission.",
+      "The Computer conducts the briefing."
 
       outfitting "PLC: {plc}" => 1..10,
                   "IR Market: {ir_market}" => 11..20
@@ -548,7 +549,13 @@ class MissionGenerator
                   "The vending machines in {@sector_name} are rebelling against their human overlords.",
                   "Due to budget cutbacks in {@sector_name}, the service groups have taken drastic actions to secure future fundings.",
                   "{secret_society} has privately declared war on {@sector_name} and is conducting an campaign of sabotage.",
-                  "Most citizens in {@sector_name} are genuinely loyal to The Computer and its regime. They will do whatever it takes to defend it against all forms of treason."
+                  "Most citizens in {@sector_name} are genuinely loyal to The Computer and its regime. They will do whatever it takes to defend it against all forms of treason.",
+                  "An 'election' (glorified popularity contest) is being held for the {@sector_name} Sector Presidency. The VIOLET incumbent ({character_sheet}) has hired {@overdog_name} to serve as head of their security staff (to protect against assassinations and terrorist attacks), while {@underdog_name} is covertly working for the INDIGO challenger ({character_sheet}).", #my attempt at remembering 'The Petbot Vote'
+                  "The whole mission is secretly an Internal Security sting operation designed to uncover non-existent traitors.",
+                  "The actual problem has been exaggerated hundreds of times over, attracting the attention of far more important and powerful agencies than it deserved.",
+                  "The Troubleshooters who failed the last mission in {@sector_name} used {random_target} as the bogeyman to blame all their failures on.",
+                  "A High Programmer or another senior official is attempting to screw over their competitors and acquire some important item or information.",
+                  "The whole incident is designed as a Loyalty Test, either for the Troubleshooters or for someone else."
 
 
       interesting_items "nuclear warheads",
@@ -618,9 +625,7 @@ class MissionGenerator
                   "Octangular" => 19..19,
                   "A maze of twisty-turny passages, all alike" => 20..20
 
-      office_problem  "Not enough desks. Deskless employees stand by edges
-                      of the room and charge toward any vacated desk. Fights
-                      are frequent, fatalities not unheard of.",
+      office_problem  "Not enough desks. Deskless employees stand by edges of the room and charge toward any vacated desk. Fights are frequent, fatalities not unheard of.",
                       "Too many desks. Way too many desks. Desks piled on
                       top of each other.",
                       "No desks. Citizens stand around. Some have a tape
@@ -659,7 +664,56 @@ class MissionGenerator
 
       floating_office "Size: {room_size}. Shape: {room_shape}. Problem: {office_problem}. Clearance of Workers: {worker_clearances}. Waiting Time: {waiting_time}."
 
-      floating_excuse ""
+      floating_excuse "The requested information is above the inquirer’s clearance.",
+                      "The information is unavailable due to Commie sabotage.",
+                      "The information is unavailable due to an unknown mutant force.",
+                      "If the inquirer files the appropriate request form, it will be processed in 6-8 days.",
+                      "The form to request that information is currently being revised.",
+                      "Knowledge of this information is illegal at all security clearances. Only a traitor would have a use for that information. Is the inquirer a traitor?",
+                      "Give information as a printout, entirely blacked out except for pronouns and articles.",
+                      "Give information as an encoded printout. Access to the code is two clearances above the inquirer (or has been lost, if the inquirer is VIOLET or higher).",
+                      "An honest I-don’t-know.",
+                      "Give obviously wrong information. ‘Repeat’ it a second time, completely differently and still obviously wrong.",
+                      "The information is above *my* security clearance.",
+                      "Imply the question is a sign of unhappiness.",
+                      "That information is available on a need-to-know basis and is not yet required.",
+                      "Information is available in a purchasable but prohibitively expensive publication.",
+                      "If the NPC told the inquirer, the NPC would have to kill him. If the inquirer insists, do it and fine him 100 credits. The next clone doesn’t remember the answer, so you don’t need an actual answer.",
+                      "Refer inquirer to a non-existent room number for that and related information.",
+                      "Refer inquirer to a real room far above his clearance.",
+                      "NPC pretends not to hear the question."
+
+      floating_denial "‘I’m sorry, citizen, we appear to be temporarily all out of that item.’",
+                    "‘According to [your briefing officer/my supervisor/The Computer], that equipment is not necessary for your mission.’",
+                    "‘Certainly, right away.’ [NPC walks off for a while.] ‘I’m sorry, it appears that Commies have stolen the last of our supply. The Computer has dispatched a Troubleshooter team to solve the problem.’",
+                    "‘Yes, of course, one moment while I get it for you.’ [Wanders off and doesn’t come back.]",
+                    "‘Are you implying The Computer forgot to assign you something, citizen?’",
+                    "‘For that you need to fill out Form #B5AT67.’ [When asked for the form, say it requires another form, and so on until they give up. If it looks like they will keep going, send them off to some remote location, where they will fall into a food vat or something.]",
+                    "‘That item has been sent to our labs for testing due to apparent design flaws. We may still have some in stock, though, if you want me to go check...’",
+                    "No one anywhere in the entirety of PLC has ever heard of the requested item, or at least doesn’t admit it.",
+                    "The requested item requires a deposit of an insanely large number of credits.",
+                    "‘Certainly, here you go.’ [The clerk provides an obviously mistaken order. Instead of the requested cone rifle, the Troubleshooters receive, say, 10 meters of twine.]"
+
+      floating_clerk "Paranoid: Confides to Troubleshooters his firm belief that all his other workers in the office are Commies. If Intimidation is used, clerk screams, ‘You’re not taking me alive!’ and opens fire.",
+                        "Greedy: Wink at your players. Rub two fingers together as if you’re holding a coin. Say stuff like ‘Sure, I think that can be (wink, wink) arranged.’ Jingle the change in your pockets.",
+                        "Antagonistic: Argues about everything. If accused of being antagonistic, will argue about that too. Would rather die than succumb to threats of physical violence—and probably will—die, that is.",
+                        "A dreamer: This citizen doesn’t really want to work in Bureaucracy Central. This citizen wants to be a HPD&MC vidstar. Talks endlessly about ‘the big break’ and popu- lar reality vidshows. He shows around his portfolio of photographs.",
+                        "Robotic: Devoid of all emotions. Talks in clipped sen- tences and uses lots of logic and other sense-making stuff. Troubleshooters might suspect clerk is a Commie android. (Maybe it is. You decide.)",
+                        "Dolefully docile: Feebly laughs if Troubleshooters try to cheer him up, or gazes at them gratefully with tear-filled eyes. Breaks into spontaneous sobs. Swallows noisily. ‘I’m s-s-sorry? (Gulp)’",
+                        "Annoyingly helpful: Has to be in control of everything. Helps other clerks so often he doesn’t have time to listen to the Troubleshooters. Favorite phrase: ‘Back in just a sec.’ Returns 10 minutes later.",
+                        "Vulture Squadron transfer: Drummed out for excessive brutality (!). Greets everyone by saying, ‘I could kill you in seven seconds. Maybe five.’ Willing to prove it. Unwilling to do just about anything else.",
+                        "Inefficient and clumsy: Troubleshooters who get pushy are in for a rude surprise. The clerk is an Internal Security agent on a task force assigned to investigate CPU reports of clerk harassment.",
+                        "Nervous: Doesn’t trust citizens with lasers (justifiably so). Tries to usher Troubleshooters out of room as quickly as possible, even if it means lying. Con Games rating 18.",
+                        "Harried: Clerk buried beneath piles of paperwork. Protruding hands snatch the form from the PCs and stamp it a dozen times with a red stamp that reads ‘Approved.’ If the PCs don’t have a form, a muffled voice inside the pile tells them to go away.",
+                        "Snob: Feels superior to any other citizen who doesn’t understand and appreciate the bureaucratic runaround as well as he does. This means just about anybody. Loves to make things difficult for poor PCs.",
+                        "Defensive: Favorite phrase: ‘Oh, I suppose you could do it better?’ If pushed, rises and says, ‘Okay, smarty, you’re in charge now. Have fun!’ Then he stalks off.",
+                        "Crazy. Schizoid. Whacked-out: Seems normal at first, but, if any pressure is brought to bear, starts dancing around the room singing, ‘Can’t catch me, I’m the gin- gerbread man!’ and current loyalty songs.",
+                        "Prematurely old: A thick layer of dust covers his arms and head; cobwebs cling to his clothes (the hygiene officer should note and remedy this). Nods off in the middle of conversations. Looks up from time to time and says, ‘Maggie-O, is that you?’",
+                        "Former hygiene officer: Wants everything done exactly the way he likes it done. Refuses to accept forms or vouchers even slightly smeared or crumpled. Won’t even speak to anyone but a hygiene officer, then trades anecdotes about ‘the good old days.’",
+                        "Bully: Tries to intimidate customers. Favorite phrase: ‘You and what service group?’ Intimidation 15; tries to extort items from the PCs in exchange for ‘favors’ that never materialize. Heavily armed to back up his threats.",
+                        "Depressed: Completely bored with existence. Infuriatingly slow. Refuses to help Troubleshooters if they don’t have the correct forms filled out properly. Immune to all Management skills. Doesn’t care if Troubleshooters blast him.",
+                        "Cheerful and competent: Likes his job. Smiles and answers all questions in a clear and concise manner. If he can’t help the Troubleshooters, he knows precisely where they should go and to whom they should talk. This should completely unnerve them.",
+                        "Cheerful and Incompetent: Like his job. Smiles and answers all questions in a clear and concise manner. But all his answers are dead wrong. Confidently and helpfully sends Troubleshooters down wrong hallway to get wrong form from wrong department."
 
       start %{
         **{mission_name}**
@@ -686,16 +740,32 @@ class MissionGenerator
         *Floaters*:
 
         Locations
-          1. {floating_location}
-          2. {floating_location}
-          3. {floating_location}
+          1. {$floating_location}
+          2. {$floating_location}
+          3. {$floating_location}
 
-        Bureacracy
-          1. {floating_office}
-          2. {floating_office}
-          3. {floating_office}
+        Bureacracies
+          1. {$floating_office}
+          2. {$floating_office}
+          3. {$floating_office}
+
+        Excuses (Information)
+          1. {$floating_excuse}
+          2. {$floating_excuse}
+          3. {$floating_excuse}
+
+        Equipment Denial
+          1. {$floating_denial}
+          2. {$floating_denial}
+          3. {$floating_denial}
+
+        Clerks
+          1. {$floating_clerk}
+          2. {$floating_clerk}
+          3. {$floating_clerk}
 
         *Secret Society Missions*:
+
         Anti-Mutant - {anti_mutant_mission}
 
         Computer Phreaks - {computer_phreak_mission}
