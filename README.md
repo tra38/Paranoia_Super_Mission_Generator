@@ -57,9 +57,9 @@ In addition to writing out my own material, I used the following supplements fro
  - The Paranoia XP GM's Screen, specifically the Mission Blender (almost all of it)
  - The Traitor's Manual, specifically the "Illuminati Motivation Table of Doom" (provides additional motivation to the NPCs as well as complications to the mission)
  - Criminal Histories (the different "job types" in Alpha Complex)
- - Internal Security (additional missions, complications, and locations)
- - The Thin Green Line (additional missions and complications)
- - Troubleshooters/XP Rulebook (floaters)
+ - Internal Security (missions, complications, locations, floaters)
+ - The Thin Green Line (missions, complications)
+ - Troubleshooters/XP Rulebook (misisons, complications, floaters)
 
 The name generator uses names from an example [email generator built using Calyx](https://github.com/maetl/calyx/blob/master/examples/faker.rb), and the generator itself was inspired by the [Faker](https://github.com/stympy/faker) Ruby gem.
 
@@ -71,7 +71,7 @@ The fake word generator (which I used to come up with random names to objects, i
 
 This program is my take on the famous "Mission Blender". There is already [an online version of the Mission Blender](http://www.highprogrammer.com/cgi-bin/mission_blender) when I started work on this project, but that project required me to "think" how to merge all the randomly-generated items together. What I wanted is a system that automates as much of the mission-generation process possible. Some human effort is still needed at the end of the day (because the goal of a tabletop RPG session is to entertain humans, not bots), but will be used more efficently - curating and refining the generated output.
 
-The format of the generated mission is usually self-explanatory, but I like to explain two things.
+The format of the generated mission is usually self-explanatory, but I like to explain three things.
 
 ### Background
 The "background" at the start of the mission is based off the format in most professionally published PARANOIA missions, where the GM is given some details about the covert dealings that is responsible for the current mission. The PCs may (or may not) be able to discover what's going on (and it's possible the PCs may not even care). But there is usually a reason behind the madness (which tends to help the GM improvise even more madness on-the-fly).
@@ -98,7 +98,7 @@ The *Internal Security* rulebook talks about "floating clues" (clues that player
 
 "Floaters" is my generalization of this very concept - players may encounter this type of content during the course of gameplay. No matter what they'll do, they'll stumble upon it. Player freedom is protected (as the context by which they encounter the content will affect how the content 'fits' into the rest of the mission), while reducing the need for the GM to improvise on the fly.
 
-I was inspired by the [Role Playing GM Asssitant](https://rpgsheets.retrofix.net/paranoia_gear/featurelist.html), which included a Mission Blender that displayed some 'random content' (like Random Bureacracies, Random 'PLC Equipment Denials', and Random Bystanders) that GMs can use when dealing with players' schemes and plans.
+I was inspired by the [The Computer's Paranoia XP RPG Tool](https://rpgsheets.retrofix.net/paranoia_gear/), which included a Mission Blender that displayed some 'random content' (like Random Bureacracies, Random 'PLC Equipment Denials', and Random Bystanders) that GMs can use when dealing with players' schemes and plans.
 
 ## License and Other Legal Information
 
