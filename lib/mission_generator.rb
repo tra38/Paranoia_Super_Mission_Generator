@@ -772,6 +772,7 @@ class MissionGenerator
           3. {$complication}
 
         *Mission Debriefing* - {debriefing_room}
+
         *Secret Society Missions*:
 
         Anti-Mutant - {anti_mutant_mission}
