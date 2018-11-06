@@ -715,6 +715,42 @@ class MissionGenerator
                         "Cheerful and competent: Likes his job. Smiles and answers all questions in a clear and concise manner. If he can’t help the Troubleshooters, he knows precisely where they should go and to whom they should talk. This should completely unnerve them.",
                         "Cheerful and Incompetent: Like his job. Smiles and answers all questions in a clear and concise manner. But all his answers are dead wrong. Confidently and helpfully sends Troubleshooters down wrong hallway to get wrong form from wrong department."
 
+      floating_clue "A note discussing future plans in a vague manner (possibly directing PCs to the next scenes).",
+                    "A brand of gum only available in one sector.",
+                    "A trail of blood.",
+                    "The most recent message on a suspect’s PDC.",
+                    "A faithful petbot who cooperates with the investigation.",
+                    "A menu from a cafeteria.",
+                    "A photo of an important location that the suspect liked.",
+                    "A talkative AutoHack bot gives the PCs a clue. ‘That guy? Had him in the back of my cab last twosday. Fuhgeddaboutit’.",
+                    "A clearly drawn map with a line going from where the PCs are now to the next scene.",
+                    "The Troopers take a wrong turn and end up where they’re supposed to be.",
+                    "A matchbook that belong to the suspect.",
+                    "The Troopers hear a scream coming from the next scene.",
+                    "Minutes from a briefing in a particular location.",
+                    "A witness cooperates with the PCs but only really can provide directions on where the PCs should go next.",
+                    "Tracing the suspect’s PDC via The Computer."
+
+      floating_evidence "A laser barrel with one shot used.",
+                        "A bootprint, matching...Alpha Complex standard issue boots.",
+                        "A cryptic note. Cryptic, in that the characters can’t even read the language it’s written in. Maybe it’s a code, maybe it’s crazed scribblings.",
+                        "Very strong body odour that lingers in the room.",
+                        "Assorted lengths of wire – the sort of wire you might use when wiring a detonator to a bomb!",
+                        "A piece of camera footage, shot from a bad angle in poor lighting and damaged in storage, which shows...well, grainy blobs doing something to other grainy blobs. Could be anything in there.",
+                        "A rambling anonymous message posted on a Grey Subnet, accusing an unnamed person of being a traitor/ mutant/cockroach in disguise/mean.",
+                        "A dropped Bouncy Bubble Beverage can. The killer drank B3... good for him!",
+                        "A piece of heavily chewed ConeRifle-brand BubbleGum. The collectible sticker that comes in every packet is missing.",
+                        "Shredded paper that might once have been an incriminating document or traitorous propaganda.",
+                        "A bot that’s obviously been expertly reprogrammed by a traitor to refuse to answer questions. Well, that or it’s got a defective brain module, but really, which is more likely?",
+                        "A coded message. It looks like a perfectly innocent report on ball-bearing production quotas, but if you ignore most of the actual letters, it’s a Commie manifesto!",
+                        "A ticket to a FunBall game. Statistically, certain proof that the suspect was associating with a traitor.",
+                        "A seditious complaint form complaining about botulism in the cafeteria.Doubting the perfection of The Computer’s food preparation and handling staff is treason.",
+                        "A photo of two clones. The face of one is blurred, but the other might be recognisable as an infamous traitor, if you squint and ignore the fact that said traitor has been dead for the last 84 yearcycles.",
+                        "DNA. Well, organic goop anyway.",
+                        "The schematics for a nuclear reactor. Well, maybe it’s an experimental R&D device. Or a warbot. Look, it’s a big incomprehensible blueprint which much have been stolen!",
+                        "Someone scratched *‘down with The Computer’* into the side of this desk.",
+                        "A signed confession, which may or may not be an IntSec plant."
+
       start %{
         **{mission_name}**
 
@@ -763,6 +799,16 @@ class MissionGenerator
           1. {$floating_clerk}
           2. {$floating_clerk}
           3. {$floating_clerk}
+
+        Clues
+          1. {$floating_clue}
+          2. {$floating_clue}
+          3. {$floating_clue}
+
+        Evidence
+          1. {$floating_evidence}
+          2. {$floating_evidence}
+          3. {$floating_evidence}
 
         *Secret Society Missions*:
 
