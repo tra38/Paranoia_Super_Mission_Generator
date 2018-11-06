@@ -537,7 +537,7 @@ class MissionGenerator
                   "The Commie Mutant Traitors are winning - the PCs must take steps to either adapt to the new order or to stop it.",
                   "{@sector_name} (or if you like, all of Alpha Complex) is just a simulation; nothing is physically real.",
                   "The PCs suspect that a High Programmer is out to get them.",
-                  "This sector has a lot of clones who are 'unregistered' (they lack an official identity in Alpha Complex's databaes) and must survive on their own. These 'sinister clones' have sworn loyalty to {random_target} in return for support.",
+                  "This sector has a lot of clones who are 'unregistered' (they lack an official identity in Alpha Complex's databases) and must survive on their own. These 'sinister clones' have sworn loyalty to {random_target} in return for support.",
                   "{@underdog_name}'s secret society is openly intervening in the crisis by sending military troops.",
                   "This mission is being recorded live by HPD&MC as part of a vidshow. The cameraperson may be a part of the PC's team as well.",
                   "{@building_name} secretly contain {interesting_items} (currently under the control of {random_target}). The Computer does not want them to fall into the wrong hands.",
