@@ -772,44 +772,6 @@ class MissionGenerator
           3. {$complication}
 
         *Mission Debriefing* - {debriefing_room}
-
-        *Floaters*:
-
-        Locations
-          1. {$floating_location}
-          2. {$floating_location}
-          3. {$floating_location}
-
-        Bureacracies
-          1. {$floating_office}
-          2. {$floating_office}
-          3. {$floating_office}
-
-        Excuses (Information)
-          1. {$floating_excuse}
-          2. {$floating_excuse}
-          3. {$floating_excuse}
-
-        Equipment Denial
-          1. {$floating_denial}
-          2. {$floating_denial}
-          3. {$floating_denial}
-
-        Clerks
-          1. {$floating_clerk}
-          2. {$floating_clerk}
-          3. {$floating_clerk}
-
-        Clues
-          1. {$floating_clue}
-          2. {$floating_clue}
-          3. {$floating_clue}
-
-        Evidence
-          1. {$floating_evidence}
-          2. {$floating_evidence}
-          3. {$floating_evidence}
-
         *Secret Society Missions*:
 
         Anti-Mutant - {anti_mutant_mission}
@@ -847,6 +809,44 @@ class MissionGenerator
         Spy For Another Alpha Complex - {spy_mission}
 
         Program Group - {program_group_mission}
+
+
+        *Floaters*:
+
+        Locations
+          1. {$floating_location}
+          2. {$floating_location}
+          3. {$floating_location}
+
+        Bureacracies
+          1. {$floating_office}
+          2. {$floating_office}
+          3. {$floating_office}
+
+        Excuses (Information)
+          1. {$floating_excuse}
+          2. {$floating_excuse}
+          3. {$floating_excuse}
+
+        Equipment Denial
+          1. {$floating_denial}
+          2. {$floating_denial}
+          3. {$floating_denial}
+
+        Clerks
+          1. {$floating_clerk}
+          2. {$floating_clerk}
+          3. {$floating_clerk}
+
+        Clues
+          1. {$floating_clue}
+          2. {$floating_clue}
+          3. {$floating_clue}
+
+        Evidence
+          1. {$floating_evidence}
+          2. {$floating_evidence}
+          3. {$floating_evidence}
       }
 
       generic_mission "Deliver {object} to {random_target}, as payment for 'service rendered'.", "Steal {@overdog_object_codename} from {@overdog_name}, as payback for their crimes against our society.", "Destroy {@building_name}. All of it. Burn it all to the ground.", "Comprehensively recon {random_target} and build up a dossier on them."
