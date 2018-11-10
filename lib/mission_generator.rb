@@ -556,7 +556,7 @@ class MissionGenerator
                   "The Troubleshooters who failed the last mission in {@sector_name} used {random_target} as the bogeyman to blame all their failures on.",
                   "A High Programmer or another senior official is attempting to screw over their competitors and acquire some important item or information.",
                   "The whole incident is designed as a Loyalty Test, either for the Troubleshooters or for someone else.",
-                  "Citizens in {@sector_name} had all their memories erased; they're in the process of trying to get it back and figure out what went wrong." #my attempt at remembering 'Battlebot Potkemin'
+                  "Citizens in {@sector_name} had all their memories erased; they're in the process of trying to get them back and figure out what went wrong." #my attempt at remembering 'Battlebot Potkemin'
 
       interesting_items "nuclear warheads",
                         "warbot parts",
