@@ -59,6 +59,7 @@ In addition to writing out my own material, I used the following supplements fro
  - Criminal Histories (the different "job types" in Alpha Complex)
  - Internal Security (missions, complications, locations, floaters)
  - The Thin Green Line (missions, complications)
+ - Mandatory Mission Pack (locations)
  - Troubleshooters/XP Rulebook (misisons, complications, floaters)
 
 The name generator uses names from an example [email generator built using Calyx](https://github.com/maetl/calyx/blob/master/examples/faker.rb), and the generator itself was inspired by the [Faker](https://github.com/stympy/faker) Ruby gem.

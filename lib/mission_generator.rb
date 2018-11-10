@@ -50,7 +50,8 @@ class MissionGenerator
                     :underdog_name
 
       location :public_location => 1..12,
-               :private_location => 13..20
+               :private_location => 13..20,
+               :mandatory_mission_location => 21..25
 
       public_location "{clearance}-clearance {public_safe_location}" => 1..10,
                       "{clearance}-clearance {public_dangerous_location}"=> 11..16,
@@ -59,6 +60,36 @@ class MissionGenerator
       private_location  :private_safe_location => 1..10,
                         :private_dangerous_location => 11..16,
                         :private_unusual_location => 17..20
+
+      mandatory_mission_location "Cory-G-FOX-6 (elite Troubleshooter) Memorial Briefing Room",
+                                "{official_thugs}'s Firing Range (unusued)",
+                                "GAMMA-Clearance Corridor (Computer denies this place exists)",
+                                "Undersea Corridor",
+                                "Minefield Corridor",
+                                "Corridor Running Club HQ",
+                                "The 'Lost' Corridor (shut down many years ago, now part of the Underplex and currently occupied by traitors from the {secret_society} secret society)",
+                                "Fleshbag Factory (entity that mass-produces suits of human skins for delivery for some other place; appears to be entirely automated)",
+                                "Servants of Cthulhu HQ",
+                                "Mandatory 'Confession Booth' Corridor",
+                                "CPU Office of Collateral Damage Registration",
+                                "IntSec Department of Observation office (each office is dedicated to observing the life of key individuals, possibly your PCs)",
+                                "Power Services Fuel Storage Co-ordination Office",
+                                "HPD&MC Bureau of Compliance",
+                                "CPU Internal Affairs Department",
+                                "HPD&MC Center For Traitor Reprogramming (turns them into deep cover agents for Internal Security)",
+                                "CPU Bureau of Information Collection",
+                                "Tech Services Bot Refurbishment Depot (secretly a betting ring for botfighting)",
+                                "CPU Analysis Section (secretly a betting rig for Troubleshooter missions)",
+                                "Tech Services Wiring Storage",
+                                "Internal Security Office of Security",
+                                "PLC Parcel Tracking Office",
+                                "Tech Services Paint Inspection Scheduling",
+                                "Armed Forces Committee on Security Rating Advisory",
+                                "HPD&MC Bureau of Bicycle Registration (as no bicycles exist, this bureau is actually an excuse to embezzle credits)",
+                                "CPU Office of Sanctioned Communications (a glorified call center where bored CPU clerks pretend to be The Computer)",
+                                "HPD&MC Television Modulation Office (monitors the effectiveness of television programs and adjust them to manipulate the population; uses lots of telemetry)",
+                                "Armed Forces Office of Ammunition Sorting"
+
 
       public_safe_location "food production area" =>1..2,
                            "living quarters" => 3..4,
@@ -613,12 +644,10 @@ class MissionGenerator
                 "Normal office (7-30 workers)" => 11..16,
                 "Large office, room for 100 desks" => 17..18,
                 "Real large office, room for 500 desks, multi-tiered (but where are the stairs?)" => 19..19,
-                "Real, real large office. Think the Astrodome with a low ceiling. Citizens at the far end look incredibly small." => 20..20
+                "Real, real large office. Think the Astrodome with a low ceiling. Citizens at the far end look incredibly small" => 20..20
 
       room_shape "Square (ho-hum)" => 1..10,
-                  "Circular. Clerks stand behind a circular counter in
-                  the center of the room, surrounded by citizens seeking
-                  service. Clerks feel besieged." => 11..12,
+                  "Circular. Clerks stand behind a circular counter in the center of the room, surrounded by citizens seeking service. Clerks feel besieged" => 11..12,
                   "Triangular" => 13..14,
                   "Pentacular" => 15..16,
                   "Hexagonal" => 17..18,
@@ -626,10 +655,8 @@ class MissionGenerator
                   "A maze of twisty-turny passages, all alike" => 20..20
 
       office_problem  "Not enough desks. Deskless employees stand by edges of the room and charge toward any vacated desk. Fights are frequent, fatalities not unheard of.",
-                      "Too many desks. Way too many desks. Desks piled on
-                      top of each other.",
-                      "No desks. Citizens stand around. Some have a tape
-                      outline on the floor showing where their desk should go. Their files and papers are scattered all over their desk areas, making information retrieval rather difficult.",
+                      "Too many desks. Way too many desks. Desks piled on top of each other.",
+                      "No desks. Citizens stand around. Some have a tape outline on the floor showing where their desk should go. Their files and papers are scattered all over their desk areas, making information retrieval rather difficult.",
                       "Room is in poor condition. Ceiling sags, cracks in the walls, exposed highvoltage lines, etc. Floor apt to give way at any moment.",
                       "Wrong security-clearance room. Way too high (maybe INDIGO). Clerks are all standing outside in the corridor expecting to get terminated for low productivity. They scream and scatter when Troubleshooters arrive.",
                       "One of the ceiling lights flutters and buzzes annoyingly. Can be fixed with a successful electronic engineering roll. Failure means the bulb explodes, showering everyone in the room with sharp pieces of glass shrapnel (damage O4W).",
@@ -650,7 +677,7 @@ class MissionGenerator
                         "RED and ORANGE with YELLOW Supervisor" => 11..13,
                         "ORANGE and YELLOW" => 14..16,
                         "ORANGE and YELLOW with one GREEN administrator visiting" => 17..19,
-                        "None. Staffed entirely by clerkbots." => 20..20
+                        "None. Staffed entirely by clerkbots" => 20..20
 
       waiting_time "No wait, suspiciously efficient service",
                     "Five minutes",
@@ -662,7 +689,7 @@ class MissionGenerator
                     "Very, very long line, eight hours",
                     "Infinitely long line. Higher-clearance personnel keep cutting in front of the Troubleshooters. Serious Bootlicking, Bribery, Intimidation or Access required to do anything but starve slowly at the end of the line"
 
-      floating_office "Size: {room_size}. Shape: {room_shape}. Problem: {office_problem}. Clearance of Workers: {worker_clearances}. Waiting Time: {waiting_time}."
+      floating_office "Size: {room_size}. Shape: {room_shape}. Problem: {office_problem} Clearance of Workers: {worker_clearances}. Waiting Time: {waiting_time}."
 
       floating_excuse "The requested information is above the inquirer’s clearance.",
                       "The information is unavailable due to Commie sabotage.",
