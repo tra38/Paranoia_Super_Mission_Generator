@@ -83,7 +83,7 @@ class MissionGenerator
                                 "Tech Services Wiring Storage",
                                 "Internal Security Office of Security",
                                 "PLC Parcel Tracking Office",
-                                "Tech Services Paint Inspection Scheduling",
+                                "Tech Services Office of Paint Inspection Scheduling",
                                 "Armed Forces Committee on Security Rating Advisory",
                                 "HPD&MC Bureau of Bicycle Registration (as no bicycles exist, this bureau is actually an excuse to embezzle credits)",
                                 "CPU Office of Sanctioned Communications (a glorified call center where bored CPU clerks pretend to be The Computer)",
