@@ -567,7 +567,7 @@ class MissionGenerator
                   "The Commie Mutant Traitors are losing - and this is a bad thing! Without a common Enemy to unify against, the Complex is about to destroy itself in an orgy of violence and mayhem.",
                   "The Commie Mutant Traitors are winning - the PCs must take steps to either adapt to the new order or to stop it.",
                   "{@sector_name} (or if you like, all of Alpha Complex) is just a simulation; nothing is physically real.",
-                  "The PCs suspect that a High Programmer is out to get them.",
+                  "The PCs suspect that a High Programmer ({character_sheet}) is out to get them.",
                   "This sector has a lot of clones who are 'unregistered' (they lack an official identity in Alpha Complex's databases) and must survive on their own. These 'sinister clones' have sworn loyalty to {random_target} in return for support.",
                   "{@underdog_name}'s secret society is openly intervening in the crisis by sending military troops.",
                   "This mission is being recorded live by HPD&MC as part of a vidshow. The cameraperson may be a part of the PC's team as well.",
@@ -585,7 +585,7 @@ class MissionGenerator
                   "The whole mission is secretly an Internal Security sting operation designed to uncover non-existent traitors.",
                   "The actual problem has been exaggerated hundreds of times over, attracting the attention of far more important and powerful agencies than it deserved.",
                   "The Troubleshooters who failed the last mission in {@sector_name} used {random_target} as the bogeyman to blame all their failures on.",
-                  "A High Programmer or another senior official is attempting to screw over their competitors and acquire some important item or information.",
+                  "A High Programmer or another senior official ({character_sheet}) is attempting to screw over their competitors and acquire some important item or information.",
                   "The whole incident is designed as a Loyalty Test, either for the Troubleshooters or for someone else.",
                   "Citizens in {@sector_name} had all their memories erased; they're in the process of trying to get them back and figure out what went wrong." #my attempt at remembering 'Battlebot Potkemin'
 
