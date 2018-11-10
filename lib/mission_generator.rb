@@ -88,7 +88,8 @@ class MissionGenerator
                                 "HPD&MC Bureau of Bicycle Registration (as no bicycles exist, this bureau is actually an excuse to embezzle credits)",
                                 "CPU Office of Sanctioned Communications (a glorified call center where bored CPU clerks pretend to be The Computer)",
                                 "HPD&MC Television Modulation Office (monitors the effectiveness of television programs and adjust them to manipulate the population; uses lots of telemetry)",
-                                "Armed Forces Office of Ammunition Sorting"
+                                "Armed Forces Office of Ammunition Sorting",
+                                "Committee for Vigilant Action HQ (the 'Committee' is actually a plot by disgruntled high-clearance citizens to overthrow The Computer and take power for themselves; sympathizes with {secret_society})"
 
 
       public_safe_location "food production area" =>1..2,
