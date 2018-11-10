@@ -51,7 +51,7 @@ class MissionGenerator
 
       location :public_location => 1..12,
                :private_location => 13..20,
-               :mandatory_mission_location => 21..21
+               :mandatory_mission_location => 21..25
 
       public_location "{clearance}-clearance {public_safe_location}" => 1..10,
                       "{clearance}-clearance {public_dangerous_location}"=> 11..16,
