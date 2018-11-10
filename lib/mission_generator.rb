@@ -62,13 +62,13 @@ class MissionGenerator
                         :private_unusual_location => 17..20
 
       mandatory_mission_location "Cory-G-FOX-6 (elite Troubleshooter) Memorial Briefing Room",
-                                "{official_thugs}'s Firing Range (unusued)",
+                                "{public_location} (previously {official_thugs}'s Firing Range)",
                                 "GAMMA-Clearance Corridor (Computer denies this place exists)",
                                 "Undersea Corridor",
                                 "Minefield Corridor",
                                 "Corridor Running Club HQ",
                                 "The 'Lost' Corridor (shut down many years ago, now part of the Underplex and currently occupied by traitors from the {secret_society} secret society)",
-                                "Fleshbag Factory (entity that mass-produces suits of human skins for delivery for some other place; appears to be entirely automated)",
+                                "Fleshbag Factory (entity that mass-produces suits of human skins for delivery to some other place; appears to be entirely automated)",
                                 "Servants of Cthulhu HQ",
                                 "Mandatory 'Confession Booth' Corridor",
                                 "CPU Office of Collateral Damage Registration",
