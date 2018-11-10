@@ -91,7 +91,6 @@ class MissionGenerator
                                 "Armed Forces Office of Ammunition Sorting",
                                 "Committee for Vigilant Action HQ (the 'Committee' is actually a plot by disgruntled high-clearance citizens to overthrow The Computer and take power for themselves; sympathizes with {secret_society})"
 
-
       public_safe_location "food production area" =>1..2,
                            "living quarters" => 3..4,
                            "dining area" => 5..6,
