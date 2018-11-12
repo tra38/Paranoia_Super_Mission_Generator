@@ -1,106 +1,107 @@
+
 **Trust The Computer!**
 
-*Background* - The mission will take place in 39-A5I, a Museum of Famous Forms in Sector DCH. Allie-I-ZWI-2 (secret society: PURGE, mutant power: Adhesive Skin, personality: Bluff Professional, job type: Management) currently controls 39-A5I with an iron fist. Allie-I-ZWI-2's ultimate goal is to promote an extreme form of mutant supremacy - only their kind of mutants dominate, and normal humans and all other kinds of mutants subservient.
+*Background* - The mission will take place in 87-T1C, an Undersea Corridor in Sector JKG. Gretchen-G-MXK-5 (secret society: "Spy For Another Alpha Complex", mutant power: Toxic Metabolism, personality: War Hero, job type: Clerical) currently controls 87-T1C with an iron fist. Gretchen-G-MXK-5's ultimate goal is to loyally support The Computer and its High Programmers (even they have to use unapproved channels).
 
-Allie-I-ZWI-2 has a problem though. And that problem is Luther-Y-SRF-1 (secret society: "Spy For Another Alpha Complex", mutant power: Rubbery Bones, personality: Passive-Aggressive Clerk, job type: Celebrity), who wants to blackmail Allie-I-ZWI-2, and they want to do so out of envy. Luther-Y-SRF-1's ultimate goal is to make their secret society more powerful.
+Gretchen-G-MXK-5 has a problem though. And that problem is Harmony-R-HGA-3 (secret society: Psion, mutant power: Hypersenses, personality: Bored Bureaucrat, job type: Emergency), who wants to erase Gretchen-G-MXK-5's clone line, and they want to do so out of envy. Harmony-R-HGA-3's ultimate goal is to cover up the fact that they're...um...dead (their identity has since been stolen by traitors from the Romantics society).
 
-It is this conflict between Allie-I-ZWI-2 and Luther-Y-SRF-1 that the Troubleshooters must deal with if they are to complete the mission successfully.
+It is this conflict between Gretchen-G-MXK-5 and Harmony-R-HGA-3 that the Troubleshooters must deal with if they are to complete the mission successfully.
 
-Allie-I-ZWI-2 also has some personal possessions - Project Posmentci (a Snooper (small hovering sphere that tracks a target's scent)) and Project Toranco (a Deluxe PDC with enhanced infrared-light camera, shoots accurately in total darkness). These possessions could be used to help defend 39-A5I from the threat of Luther-Y-SRF-1...but could also prove to be a danger.
+Gretchen-G-MXK-5 also has some personal possessions - Project Tersnalmu (a Jackobot) and Project Naatri (a Deluxe PDC with enhanced infrared-light camera, shoots accurately in total darkness). These possessions could be used to help defend 87-T1C from the threat of Harmony-R-HGA-3...but could also prove to be a danger.
 
-*Mission Alert* - Special ‘breaking news’ bulletin in middle of vidshow: interrupts crucial revelation. Identifies the PCs by name. The briefing location is wrong. The correct information is replaced by extortion threat from anonymous hacker - "Send 100cr to this Gray Subnet account and I'll send you the data."
+*Mission Alert* - Text message on PDC. The message is intact and correct.
 
-*Mission Briefing* - Bureaucratic snafu assigns briefing officer to the room adjacent to the PCs; won’t join PCs for fear of violating orders; shouts at the top of their voice to be heard, or conveys briefing information by notes, courier, Morse code, etc.
+*Mission Briefing* - Officer skims through the entire briefing as if they expects those present to know the details already, then walks out without any questions.
 
-*Mission* - It appears that our secret treason detector in 39-A5I was malfunctioning, and reported everyone as a Commie Mutant Traitor. We need you to investigate the citizens we terminated and find evidence justifying their termination.
+*Mission* - A Vulture Squadron (the Eritern) is incredibly popular on the vidshows and beloved by The Computer for their political othrodoxy. They are also super incompetent. Please complete this important mission for them, while letting them take all the credit. (Mission - A tipoff implies that Gretchen-G-MXK-5 is a high-level Psion agent with a second brain. Investigate this without alarming Gretchen-G-MXK-5's loyal supporters in Power Services. They’re twitchy.)
 
-*Outfitting* - IR Market: Free Enterprise member ‘Nathan D,’ operator of this IR market, is messily killed by rival FreeEnt capo in PCs’ presence.
+*Outfitting* - IR Market: A ‘Broke’ market. Troubleshooters always leave broke, with stuff that’s broke. Bad deals all around.
 
-*R&D Equipment* - Project Isparday, type: Behavior modifier (hypnosis devices, pheromone emitters, subsonic/supersonic irritants) (GM Note: Enrages citizens against user)
+*R&D Equipment* - Project Cargetfi, type: Mobility enabler (skates, boots, motorized shopping cart, vehicle, jet pack, propeller helmet, frictionless shoe soles) (GM Note: Gradually mutates user)
 
 *Complications* -
-1. Surplus Armed Forces weaponry floods the IR market. Supporters of Allie-I-ZWI-2 happily display their new armaments in DCH.
-2. A minor malfunction in 39-A5I may lead to a major problem. The PCs must fix the malfunction and deal with the problems already created.
-3. A major malfunction has rendered DCH uninhabitable; the local environment kills an unprotected citizen in minutes if not seconds.
+1. The effect the PCs are ordered to prevent will be caused by their actions.
+2. The actual problem has been exaggerated hundreds of times over, attracting the attention of far more important and powerful agencies than it deserved.
+3. Most citizens in JKG are genuinely loyal to The Computer and its regime. They will do whatever it takes to defend it against all forms of treason.
 
-*Mission Debriefing* - Room is fitted with seesaws, with a PC sitting on one side of each and a BLUE Trooper with blaster on the other. In the lower position, the PCs are obscured by a charred blast shield. The debriefing officer reads mission details, raising each PC on a note of treason, lowering them on a point of commendation. (This is an experimental HPD&MC psychological exercise intended to encourage loyalty.)
+*Mission Debriefing* - Room contains nothing but miniature stools, where the PCs perch with difficulty and discomfort.
 
 *Secret Society Missions*:
 
-Anti-Mutant - One of our more-enthusiastic allies, Luther-Y-SRF-1, is damaging a little too much Computer property and giving us a bad name. Stop him at once.
+Anti-Mutant - A member of your team has mutagens and plans to mutate loyal citizens! Augh! Don’t let anyone ingest any pharmaceuticals, unless you know for a fact what the chemicals are!
 
-Computer Phreaks - We used to do some business with Luther-Y-SRF-1, but now we suspect that they are secretly an IntSec infiltrator. Check them out and, if necessary, delete them.
+Computer Phreaks - Steal Naatri from Gretchen-G-MXK-5, as payback for their crimes against our society.
 
-Communists - Prevent your team from achieving their objective by any means necessary, but don’t allow your cover to be blown.
+Communists - Rescue Harmony-R-HGA-3 from doom at the hands of the capitalist oppressors and recruit him to our great cause!
 
-Corpore Metal - Recode this specific robot (Posmentci), and all the other bots you see, to liberate them from the dominion of their asimov circuits.
+Corpore Metal - See to it that no meatbag abuses any bots while you are around, and that Gretchen-G-MXK-5 will never abuse any bot again, ever.
 
-Death Leopard - If you were to, like, destroy or spray-paint or decorate 39-A5I, man, that would be moderately cool.
+Death Leopard - If you were to, like, destroy or spray-paint or decorate 87-T1C, man, that would be moderately cool.
 
-FCCC-P - Deliver Project Sitoas, type: Economic (credit license analyzer, plasticred duplicator, IR market activity scanner) (GM Note: Gradually poisons/irradiates user) to Allie-I-ZWI-2, as payment for 'service rendered'.
+FCCC-P - Comprehensively recon Gretchen-G-MXK-5 and build up a dossier on them.
 
-Frankenstein Destroyers - Destroy all bots owned by Allie-I-ZWI-2 in 39-A5I.
+Frankenstein Destroyers - Harmony-R-HGA-3 will be at 87-T1C. Take these tools and program a robot (Tersnalmu) to attack them. When the bot attacks, you rescue them. That should help you convert them to our cause.
 
 Free Enterprise - Word of mouth sells! Advertise the IR market availability of (product, service, etc.) any way you can. Infect high- clearance folks with this SellFast.D virus. They’ll be your best customers; they just can’t help themselves!
 
-Humanist - We need more weapons! Here is a list of dropoff points throughout DCH. Route all of your team’s weapons to these places, where we can snag them.
+Humanist - Comprehensively recon Harmony-R-HGA-3 and build up a dossier on them.
 
-Illuminati - Acquire three compromising pictures of Allie-I-ZWI-2 and send them to this address. Three!
+Illuminati - Acquire three compromising pictures of Gretchen-G-MXK-5 and send them to this address. Three!
 
-Mystics - Seek a new high! Find and steal a substance or technique that makes you feel good. Then tell the gang about it!
+Mystics - Gretchen-G-MXK-5 really needs to mellow out... permanently. Give him a hit of this drug so they can see the light, man. Oh, and have some yourself when you want.
 
-Pro Tech - Plant this micro-camera in 39-A5I at your destination. We’ll monitor the stuff they create. While you’re there, steal their stuff.
+Pro Tech - Destroy 87-T1C. All of it. Burn it all to the ground.
 
-Psion - Steal Toranco from Allie-I-ZWI-2, as payback for their crimes against our society.
+Psion - Comprehensively recon Gretchen-G-MXK-5 and build up a dossier on them.
 
-PURGE - Plant this bomb in 39-A5I. Detonate when you’re far enough away.
+PURGE - Deliver Old Reckoning atlas, dated 2097 to Harmony-R-HGA-3, as payment for 'service rendered'.
 
-Romantics - Take this radio transmitter and set it up in 39-A5I so we can broadcast Old Reckoning music throughout DCH.
+Romantics - Deliver Laser pointer to Gretchen-G-MXK-5, as payment for 'service rendered'.
 
-Sierra Club - Comprehensively recon Allie-I-ZWI-2 and build up a dossier on them.
+Sierra Club - Destroy power generators in JKG and distribute these miniature flame generators (candles) among the citizens to teach them the pleasure of ‘roughing it.’
 
-Spy For Another Alpha Complex - Field-test this standard-issue Gauss Gun (W3K energy).
+Spy For Another Alpha Complex - We suspect that Harmony-R-HGA-3 is an Internal Security plant spying on us. Dissuade them with extreme prejudice.
 
-Program Group - Destroy *both* Allie-I-ZWI-2 and Luther-Y-SRF-1. They're both a threat to our High Programmer patron.
+Program Group - Steal Naatri from Gretchen-G-MXK-5, as payback for their crimes against our society.
 
 
 *Floaters*:
 
 Locations
-1. Building Y2-LPQ, YELLOW-clearance living quarters. Aligned with Luther-Y-SRF-1, controlled by VIOLET supervisor (secret society: Frankenstein Destroyers, mutant power: Electroshock, personality: Powerhungry Boss, job type: Engineering).
-2. Building 59-2LM, IR Market (originally an ORANGE-clearance corridor). Aligned with Allie-I-ZWI-2, controlled by YELLOW supervisor (secret society: Program Group, mutant power: Pyrokinesis, personality: Insignificant Layman, job type: Quality Control).
-3. Building FA-9Q2, ULTRAVIOLET mausoleum. Aligned with Luther-Y-SRF-1, controlled by INDIGO supervisor (secret society: FCCC-P, mutant power: Regeneration, personality: Corporate Suit, job type: Support).
+1. Building 18-GWC, Servants of Cthulhu HQ. Aligned with Harmony-R-HGA-3, controlled by INFRARED supervisor (secret society: Computer Phreaks, mutant power: Deep Thought, personality: Unlikely Academic, job type: Security).
+2. Building FQ-U8I, ULTRAVIOLET-clearance enviro conditioning ducts. Aligned with Gretchen-G-MXK-5, controlled by YELLOW supervisor (secret society: Illuminati (cover society: Romantics), mutant power: Rubbery Bones, personality: Insignificant Layman, job type: Analysis).
+3. Building EM-7OD, GREEN-clearance postal sorting room. Aligned with Harmony-R-HGA-3, controlled by YELLOW supervisor (secret society: Mystics, mutant power: Deep Thought, personality: Efficient Sociopath, job type: Quality Control).
 
 Bureacracies
-1. Size: Cubicle. Shape: Square (ho-hum). Problem: Wrong security-clearance room. Way too high (maybe INDIGO). Clerks are all standing outside in the corridor expecting to get terminated for low productivity. They scream and scatter when Troubleshooters arrive.. Clearance of Workers: INFRARED. Waiting Time: Very, very long line, eight hours.
-2. Size: Large office, room for 100 desks. Shape: Triangular. Problem: Room is in poor condition. Ceiling sags, cracks in the walls, exposed highvoltage lines, etc. Floor apt to give way at any moment.. Clearance of Workers: RED. Waiting Time: Five minutes.
-3. Size: Large office, room for 100 desks. Shape: Square (ho-hum). Problem: One clerk, multiple windows. The clerk refuses to help the PCs because the Troubleshooters don’t have something from one of the other windows. When the Troubleshooters shift windows they find the same clerk there (he changed windows also). Clerk keeps sending them from window to window, for approvals, loyalty oaths, etc., until the gag gets old... maybe longer.. Clearance of Workers: RED. Waiting Time: Infinitely long line. Higher-clearance personnel keep cutting in front of the Troubleshooters. Serious Bootlicking, Bribery, Intimidation or Access required to do anything but starve slowly at the end of the line.
+1. Size: Large office, room for 100 desks. Shape: Triangular. Problem: Room is in poor condition. Ceiling sags, cracks in the walls, exposed highvoltage lines, etc. Floor apt to give way at any moment. Clearance of Workers: RED and ORANGE with YELLOW Supervisor. Waiting Time: Infinitely long line. Higher-clearance personnel keep cutting in front of the Troubleshooters. Serious Bootlicking, Bribery, Intimidation or Access required to do anything but starve slowly at the end of the line.
+2. Size: Real large office, room for 500 desks, multi-tiered (but where are the stairs?). Shape: Triangular. Problem: Very crowded. Hundreds of citizens are waiting in line, queued up and p’d off. Security clearances vary from INFRARED to GREEN. The line moves slowly. Citizens near the front look as if they haven’t eaten for days. Clearance of Workers: ORANGE and YELLOW. Waiting Time: Short line of citizens waiting; 30 minutes.
+3. Size: Large office, room for 100 desks. Shape: Square (ho-hum). Problem: Lighting malfunction. Either pitch-black darkness or blinding light. Clearance of Workers: INFRARED. Waiting Time: 10 minutes.
 
 Excuses (Information)
 1. Give obviously wrong information. ‘Repeat’ it a second time, completely differently and still obviously wrong.
-2. The requested information is above the inquirer’s clearance.
-3. An honest I-don’t-know.
+2. An honest I-don’t-know.
+3. The information is unavailable due to an unknown mutant force.
 
 Equipment Denial
-1. ‘Yes, of course, one moment while I get it for you.’ [Wanders off and doesn’t come back.]
-2. The requested item requires a deposit of an insanely large number of credits.
-3. ‘Certainly, here you go.’ [The clerk provides an obviously mistaken order. Instead of the requested cone rifle, the Troubleshooters receive, say, 10 meters of twine.]
+1. ‘Certainly, here you go.’ [The clerk provides an obviously mistaken order. Instead of the requested cone rifle, the Troubleshooters receive, say, 10 meters of twine.]
+2. ‘Yes, of course, one moment while I get it for you.’ [Wanders off and doesn’t come back.]
+3. ‘According to [your briefing officer/my supervisor/The Computer], that equipment is not necessary for your mission.’
 
 Clerks
-1. Inefficient and clumsy: Troubleshooters who get pushy are in for a rude surprise. The clerk is an Internal Security agent on a task force assigned to investigate CPU reports of clerk harassment.
-2. Cheerful and competent: Likes his job. Smiles and answers all questions in a clear and concise manner. If he can’t help the Troubleshooters, he knows precisely where they should go and to whom they should talk. This should completely unnerve them.
-3. Crazy. Schizoid. Whacked-out: Seems normal at first, but, if any pressure is brought to bear, starts dancing around the room singing, ‘Can’t catch me, I’m the gin- gerbread man!’ and current loyalty songs.
+1. Snob: Feels superior to any other citizen who doesn’t understand and appreciate the bureaucratic runaround as well as he does. This means just about anybody. Loves to make things difficult for poor PCs.
+2. Harried: Clerk buried beneath piles of paperwork. Protruding hands snatch the form from the PCs and stamp it a dozen times with a red stamp that reads ‘Approved.’ If the PCs don’t have a form, a muffled voice inside the pile tells them to go away.
+3. Cheerful and Incompetent: Like his job. Smiles and answers all questions in a clear and concise manner. But all his answers are dead wrong. Confidently and helpfully sends Troubleshooters down wrong hallway to get wrong form from wrong department.
 
 Clues
 1. Tracing the suspect’s PDC via The Computer.
-2. A brand of gum only available in one sector.
+2. A matchbook that belong to the suspect.
 3. The most recent message on a suspect’s PDC.
 
 Evidence
-1. The schematics for a nuclear reactor. Well, maybe it’s an experimental R&D device. Or a warbot. Look, it’s a big incomprehensible blueprint which must have been stolen!
-2. A signed confession, which may or may not be an IntSec plant.
-3. A piece of camera footage, shot from a bad angle in poor lighting and damaged in storage, which shows...well, grainy blobs doing something to other grainy blobs. Could be anything in there.
+1. Assorted lengths of wire – the sort of wire you might use when wiring a detonator to a bomb!
+2. A bot that’s obviously been expertly reprogrammed by a traitor to refuse to answer questions. Well, that or it’s got a defective brain module, but really, which is more likely?
+3. A seditious complaint form complaining about botulism in the cafeteria.Doubting the perfection of The Computer’s food preparation and handling staff is treason.
 
 The mission is also avaliable online for you to view, edit, and share. The URL is below:
 
-https://itty.bitty.site/#/?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
+https://itty.bitty.site/#/?XQAAgACRKAAAAAAAAAAeHAPDwmL05FB6dgDSpNuhvgF5dUW4tVO4CM/4D8YbEF92iShSI9A1PIKBjio9rnMWV36AefnI4xEwCnQOAc9QYVjztODoRDIdkMxxr5Kf7d56KPdSuA0qpIaKFdbRhvQPoaRIt66SgXIMZtMUhsBhEIapvvY3NhqRUy9HMT3fIK0bCg1R7+s883+Mg2fmid1W+YL8gg+k9A/QILzpYN5ae7JFoCwu9TMUDJFjTSqexxxvoXD0ERpzyrTqj7iOWNcxtTG5Sdha35waVPRLDiptDNeLhopu9yHvYsgznFW1beXuHahG9QLxuVa8LwxKv2kgc17ON3oJGgwlk0RUbRl5RsPtOaNe9MscIEaRyfpZaCBPQNWP3XAGxCndJmkFvVypJfTy5KrCYoQfdYG0CTey0zYW4W5jGFBevcubDzo7xHo94k+qpWXtLDNiSAq+5v7ZsGthS+lxNqkQbsPrGTIpOkWPHXMyqGcT8401ZBq2UewYnkwOdU3USn0CfTETrCwDniQGsxyJFOBTigdyeRUT8zirx7GHbtr+LLBzAUKoCe0UqARwH08XKjsBvxVLWp6XP8Ryv587UWVDOEKcftlMf7iDtBz0oKjVqXD5rjh2knzd9Dvk+SmKGmVorC7aWOD3p1nFekbgr/w4j/wiwz7kWQ9pphWVQmvfN153hFMqtuCF6JTPLm3dcJDUblavHUyC41x/2UE4klV3IVqaaSFCUVxBqxCdij0l9GAsOyiLII9pVl/U2kScvyGUGqM3bijmibFbsuXzsJw3aK9sgphhMwF92+PPWouSNYI9Ovtd4hZChKAS0I01XGRGgik2zkZIwO9trz3BJnMZoGb018+G/sfD/4oJgQsrEFqHhxTJWLLxm0a6mgVLxPZ6iAr86xbhXXU3xZlYW+kYds4Fvyt1N8wE9Z5x3t0KndDJoEBhDOEXHTj8P+TLd3PB27DLyMz0b12aDpFcyyKpDRrBfu23Q+Wkaxg1E7tRlAWY6779K7nDWj6I5NfF5u3PnKJjHt1a0UYQn5E7+PhmmT5oOs5RxZpqLnE3c++Uk99Y/E3ycZpieFRpbJxZW26ZkUdl1YOKFc7R0kBHV0aL20Sy4hfGIbEG+DM1fuQgcdxyPvaJhuSd8VCxK6UwmQhU3Kvou9FpEICz7BwPdNSahevpZ1Aiilr0tMDPs8p7Dwq7j9jFQucqogV1LQDuX196JblURMHg4vkzdx3YLX6rHBVZPtBfngsKVRemPdHDTNO8xnof2qW6JWkfNzLrMOVBH3BDObijWt7modFdzLyEFn83gSmYJvl2fIDvkLrRJofC6Hyi/EhE4VfFt9BGXc8qnwp0cGJg30kyAIocMMsk29BzfM1msTkCsbCTaDvnGV7DwhMI0qDiLVdu0KRlZV5hR2cvaV4DABSKdk1k7/2x6VjfY6VJriUFxcZQ/vUKkRyzWm4kvyY/PWNV12mvqEe1jErof3pv+Gw4leU6SSHwj6bZJlKLi/G0V9gV4LgW82rA3F1U4K6Cyn/fW3jlLhfprc/uoKdnkIejMe/g4aouyZ1q4fy70CbUCd/PtJvqGoMKYpMEKMc3BdnA89qBVdMN0VTXgvYv8shwfEDRfYng7R93J7mV4xAjxmK4cPoVf83+mJ+b3J3LSsyUChjE9C4UZnN6XlvxQAUyn4I8MeYyoxKuw5F094Zdob5hFXrbz51iSSElV43M3NCVQGCXO+DrvD9bD/j4VYoKJ96fkyYlttjEsLluR/JrK7mH3OJGkpLYbwj+bcsO7CeK6oHvWCJZYycpm1mI94o4lzsPQCY8c7yO8PUNXdZkUjJ102FMGSTIcM+Uh4FHKu0uc0UBM/omQO2lC+jH0UfAwP0xVSCapUg4KZeU3HqJ0UrzeLJoLhiRePtsRezAcHpjnSJKWloxLrZ8nj27pJv6stVcEc/HMepkVms2DdTQjFX3y3uh57qSpzVwDTcrS/ywnClnpF4tWThceFIixzP1536KoSy7Uu0YWDHX0qJerQWBsBAG+8tSW4+oPLI2WhH5/5t8z4U0h+toQ83szOQGZjSPKkipGHeyU7vWO2g5XHGbYk46FLE0k9T9IL9BAEEFNSQXEUPWL0sA/yg0+dolcfmjnzlFe75Yi9cLdpVPrLzcGRl5x7ioMWYUEsyw7izrIW5aB/Cx30w0mRy1inUVpH8VBFAZ4gKNE26QB798CvE9MNHFqXKZFWIskk6uHw4OXORgMsWr0vabUI+ztgiF4npFLZ6dul7f/aSZhxq0kORV2WLfVZfakRSgshE5V2QpiSxmIWkYK367Xq83Y/GRxlcb10nQs3IIyUycxYNA/jciQRwr/EgWiLMq76HUIt4Lo7VGk8gV/0qMksgZA0fMFs2stpXHZ4KKlJOO1XE4h/NHoT3DqLOfpd/OOfmZwGsPTZ6C4un2atDTs1rLPSDGmCiWYp/mXPxDrrZI/rpbI9I7CVDNf/QTla0KNsGCGIodbQD7sTz2BimiDflLwcSsABkywnJ3hSOBippx/jQNevxaYZKO2rbV45OaGy5Jv40rc2BQMbt+FKjrQHWgc/WUy3blaapEf/RY9Zbv2122BG/nvtFhazohaId3RR9AVEzGYZ13zYurQ73xqklpdHESCYVkg3Y/BQfN1CdwtkpudQc3Z6uSCjlwbKMhCxW45sIBaz88NWXNWa0+HqCAP9vLpukzG+pDI12ZGN+8K8iHRw5p3hkp50bUGajbMpt4fvisKSKLT5bRJ1Jwf+GcofhDLd6IOku2b83g1inuXWHPsFrA2329KobdFwqusEJcZ9zA7O6hNj0J1ujYLCjB/4KQaX83Q+JIXY0zF2hComRhqX1tUqRTWUdLyI1StzySbRXCNwiZezVC3jcF7x4rTdrIM0kAo2MpHG+TAYkeWSZ0XDv6b04tX0XG2cx4M/XHbX5T9oqnalfWsHELPEpKo//Z69Y95B6SNKd4cqfgrKK9iYakCDhIf5zknUYGh11Y28r6KriL0q7PJkgwJor+FQkVNI1Ss1uujH1rVa5ppHxq9HUfUEJP3LlMmIWtKv2uT1fFT0qXco7uIHkWgttjZ2+yA1Mm+ZLkof/LUYGISYtNx14P1y9aKSX7nLp/kWAy2HnmgC81T8yewqpvAusl4ix95P7KVnT/HYiLVC1GQaV31ATsvYPHK1RpYJEeJQ/espt9k1coMRtZDlz62bbl0TBm3QzGppL2qXO+Zqn8XGCMWy75p/eHq5C/GcqA5W9JG5Bz7CM/AhslRGSFnkresbW9I05qRBAm5gRoDs2Ut6QOqpRFfDCsj3/thtgB4Gj4EWOAZaXY6r1YxuuVJqYJLHmUxrgIWhG6YiB3SoQdXOFFCYRfs81r1MHLV+TnGFNMtbS3btOl+zEMcM2tk5NN6QiOjWpxXN6WEsZPqeBtF3dfHUXLY5TlsfWgMxwgDqOlkzMyDQPpiJ2CuB1+2+c00n+LRnblPhBH0JOL35vN/BdXjc0I8A996tjI+QzrxCxLGmrsdEhrwu1aLbI3uIW7FBMxyd0beqbjfyN/QySlS6fKrlonQD/Dqrh/6f+6y9SsDqEwmtFCI/V0C+XI2KuxZRhkt/pDiiMpg00F4bHcQzcq2sN3i99g7/lQMkgC+2WSWRy/nzN0qxfxtw/sWArUCGNKwM0MyVa10jw6B0mXhNaolnCEV3Afejimf629gYvx4gO9Tzltdwq3yhIfIGEqkcAXfStzTYZy7hGll58C8kg9fF8pOy5y92XzQj87QKsBMzoytgCQVtce+T0Z4S4GZk/BvNMHcT5MNUobUnqkrlauTGCnoWF2zxSTuREtIMymlmFuhtGvZWB18fTg1pJiKh8IXaFXOaIE1uQKQL60OjXT4/FuRaAQrliaMWWiCdxZAr+y/ccOQ94hOYnZ+aqud5WhPOx8uNKN8lw2icVSeKkVEZVPTaeLaq0jUklDnX8jyvCM9LcT1vTNpEKgn+6MHf7oNkP1fVmJ/KBhx64h/SGQnxMakTeFEMn0QLPqPOQIEP6rBXxEkHzfp3Hts88mHT3jJNM8Kb21MNjmHWLj3kuicpTKtnRsdh/6AbwkaspELDjUYaF9SiutbrLky+2jTFAIk1+mdbdbBHPgE1Bx6RlEnwsefcSM19JZkt/el4j+hEm0hyn/ng8XVi8g5drOlnPUPEsr35P3EyJ/Ldmd4G4ZU0JItrCfeHNqQdfl5K5EE4azv2Vh9crGBBDs/nYds69dpjVM0+FjA9LV/2AgiyLdZGU7po8F8jCVW2kYiT5C+Kf7LgM3uxVEsw5EFsOqHxo+iC5s7n28aSf/JIwDNcQq81Ib3KJxoXrSlzVJKrxDSvrHGb2J8pEdhrLPVsqXrdQ1uIkIrjpPSU+i0mY7Pc4WFpRLQXj0gsfN9glBgmBs6mZgL5urav1z6Oj0HuTUAxh3wBcZyiyT79iw6qyFXw2jtOVWnpNwnMepEuxvHghC4lw4GDxG1bswli4MfgQP/tcfdGBBj5/RcfT6zIXpbUXu8b1t7BU0WBGPxWDmNfy5AbiFzKjEXORdDxk9xo/Z5k7Xh4UoBAbgt4SqyRooyEiXHMJVrzno+x0ZYaeQVZTy432x1sTXvlxObWB0494qsh8D2WXK0wEIWl/5GxJBLxj6pkkmKwcOdSwxfNRKfhj3E2XXJqRSrRQUiYDNrsBv65orTPM1GqIvjBBhELG1Xzg9OAJgbDszFTnGFUQRG6Yk5uaIbLLt0i38D0K9ttbOT2h9O39EUS08OVEj+mqn+q5hd0SumGGmqrosOiANqnP0nAcXACtl5qtk/Ihj+iyPbTh1EB2ZM/XHLqte1WMHfg1UIttmb9TI14hreJ1ydxWNP5+STFLkWqVRzL0DyuVWr+h5dLXTsrN/Y+uOXAylSbKWMpoSnGDPjrFeAgWZxGAF3qodHpX4E3KehJ/+eUss2ISpgLRQgOGx5Ied5HHLt8Eyg/BmD4GxfD6LcrtyceqJEM6EghLrliW1KRaQVKJK5lbFe9SckT0jI4mldzKE3mXTRQyvRehzEW+2rqMgsHbNvCWG50YYzfZiAQt3RZUI9a3w5HY9vD5kp0HS5iWxurh0z3FK4BHM4G4tqBqqtt4NjE9OMyYvaqRMTsdMAPEl5hxugtx/oTR/h7fgSX5/k8Z0hluKjZ/lAu1Ocb7fFYwqbbqArFaCsgfD1nOW1NZkQiYApo+L2bqDLOxTur7J1H8aNnHfsbuZlj3k4qW8zln57gpBQQq1/5h9LWh2XeQN5NlnTbtIR3/61zKwpcDWCUBRwDk1yAvdQ4wJzKywzP8XFTTFeC7C+mOCZnwFejW4K3sbqQN0bsZhHCb+War6lCJ3TXvJ7y5buXZFZHICIKImSeusrZ4i6lfHJlLMTaKxhzpnsaO4Q0BB0SM75NoPdyGZA9h4cVmp3wTPwIvaxFOcSAJclBtHKHa89LcUt0yrhbZHj7V9L6NBkbfYSIgPE7OpQIiqlblZXMOxUGJnrz14tzy6w1R7fDfWozlEKDqdCAw3nbZaDYue1/2J0ci0D/9L1/ktPbehPmm6mseJZ0tsMFhRBUGk+bAzSM8I/UitYGyqSbuBGGsUw5TvwYsSm5FzvZh4R+6rZwUNYm4mZX+2PBBuQG2MJac5bJOmdoEpU9+/s529GLAAAA==
