@@ -2,6 +2,7 @@ require 'calyx'
 require 'timeout'
 require_relative 'lib/controller'
 require_relative 'lib/exporter'
+require 'progressbar'
 
 puts "Please type in a search term."
 
@@ -22,19 +23,27 @@ end
 
 generated_mission = nil
 
-begin
-  Timeout.timeout(10) do
-  until (new_regex.match(generated_mission))
-    word_prompt = codename_grammar.generate
-    generated_mission = Controller.generate(word_prompt)
-  end
+counter = 0
 
+progressbar = ProgressBar.create(:format => '%a |%b>>%i| %p%% %t')
+
+until (counter > 1000 || new_regex.match(generated_mission))
+  counter += 1
+  word_prompt = codename_grammar.generate
+  generated_mission = Controller.generate(word_prompt)
+  if (counter % 10 == 0)
+    progressbar.increment
+  end
+end
+
+progressbar.finish
+
+if new_regex.match(generated_mission)
   puts generated_mission
 
   export_phrase = Exporter.export(generated_mission)
 
   puts export_phrase
-end
-rescue Timeout::Error
+else
   puts "We're sorry; we were unable to generate a mission with your specified search term. Thank you for your cooperation."
 end
