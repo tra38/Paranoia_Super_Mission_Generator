@@ -1,13 +1,12 @@
 require_relative 'clone_generator'
 require_relative 'mission_generator'
+require 'digest'
 
 module Controller
   def self.generate(word)
-    integer_array = word.split("").map do |character|
-      character.ord
-    end
+    hexdigest = Digest::SHA256.hexdigest(word)
 
-    seed = integer_array.inject { |sum, integer| sum += integer }
+    seed = hexdigest.to_i(16)
 
     clone_generator = CloneGenerator.new(seed)
 
