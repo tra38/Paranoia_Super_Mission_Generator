@@ -548,7 +548,8 @@ class MissionGenerator
         "Filesharers in {@building_name} are currently violating intellectual property laws and security regulations. Terminate the Filesharers before they spread unauthorized rumors! We suspect {random_target} might be involved in the situation.",
         "We need you to infiltrate a suspected Commie base at {@building_name}. You must locate the base,get inside and then plant this homing beacon so our Warbot can eliminate it.",
         "We’ve had to terminate the committee responsible for running {@building_name}. Even though you have no applicable skills or training and don’t have the Clearance to know what the committee does, we need you to take over.",
-        "{@overdog_name} needs your help with their latest dinner party/round of UltraGolf/nefarious secret project."
+        "{@overdog_name} needs your help with their latest dinner party/round of UltraGolf/nefarious secret project.",
+        "R&D needs to do certain...things...at {@building_name}. Escort the scholars. Don't pay attention to the Lovecraftian rantings. Let them do their occult rituals, then escort them back. (We suspect that {random_target} may want to interfere with the ritual.)"
 
       complication "A service group feud between {two_rival_groups} have spun out of control in {@sector_name}. Assassinations and drive-by shootings are commonplace, and the sector is close to civil war.",
                   "A major malfunction has rendered {@sector_name} uninhabitable; the local environment kills an unprotected citizen in minutes if not seconds.",
