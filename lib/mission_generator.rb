@@ -544,7 +544,8 @@ class MissionGenerator
         "{@overdog_name} has developed a really, really cool R&D device ({experimental_object}). However, they are using it as a Doomsday Device and threatening to use against {service_group}. Find a way to recover the R&D device (and {@overdog_name}) alive.",
         "{official_thugs} (the {codename}) is incredibly popular on the vidshows and beloved by The Computer for their political othrodoxy. They are also super incompetent. Please complete this important mission for them, while letting them take all the credit. (Mission - {$mission})",
         "The {codename} (a Funball team who supports {@overdog_name}) is facing off against the {codename} (another Funball team who supports {@underdog_name}) today in the {@sector_name} Championship match. There's a lot of prestige/money/INFRARED morale on the line here, so we want you to make sure that {random_target}'s team loses this match. Concidentically, their Funball team is currently located at {@building_name}.", #my attempt at remembering MCM #2
-        "A zombie has been spotted in {@building_name}. Terminate the zombie before it spreads the infection and starts a zombie apocalypse. (GM Note: {random_target} had stolen a high-clearance ME card and is currently using their identity as part of some greater scheme. The problem is that the high-clearance card belongs to a high-clearance citizen that has ran out of clones and is officially deceased. The Computer treats activities associated with that ME card as proof that the citizen has came back from the dead as a zombie.)"
+        "A zombie has been spotted in {@building_name}. Terminate the zombie before it spreads the infection and starts a zombie apocalypse. (GM Note: {random_target} had stolen a high-clearance ME card and is currently using their identity as part of some greater scheme. The problem is that the high-clearance card belongs to a high-clearance citizen that has ran out of clones and is officially deceased. The Computer treats activities associated with that ME card as proof that the citizen has came back from the dead as a zombie.)",
+        "Filesharers in {@building_name} are currently violating intellectual property laws and security regulations. Terminate the Filesharers before they spread unauthorized rumors! We suspect {random_target} might be involved in the situation."
 
       complication "A service group feud between {two_rival_groups} have spun out of control in {@sector_name}. Assassinations and drive-by shootings are commonplace, and the sector is close to civil war.",
                   "A major malfunction has rendered {@sector_name} uninhabitable; the local environment kills an unprotected citizen in minutes if not seconds.",
@@ -979,7 +980,7 @@ class MissionGenerator
                     "Plant this bomb in {@building_name}. Detonate when you’re far enough away." => 11..12,
                     "Prevent your team from achieving their objective by any means necessary, but don’t allow your cover to be blown." => 13..14,
                     "Replace your team’s happiness pills with these, which will spur them to destructive rampages." => 15..16,
-                    "{random_target} is a friend of PURGE. Protect them at all costs as they complete their mission." => 17..18,
+                    "{random_target} is a friend of PURGE. Protect them at all costs asf they complete their mission." => 17..18,
                     "Destroy Computer property and make it look like {random_target} (an enemy of PURGE) is responsible." => 19..20
 
       romantics_mission "{$generic_mission}" => 1..10,
