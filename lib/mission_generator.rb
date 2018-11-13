@@ -518,7 +518,7 @@ class MissionGenerator
         "A deadly pathogen is eating through the population, and we suspect {random_target} is responsible. Capture and interrogate them to find out the cure. (GM Note: The PCs are infected with the pathogen the moment their clone backups are decanted.)",
         "You have been accussed of destroying Building {building_name} ({public_location.indefinite_article}), a crime worthy of Erasure of your entire clone line. {official_thugs} will escort you to the nearest termination booth. Thank you for your cooperation. (GM Note: {@overdog_name} is actually responsible for the destruction and the  PCs are being framed for the crime as part of a coverup. If the PCs wants to *not* get terminated and instead to clear their name, then {@underdog_name} will help out by texting where they need to go for the Outfitting and R&D phases.)",
         "A Troubleshooter team has gone rogue and is currently conducting an unauthorized Troubleshooting mission (mission: {$mission}). Stop this mission from succeeding.",
-        "{@underdog_name} is a loyal and competence clone who deserves a promotion! Help them get that promotion.",
+        "{@underdog_name} is a loyal and competent clone who deserves a promotion! Help them get that promotion.",
         "Replace the batteries in {@overdog_name}'s equipment.",
         "Carry around these huge batteries and drain any aunthorized power source you find in {@building_name}.",
         "Escort {@overdog_name} over to {building_name} ({public_location.indefinite_article}) where we can engage in Sanity Correction.",
