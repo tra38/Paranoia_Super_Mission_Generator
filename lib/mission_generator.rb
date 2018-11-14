@@ -359,7 +359,7 @@ class MissionGenerator
             "Experimental Prismatic armor (E4; mirrored suit reflects energy attacks; wearer is most visible target around)",
             "Prototype {$armor} (Due to using the latest bleeding-edge tech, the armor is much more protective than the standard version. Prevents injuries almost entirely. It’s also much more cumbersome.)"
 
-      robot "metallic can that bleeps constantly (The Computer claims it’s extremely important)", "scrubot", "pharmabot (hovering sphere that injects drugs and dispenses pills)", "Jackobot", "Snooper (small hovering sphere that tracks a target's scent)", "Robobutler (you rang, sir?)", "Docbot Model 1", "Docbot Model 5", "Petbot", "Teachbot", "Psychbot Sanity Restoration Unit", "Explodatron (small, nervous bot that exists to explode in hopeless situations, taking enemies and PCs with it)", "Guardbot", "Combot", "Warbot", "Mega {robot}"
+      robot "metallic can that bleeps constantly (The Computer claims it’s extremely important)", "scrubot", "pharmabot (hovering sphere that injects drugs and dispenses pills)", "Jackobot", "Snooper (small hovering sphere that tracks a target's scent)", "Robobutler (you rang, sir?)", "Docbot Model 1", "Docbot Model 5", "Petbot", "Teachbot", "Psychbot Sanity Restoration Unit", "Explodatron (small, nervous bot that exists to explode in hopeless situations, taking enemies and PCs with it)", "Guardbot", "Combot", "Warbot", "Mega {$robot}"
 
       mission_alert_delivery 'Text message on PDC.' => 1..5,
                               "An INFRARED courier delivers alert {delivery_method}, seeks 10cr 'tip' for the delivery. Demeanor: {delivery_demenaor}." => 6..10,
