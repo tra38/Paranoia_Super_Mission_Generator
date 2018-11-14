@@ -220,7 +220,35 @@ class MissionGenerator
 
       underplex_location "derelict rooms", "abandoned shafts", "sewers"
 
-      character_sheet "secret society: {$secret_society}, mutant power: {mutant_power}, personality: {$personality}, job type: {$job_type}"
+      character_sheet "secret society: {$secret_society}, mutant power: {mutant_power}, personality: {$personality}, job type: {$job_type}, Current Status: {$threat_level} {$role_in_mission}"
+
+      threat_level "{safe_threat}",
+                  "{dangerous_threat}",
+                  "{unusual_threat}"
+
+      safe_threat "Drugged (sandallathon, visomorpain)",
+                  "Gullible (worryingly lacking in paranoia)",
+                  "Amicable, Self-Interested, Ordinary",
+                  "Meticulous, Obsessive-Compulsive",
+                  "Stumbling, Prone-To-Breakage, Awkward"
+
+      dangerous_threat "Paranoid (armed with {weapon} and {armor})",
+                      "Drugged (thymoglandin, hydropsionic acid)",
+                      "Buzzed (high on Wakey Wakey)",
+                      "Wild-eyed, Frenized, Incoherent",
+                      "Psychotic, Kill-Crush-Smash-Destroy"
+
+      unusual_threat "Quiety delusional",
+                      "'Demon'-Possessed",
+                      "Panicky, Lacking focus, Hyperactive",
+                      "Drugged (rolactin, dynomorphin, xanitrick)",
+                      "Dreamy, Dazed"
+
+      role_in_mission "Information Source",
+                      "Bureaucratic Obstacle",
+                      "Physical Threat",
+                      "Sadistic Hinderance",
+                      "Mental Threat"
 
       background %{The mission will take place in {@building_name}, {location.indefinite_article} in Sector {@sector_name}. {@overdog_name} ({character_sheet}) currently controls {@building_name} with an iron fist. {@overdog_name}'s ultimate goal is to {$secret_agenda}.
 
