@@ -55,7 +55,7 @@ When you run ```ruby railroad.rb```, instead of being prompted for a word prompt
 
 Here's an example tutorial for using ```railroad.rb```.
 
-1. Run railroad.rb if running online or type ```ruby railroad.rb``` if running locally
+1. Select railroad.rb if running the software online or type ```ruby railroad.rb``` if running locally
 2. When it prompts you for a search term, search for "A Troubleshooter team has gone rogue and is currently conducting an unauthorized Troubleshooting mission"
 3. See the generated mission with that search term included!
 
