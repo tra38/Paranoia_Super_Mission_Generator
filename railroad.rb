@@ -8,7 +8,7 @@ puts "Please type in a search term."
 
 user_regex = gets.chomp
 
-new_regex = /#{Regexp.escape(user_regex)}/
+new_regex = /#{Regexp.escape(user_regex)}/i
 
 codename_grammar  = Calyx::Grammar.new do
   syllabe 'the','ing','er','a','ly','ed','i','es','re','tion','in','e','con','y','ter','ex','al','de','com','o','di','en','an','ty','ry','u',
