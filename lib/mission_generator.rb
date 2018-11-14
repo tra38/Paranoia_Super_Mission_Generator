@@ -343,7 +343,7 @@ class MissionGenerator
       "Cone Rifle (with napalm ammo)",
       "Flamethrower (S3K energy)",
       "Plasma Generator (V1V energy)",
-      "Prototype {weapon} (Due to using the latest bleeding-edge tech, the weapon can hit for one damage step above its maximum. However, it's also more prone to malfunctioning...or working too well.)"
+      "Prototype {$weapon} (Due to using the latest bleeding-edge tech, the weapon can hit for one damage step above its maximum. However, it's also more prone to malfunctioning...or working too well.)"
 
       armor "Fake armor",
             "Reflec",
@@ -357,7 +357,7 @@ class MissionGenerator
             "Experimental Electromagnetic clothing (makes wearer a living magnet; can stick to metal walls; watch out for knives!)",
             "Experimental Jet Suit (aerodynamic suit with jetpack)",
             "Experimental Prismatic armor (E4; mirrored suit reflects energy attacks; wearer is most visible target around)",
-            "Protoype {armor} (Due to using the latest bleeding-edge tech, the armor is much more protective than the standard version. Prevents injuries almost entirely. It’s also much more cumbersome.)"
+            "Prototype {$armor} (Due to using the latest bleeding-edge tech, the armor is much more protective than the standard version. Prevents injuries almost entirely. It’s also much more cumbersome.)"
 
       robot "metallic can that bleeps constantly (The Computer claims it’s extremely important)", "scrubot", "pharmabot (hovering sphere that injects drugs and dispenses pills)", "Jackobot", "Snooper (small hovering sphere that tracks a target's scent)", "Robobutler (you rang, sir?)", "Docbot Model 1", "Docbot Model 5", "Petbot", "Teachbot", "Psychbot Sanity Restoration Unit", "Explodatron (small, nervous bot that exists to explode in hopeless situations, taking enemies and PCs with it)", "Guardbot", "Combot", "Warbot", "Mega {robot}"
 
