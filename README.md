@@ -3,6 +3,9 @@
 ## Table of Contents
 
   - [Instructions](#instructions)
+    - [Online](#online)
+    - [Locally](#locally)
+  - [main.rb](#mainrb)
   - [Itty.Bitty.Site](#ittybittysite)
   - [railroad.rb](#railroadrb)
   - [Credits](#credits)
@@ -13,11 +16,22 @@
   - [License and Other Legal Information](#license-and-other-legal-information)
 
 ## Instructions
+
+### Online
+
+1. Go to [https://repl.it/@tra38/PARANOIASuperMissionGenerator](https://repl.it/@tra38/PARANOIASuperMissionGenerator).
+2. Click on "run" to start up the program.
+3. When it's fully loaded, you can choose between running ```main.rb``` or ```railroad.rb```.
+
+### Local Machine
+
 1. ```git clone``` the repo.
 
 2. ```bundle install```
 
-3. ```ruby main.rb```
+3. If you want to run ```main.rb```, type ```ruby main.rb```. If you want to run ```railroad.rb```, type ```ruby railroad.rb```.
+
+## ```main.rb```
 
 You will receive a prompt to "name" your mission. That name will serve as a seed that will be used to generate the mission in question (which will be formatted using Markdown). You can copy this generated mission over to a text file for you to view, edit and share to your heart's content.
 
@@ -26,6 +40,7 @@ The generated mission also includes a URL to a website hosted on [https://itty.b
 Look at EXAMPLE.md to see how an example generated mission might look like. I recommend generating multiple missions and picking and choosing what elements you want (customizing it to match your own purposes). Secret society missions are pretty generic and will probably require some major customizations (or even to be re-written from scratch) to match the mood and style of your mission.
 
 ## Itty.Bitty.Site
+
 The generated URL is very long. This is because the URL actually contains the *generated mission text*, just mostly compressed (think of it like a zip file). itty.bitty.site decompresses the URL, allowing us to see the content.
 
 This feature is actually very cool. It allows us to easily transmit files (just copy and paste the URL). But, it also means that this site only functions properly with browers that can handle long URLs.
@@ -40,9 +55,11 @@ When you run ```ruby railroad.rb```, instead of being prompted for a word prompt
 
 Here's an example tutorial for using ```railroad.rb```.
 
-1. ```ruby railroad.rb```
-2. When it prompts for a search term, search for "A Troubleshooter team has gone rogue and is currently conducting an unauthorized Troubleshooting mission"
+1. Run railroad.rb if running online or type ```ruby railroad.rb``` if running locally
+2. When it prompts you for a search term, search for "A Troubleshooter team has gone rogue and is currently conducting an unauthorized Troubleshooting mission"
 3. See the generated mission with that search term included!
+
+We also include an itty.bitty.site URL as well, for you to view, edit, and share to your heart's content.
 
 If you want to know what you can search for, look in ```lib/mission_generator.rb``` for a list of possible stuff that we can generate.
 
