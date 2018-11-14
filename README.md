@@ -21,7 +21,7 @@
 
 1. Go to [https://repl.it/@tra38/PARANOIASuperMissionGenerator](https://repl.it/@tra38/PARANOIASuperMissionGenerator).
 2. Click on "run" to start up the program.
-3. When it's fully loaded, you can choose between running ```main.rb``` or ```railroad.rb```.
+3. When it's fully loaded, you can choose between ```main.rb``` or ```railroad.rb```.
 
 ### Local Machine
 
