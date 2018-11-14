@@ -220,7 +220,7 @@ class MissionGenerator
 
       underplex_location "derelict rooms", "abandoned shafts", "sewers"
 
-      character_sheet "secret society: {$secret_society}, mutant power: {mutant_power}, personality: {$personality}, job type: {$job_type}, Current Status: {$threat_level} {$role_in_mission}"
+      character_sheet "secret society: {$secret_society}, mutant power: {mutant_power}, personality: {$personality}, job type: {$job_type}, current status: {$threat_level} {$role_in_mission}"
 
       threat_level "{safe_threat}",
                   "{dangerous_threat}",
