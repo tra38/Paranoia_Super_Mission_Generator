@@ -811,7 +811,7 @@ class MissionGenerator
                         "A bot that’s obviously been expertly reprogrammed by a traitor to refuse to answer questions. Well, that or it’s got a defective brain module, but really, which is more likely?",
                         "A coded message. It looks like a perfectly innocent report on ball-bearing production quotas, but if you ignore most of the actual letters, it’s a Commie manifesto!",
                         "A ticket to a FunBall game. Statistically, certain proof that the suspect was associating with a traitor.",
-                        "A seditious complaint form complaining about botulism in the cafeteria.Doubting the perfection of The Computer’s food preparation and handling staff is treason.",
+                        "A seditious complaint form complaining about botulism in the cafeteria. Doubting the perfection of The Computer’s food preparation and handling staff is treason.",
                         "A photo of two clones. The face of one is blurred, but the other might be recognisable as an infamous traitor, if you squint and ignore the fact that said traitor has been dead for the last 84 yearcycles.",
                         "DNA. Well, organic goop anyway.",
                         "The schematics for a nuclear reactor. Well, maybe it’s an experimental R&D device. Or a warbot. Look, it’s a big incomprehensible blueprint which must have been stolen!",
