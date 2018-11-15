@@ -288,6 +288,7 @@ class MissionGenerator
                     "prepare Alpha Complex for colonization and subversion by some external enemy (aliens? mutants from the Outdoors? sentient vatslime?)",
                     "follow orders from the Old Reckoning leadership who managed to survive the Global Die-Off by using cryogenics",
                     "obey the orders of a traitorous meme virus created by the {$secret_society} secret society",
+                    "genuinely improve the lot of INFRAREDs in Alpha Complex",
                     # other stuff
                     "cover up the fact that they're...um...dead (their identity has since been stolen by traitors from the {secret_society} society)"
 
