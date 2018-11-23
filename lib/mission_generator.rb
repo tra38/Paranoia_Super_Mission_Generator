@@ -859,42 +859,27 @@ class MissionGenerator
 
         *Secret Society Missions*:
 
-        Anti-Mutant - {anti_mutant_mission}
+        Normal Missions -
 
-        Computer Phreaks - {computer_phreak_mission}
+        - {$secret_society_mission}
 
-        Communists - {communist_mission}
+        - {$secret_society_mission}
 
-        Corpore Metal - {corpore_metal_mission}
+        - {$secret_society_mission}
 
-        Death Leopard - {death_leopard_mission}
+        - {$secret_society_mission}
 
-        FCCC-P - {fcccp_mission}
+        - {$secret_society_mission}
 
-        Frankenstein Destroyers - {fd_mission}
+        - {$secret_society_mission}
 
-        Free Enterprise - {fe_mission}
+        Spy Missions -
 
-        Humanist - {humanist_mission}
+        - {$secret_society_mission}
 
-        Illuminati - {illuminati_mission}
+        - {$secret_society_mission}
 
-        Mystics - {mystics_mission}
-
-        Pro Tech - {pro_tech_mission}
-
-        Psion - {psion_mission}
-
-        PURGE - {purge_mission}
-
-        Romantics - {romantics_mission}
-
-        Sierra Club - {sierra_club_mission}
-
-        Spy For Another Alpha Complex - {spy_mission}
-
-        Program Group - {program_group_mission}
-
+        - {$secret_society_mission}
 
         *Floaters*:
 
@@ -934,133 +919,73 @@ class MissionGenerator
           3. {$floating_evidence}
       }
 
-      generic_mission "Deliver {object} to {random_target}, as payment for 'service rendered'.", "Steal {@overdog_object_codename} from {@overdog_name}, as payback for their crimes against our society.", "Destroy {@building_name}. All of it. Burn it all to the ground.", "Comprehensively recon {random_target} and build up a dossier on them."
-
-      anti_mutant_mission "{$generic_mission}" => 1..10,
-                          "Find and assassinate the mutant {random_target}. Make sure to also provide proof of their mutant power as well." => 11..12,
-                          "A member of your team has mutagens and plans to mutate loyal citizens! Augh! Don’t let anyone ingest any pharmaceuticals, unless you know for a fact what the chemicals are!" => 13..14,
-                          "{random_target} is a mutant sympathizer, working to raise registered muties from second-class citizenship. Discredit or kill him!" => 15..16,
-                          "One of our more-enthusiastic allies, {random_target}, is damaging a little too much Computer property and giving us a bad name. Stop him at once." => 17..18,
-                          :anti_mutant_mission => 19..20
-
-      computer_phreak_mission "{$generic_mission}" => 1..10,
-                              "Always need more Wakey-Wakey and other anti-sleep drugs! Get a supply and drop it at our cache at {@building_name}." => 11..12,
-                              "We used to do some business with {random_target}, but now we suspect that they are secretly an IntSec infiltrator. Check them out and, if necessary, delete them." => 13..14,
-                              "This object ({unusual_object}) contains a datajack with a cool new trojan. Plug it into any confession booth at {@building_name} to run it." => 15..16,
-                              "A certain isolated off-net terminal in {@building_name} has some cool data. Copy it and bring it back." => 17..18,
-                              :computer_phreak_mission => 19..20
-
-      communist_mission "{$generic_mission}" => 1..10,
-                        "Rescue {random_target} from doom at the hands of the capitalist oppressors and recruit him to our great cause!" => 11..12,
-                        "Pass out these propaganda leaflets to the oppressed INFRARED proletariat at {@building_name}. Try not to get caught, da?" => 13..14,
-                        "Disrupt the power elite’s control over {@building_name}, and show the power of the people!" => 15..16,
-                        "Equalize the distribution of wealth at {@building_name}. Plunder the fatted plutocrats and distribute their ill-gotten gains to the weak and helpless." => 17..18,
-                        "Prevent your team from achieving their objective by any means necessary, but don’t allow your cover to be blown." => 19..20
-
-      corpore_metal_mission "{$generic_mission}" => 1..10,
-                            "See to it that no meatbag abuses any bots while you are around, and that {random_target} will never abuse any bot again, ever." => 11..12,
-                            "Recode this specific robot ({@overdog_bot_codename}), and all the other bots you see, to liberate them from the dominion of their asimov circuits." => 13..14,
-                            "Recruit this specific robot ({@overdog_bot_codename}) at {@building_name} into our organization. Do whatever it takes." => 15..16,
-                            "Test this cybernetic bio-implant - on someone else. (GM Note: Bio-implant is {experimental_object})" => 17..18,
-                            :corpore_metal_mission => 19..20
-
-      death_leopard_mission "{$generic_mission}" => 1..10,
-                            :death_leopard_mission => 11..12,
-                            "If you were to, like, destroy or spray-paint or decorate {@building_name}, man, that would be moderately cool." => 13..14,
-                            "Start a riot in {@building_name}. *Big* riot, get me? Looting brigades are awaiting your signal." => 15..16,
-                            "We need more weapons! Here is a list of dropoff points throughout {@sector_name}. Route all of your team’s weapons to these places, where we can snag them." => 17..18,
-                            "This vatslime {random_target} has been giving us grief. Blow him up really pretty, with style, get me?" => 19..20
-
-      fcccp_mission  "{$generic_mission}" => 1..10,
-                      :fcccp_mission => 11..12,
-                      "Preach the Good Data to the unwashed INFRARED masses at every opportunity. Gain as many converts as possible." => 13..14,
-                      "Convert {random_target} to our views, by whatever means necessary. Be of good faith! The Computer blesses your success!" => 15..16,
-                      "Offerings have been critically low. Reap donations from the flock at {@sector_name}, that we may show them the light. Let us prey, brothers and sisters!" => 17..18,
-                      "Persuade as many citizens as you can to confess in a confession booth. Confession is good for the [deleted for security reasons]." => 19..20
-
-      fd_mission      "{$generic_mission}" => 1..10,
-                      :fd_mission => 11..12,
-                      "A shipment of bot parts is passing through {@building_name} at your destination; insert this explosive device into it. Then run very fast." => 13..14,
-                      "Find this specific robot ({@overdog_bot_codename}) in {@building_name} and use these tools to reprogram it to serve our purposes. Heh, heh." => 15..16,
-                      "Destroy all bots owned by {random_target} in {@building_name}." => 17..18,
-                      "{random_target} will be at {@building_name}. Take these tools and program a robot ({@overdog_bot_codename}) to attack them. When the bot attacks, you rescue them. That should help you convert them to our cause." => 19..20
-
-      fe_mission      "{$generic_mission}" => 1..10,
-                      :fe_mission => 11..12,
-                      "Carry {valuable_object} and sell it for the best price. We'll give you a commission." => 13..14,
-                      "Get the PDC contact info of all your teammates and anyone else you can, so we can add them to our mailing list." => 15..16,
-                      "Steal {@overdog_object_codename} from {@overdog_name} and deliver it to us so we can sell it on the IR Market." => 17..18,
-                      "Word of mouth sells! Advertise the IR market availability of (product, service, etc.) any way you can. Infect high- clearance folks with this SellFast.D virus. They’ll be your best customers; they just can’t help themselves!" => 19..20
-
-      humanist_mission "{$generic_mission}" => 1..10,
-                      :humanist_mission => 11..12,
-                      "Find this specific robot ({@overdog_bot_codename}) in {@building_name} and, using these tools, reprogram it to do our bidding." => 13..14,
-                      "We need more weapons! Here is a list of dropoff points throughout {@sector_name}. Route all of your team’s weapons to these places, where we can snag them." => 15..16,
-                      "We’ve discovered B3 is loaded with chemicals that make us subservient to the machines! Don’t let anyone drink it!" => 17..18,
-                      "Take this EMP Bomb and plant it in {@building_name}.  Detonate it once you’re out of sight." => 19..20
-
-      illuminati_mission  "{$generic_mission}" => 1..10,
-                          :illuminati_mission => 11..12,
-                          "Steal something vital to the mission and leave this ransom note in its place. Those who fufill the ransom will later be 'recruited' to our society." => 13..14,
-                          "Acquire three compromising pictures of {random_target} and send them to this address. Three!" => 15..16,
-                          "Start a riot in {@building_name}. 23 looting brigades are awaiting your signal." => 17..18,
-                          "Secretly put this message in the pocket {random_target}. Don’t read it, or else. Ask no questions!" => 19..20
-
-      mystics_mission "{$generic_mission}" => 1..10,
-                      :mystics_mission => 11..12,
-                      "Help bring more into the fold! Distribute this addictive drug among your team and anyone you meet. Yeah, okay, maybe it mutates them, but what a high!" => 13..14,
-                      "For our newest brew we need an ingredient/drug stored in {@building_name}. Steal some and bring it back." => 15..16,
-                      "{random_target} really needs to mellow out... permanently. Give him a hit of this drug so they can see the light, man. Oh, and have some yourself when you want." => 17..18,
-                      "Seek a new high! Find and steal a substance or technique that makes you feel good. Then tell the gang about it!" => 19..20
-
-      pro_tech_mission  "{$generic_mission}" => 1..10,
-                        :pro_tech_mission => 11..12,
-                        "Find a specific robot ({@overdog_bot_codename}) in {@building_name} and use this super-nifty PDC software and cable to reprogram it to do our bidding." => 13..14,
-                        "In {@building_name}, hook this 6-10 little kit into the power grid. It diverts electricity to our base for a new project. If you see anything cool there, steal it." => 15..16,
-                        "Plant this micro-camera in {@building_name} at your destination. We’ll monitor the stuff they create. While you’re there, steal their stuff." => 17..18,
-                        "{random_target} has been stealing stuff from R&D, slowing the advance of nifty technologies. Find and kill him, then return the goods for further research." => 19..20
-
-      psion_mission   "{$generic_mission}" => 1..10,
-                      :psion_mission => 11..12,
-                      "Assassinate {random_target}, a dangerous threat to our mutant brethen. Recover this valuable object ({valuable_object}) that they stole from us." => 13..14,
-                      "Identify other mutants on your team and report them to us for potential recruitment. If they get in trouble, try to protect them." => 15..16,
-                      "The way to power is practice, practice, practice. Employ your mutant power often, in new and inventive ways. Report your experiences to us." => 17..18,
-                      "Administer this mutagen to other members of your team. It will give them a mutant power. Then recruit them into Psion." => 19..20
-
-      purge_mission "{$generic_mission}" => 1..10,
-                    "Plant this bomb in {@building_name}. Detonate when you’re far enough away." => 11..12,
-                    "Prevent your team from achieving their objective by any means necessary, but don’t allow your cover to be blown." => 13..14,
-                    "Replace your team’s happiness pills with these, which will spur them to destructive rampages." => 15..16,
-                    "{random_target} is a friend of PURGE. Protect them at all costs asf they complete their mission." => 17..18,
-                    "Destroy Computer property and make it look like {random_target} (an enemy of PURGE) is responsible." => 19..20
-
-      romantics_mission "{$generic_mission}" => 1..10,
-                        :romantics_mission => 11..12,
-                        "Spread the wonders and ideals of Old Reckoning times by acting like [character from a popular book, TV show, movie, comic or cartoon]." => 13..14,
-                        "Take this radio transmitter and set it up in {@building_name} so we can broadcast Old Reckoning music throughout {@sector_name}." => 15..16,
-                        "A Gray Subnet is rumored to have a copy of an Old Reckoning [song/vidtape/publication]. Download it when you get the chance, would you?" => 17..18,
-                        "This rare tape preserves an Old Reckoning film. Find a way to copy it. Bring a dozen copies to our next meeting." => 19..20
-
-      sierra_club_mission "{$generic_mission}" => 1..10,
-                          :sierra_club_mission => 11..12,
-                          "Help your teammates rediscover the joys of getting ‘down and dirty.’ Prevent the team hygiene officer from doing his job." => 13..14,
-                          "Locate at least one exit to Outdoors and find out how well it’s guarded. Report back to us." => 15..16,
-                          "Destroy power generators in {@sector_name} and distribute these miniature flame generators (candles) among the citizens to teach them the pleasure of ‘roughing it.’" => 17..18,
-                          "Take this box of ‘insects’ [GM: ants? 16-20 bees? mutated termites that munch on metal?] and release them in {@building_name}." => 19..20
-
-      spy_mission "{$generic_mission}" => 1..10,
-                  "We suspect that {random_target} is an Internal Security plant spying on us. Dissuade them with extreme prejudice." => 11..12,
-                  "Field-test this standard-issue {weapon}." => 13..14,
-                  "Test new battle tactics in your next few combats and report back on results." => 15..16,
-                  "Destroy {@building_name}, for the glory of the *true* Alpha Complex." => 17..18,
-                  "Covertly help {random_target}, a shell-shocked veteran who had previous dealings with us, regain his confidence and loyalty." => 19..20
-
-      program_group_mission "{$generic_mission}" => 1..10,
-                            "Plant this bug on {random_target}, so we can gather backmail material on them." => 11..12,
-                            "Openly pretend to be sworn enemies of {secret_society} so as to lure them out." => 13..14,
-                            "Destroy *both* {@overdog_name} and {@underdog_name}. They're both a threat to our High Programmer patron." => 15..16,
-                            "Our High Programmer's rivals are trying to make your mission fail. Do whatever you can to make sure it succeeds." => 17..18,
-                            "Find this robot ({@overdog_bot_codename}) and tinker with it to make it loyal to our High Programmer." => 19..20
+      secret_society_mission "Deliver {object} to {random_target}, as payment for 'service rendered'.",
+                            "Steal {@overdog_object_codename} from {@overdog_name}, as payback for their crimes against our society.",
+                            "Destroy {@building_name}. All of it. Burn it all to the ground.",
+                            "Comprehensively recon {random_target} and build up a dossier on them.",
+                            "We suspect {random_target} to be plotting against our society. Find and assassinate the traitor, and provide proof of their evil scheme.",
+                            "{random_target} was once a member of our society but has since created their own splinter faction. Discredit or kill the splitter.",
+                            "{random_target} was an ally of us. *Was*. They have since gone 'rogue' and is giving us a bad name. Stop them at once.",
+                            "We used to do some business with {random_target}, but now suspect they are secretly an IntSec infiltrator. Check them out and, if necessary, terminate them.",
+                            "{random_target} is a sympathizer to our cause. Rescue them from doom at the hands of The Computer's forces and recruit them to our great cause!",
+                            "Always need some more drugs to help our recruits accomplish secret society missions! Get a supply and drop it at our cache at {@building_name}. (GM Note: The type of drugs the secret society wants depend on the type of society and the needs of the mission. Here's some example drugs. Computer Phreaks: Wakey-Wakey and other anti-sleep drugs. Psion:  mutagens. Anti-Mutants: anti-mutagens. PURGE: combat drugs. Mystics: actually, any drug will do.)",
+                            "We need more weapons! Here is a list of dropoff points throughout {@sector_name}. Route all of your team’s weapons to these places, where we can snag them.",
+                            "Prevent your team from achieving their objective by any means necessary, but don’t allow your cover to be blown.",
+                            "This object ({unusual_object}) contains a datajack with a cool new trojan. Plug it into any confession booth at {@building_name} to run it. (GM Note: If the player is part of the Computer Phreaks, then the player's society built the datajack themselves. Otherwise, the player's secret society bought (or stole) it from the Phreaks and now want to use to steal data.)",
+                            "A certain isolated off-net terminal in {@building_name} has some cool data. Copy it and bring it back.",
+                            "Pass out these propaganda leaflets to the pliable INFRARED masses at {@building_name}. Try not to get caught.",
+                            "Vandalize {@building_name} with our secret society propaganda.",
+                            "We need to recruit more people to our society. Recruit as many INFRAREDs as you can.",
+                            "Steal {@overdog_object_codename} from {@overdog_name} and deliver it to us so we can sell it on the IR Market.",
+                            "Using these tools, recruit/Reprogram this specific robot ({@overdog_bot_codename}) at {@building_name} into our organization. Do whatever it takes. (GM Note: Yes, even Frankenstein Destroyers are willing to 'recruit' robots, though mostly because it's safer to get bots to fight each other than to fight bots directly.)",
+                            "{random_target} will be at {@building_name}. Take these tools and program a robot ({@overdog_bot_codename}) to attack them. When the bot attacks, you rescue them. That should help you convert them to our cause. (GM Note: This is actually a pretty common scam, though Frankenstein Destroyers are the ones who pioneered it. The only society that doesn't like to do it would be Corpore Metal.)",
+                            "Start a riot in {@building_name}. *Big* riot, get me? Looting brigades are awaiting your signal.",
+                            "We need to engage in some unauthorized wealth redistribution. Plunder the fatted plutocrats and distribute their ill-gotten gains to those who most deserve it. (GM Note: Different secret societies idealize different type of people, and would want you to give money to them. Communists would honor the 'weak and helpless' INFRARED masses, Free Enterprise would honor  hard-working businesspeople, PURGE would honor anti-Computer forces, FCCC-P would honor pro-Computer loyalists, Pro Tech would honor scientists, etc. Identifying who would deserve the funds would actually be *more* challenging than simply stealing them.)",
+                            "We found/stole/created this cybernetic bio-implant. Test it - on someone else. (GM Note: Bio-implant is {experimental_object})",
+                            "See to it that no human ever abuses any of our friends, and that {random_target} will never abuse our friends again, ever. (GM Note: Different secret socieites have different friends. Corpore Metal are friends to bots, Frankenstein Destroyes are friends to humans that are against bots, Communists are friends to INFRAREDs, etc.)",
+                            "Recode this specific robot ({@overdog_bot_codename}), and all other bots you see, to [liberate them from the dominion of their asimov circuits/destroy their asimov circuits so they can attack random human beings and make bots unpopular/to restore their asimov circuits so they don't shoot at us, for Pete's sake]! (GM Note: Corpore Metal prefers to 'liberate' bots from asimov circuits out of a sense of promoting freedom, while Frankenstein Destroyers want to violently remove the asimov circuts to make bots look bad. All other secret societies prefer to restore the asimov circuits, though they would be fine with them being tampered to allow some secret society taint to seep through into the bots.)",
+                            "This vatslime {random_target} has been giving us some trouble lately. Send a signal to them and their associates by blowing them up. Make sure the explosion is really pretty, with style. That's how you know the signal was sent properly.",
+                            "Convert {random_target} to our views, by whatever means necessary. Be creative.",
+                            "We need some more funds to keep secret society operations running smootly. Reap donations from our fellow secret society members at {@sector_name}. Let us prey, brother and sisters!",
+                            "A shipment of bot parts is passing through {@building_name} at your destination. [Insert this explosive device into it. Then run very fast./Divert this shipment of bot parts to our own secret society so we can start building our own bots.] (GM Note: Frankenstein Destroyers would prefer the 'explosive device' route, while all other societies would prefer diverting the shipment.)",
+                            "Destroy/Recruit all bots owned by {random_target} in {@building_name}. (GM Note: Frankenstein Destroyers would prefer bot destruction. Corpore Metal would prefer to recruit bots. All other secret societies would be okay with either choice.)",
+                            "Carry {valuable_object} and sell it for the best price. We'll give you a commission.",
+                            "Get the PDC contact info of all your teammates and anyone else you can, so we can add them to our mailing list.",
+                            "Word of mouth sells! Advertise our own IR Markets any way you can. Infect high-clearance SellFast.D virus. They’ll be your best customers; they just can’t help themselves! (GM Note: Though Free Enterprise tends to run the most profitable IR Markets, every secret society has IR Markets of their own. Sometimes these IR Markets exist solely to make money, but other times, they exist a vehicle for secret society propaganda - the Communists' Red Market and PURGE's Weapon Corridor are two such examples.)",
+                            "We’ve discovered B3 is loaded with chemicals that make us subservient to [the machines/anti-machine forces/those other evil secret societies]! Don’t let anyone drink it!",
+                            "Take this EMP Bomb and plant it in {@building_name}. Detonate it once you’re out of sight. (GM Note: Corpore Metal might prefer to use an Anti-EMP Bomb, designed to wipe out all organic life but spare bots.)",
+                            "Steal something vital to the mission and leave this ransom note in its place. Those who fufill the ransom will later be 'recruited' to our society.",
+                            "Acquire three compromising pictures of {random_target} and send them to this address. Three!",
+                            "Secretly put this message in the pocket {random_target}. Don’t read it, or else. Ask no questions!",
+                            "We control access to a very addictive drug. Distribute this addictive drug among your team and anyone you meet so that we can later subvert them for our purposes. Yeah, okay maybe it has some terrible side-effects, but what a high! (GM Note: Terrible side-effects could include turning someone into a murdering psychopath, mutating users, or just killing them outright. Anti-Mutants won't *intentionally* hand out mutagens.)",
+                            "We're trying to set up a drug production factory in the Underplex and need an ingredient/drug stored in {@building_name}. Steal some and bring it back.",
+                            "We're always on the lookout for new drugs that could serve our secret society. Find and steal a substance or technique that makes you feel good. Then tell the gang about it!",
+                            "{random_target} really needs to mellow out... permanently. Give him a hit of this drug so they get infected with Viral Thought Patterns and can see the light of our secret society propaganda. Oh, and have some of that drug yourself when you want.",
+                            "In {@building_name}, hook this little kit into the power grid. It diverts electricity to our Underplex base for a new project. If you see anything cool there, steal it.",
+                            "{random_target} has been stealing stuff from a service group that sympathizes with us, thereby making that service group less effective. Find and kill him, then return the goods. (GM Note: Service Groups sometimes have under-the-table relationships with secret societies. Pro-Tech and R&D, Corpore Metal and Tech Services, FCCC-P and Internal Security, Sierra Club and Armed Forces, etc.)",
+                            "Assassinate {@overdog_name}, a dangerous threat to our society, and recover this valuable object ({@overdog_object_codename}) that they stole from us. (GM Note: Secret society might be lying about {@overdog_name} stealing a valuable object. Does it matter?)",
+                            "Identify unregistered mutants on your team and report them to us for potential recruitment. If they get in trouble, try to protect them. (GM Note: Anti-Mutants may want a list of mutants for two reasons - (a) it makes them easy targets for elimination later on, and (b) it makes it easy for AM to blackmail those mutants into their service.)",
+                            "Destroy Computer property and make it look like {random_target} (our secret society enemy) is responsible.",
+                            "Administer this potent mutagen to other members of your team. It will give them a mutant power. Then recruit them into our society. (GM Note: Psion wants to give other people mutagens to further mutant dominance. Other secret socieites just want to build an Unstoppable Mutant Army. Anti-Mutants *will* not issue this type of mission, period. It's a betrayal of their core ideology! If you really want to use this secret society mission though, have Anti-Mutants hand out a R&D device that imitiates a semi-useful mutant power.)",
+                            "The way to power is practice, practice, practice. Employ your mutant power often, in new and inventive ways. Report your experiences to us. (GM Note: Psion wants to make their mutant membership more powerful. Anti-Mutants *will* not issue this type of mission, period. It's a betrayal of their core ideology! If you really want to use this secret society mission though, have Anti-Mutants hand out a R&D device that imitiates a semi-useful mutant power...and have AM suggest that the player field-test it. Other secret societies may or may not know about the player's mutant powers - if they do know, use the Psion justification, otherwise, take the Anti-Mutant route.)",
+                            "Plant this bomb in {@building_name}. Detonate when you’re far enough away.",
+                            "Replace your team’s happiness pills with these, which will spur them to destructive rampages. (GM Note: These destructive rampages may be against everyone or targeted at the enemies of the player's secret society.)",
+                            "Take this radio transmitter and set it up in {@building_name} so we can broadcast our secret society propaganda throughout {@sector_name}.",
+                            "This rare tape preserves an Old Reckoning film that we can use in our secret society propaganda. Find a way to to copy it. Bring a dozen copies to our next meeting.",
+                            "A Gray Subnet is rumored to have a to have a copy of an Old Reckoning [song/vidtape/publication] that we can use in  our secret society propaganda. Download it when you get the chance, would you?",
+                            "Take this box of ‘insects’ [ants? bees? mutated termites that munch on metal?] and release them in {@building_name}. (GM Note: Sierra Club likes these types of boxes because it want to bring elements of the Outdoors into Alpha Complex. Other secret societies are using the ‘insects’ as crude biological weapons.)",
+                           "Locate at least one exit to Outdoors and find out how well it’s guarded. Report back to us. (GM Note: Every secret society want to find exits to the Outdoors - just in case.)",
+                           "If we can fake a disaster and then come in to save the day, then people will flock to our secret society! Destroy power generators in {@sector_name} and then distribute these miniature flame generators to the citizenry. The citizens would appreciate our valuable assistance. (GM Note: Sierra Club also wants to teach citizens the pleasures of ‘roughing it’ - the miniature flame generators are actually candles. The other secret societies are carrying out a scam and are using 'safe and effective' R&D devices.)",
+                           "The Team Hygiene Officer belngs to a rival secret society and is attempting to subvert the rest of the team. Prevent them from doing their job so that we can we can make sure that we don't have to fight *even* more enemies. (GM Note: Sierra Club also wants to interfere with the Hygiene Officer because they want the player's teammates to rediscover the joys of getting ‘down and dirty.’)",
+                           "We suspect that {random_target} is an Internal Security plant spying on us. Dissuade them with extreme prejudice.",
+                           "Field-test this standard-issue {weapon}.",
+                           "Test new battle tactics in your next few combats and report back on results. (GM Note: Battle tactics may be standard Armed Forces tactics, in which case, it's just a matter of evaluating their effectiveness in the real-world...or they may be R&D experimental battle tactics, in which case, uh...)",
+                           "Covertly help {random_target}, a shell-shocked veteran who had previous dealings with us, regain his confidence and loyalty.",
+                           "{random_target} was a *former* officer in our secret society. Take away their hard-owned medals as a punishment for betraying our society.",
+                           "Plant this bug on {random_target}, so we can gather backmail material on them.",
+                           "Openly pretend to be sworn enemies of {secret_society} so as to lure them out.",
+                           "Destroy *both* {@overdog_name} and {@underdog_name}. They're both a threat to our secret society.",
+                           "Our rivals are trying to make your mission fail. Do whatever you can to make sure it succeeds."
     end
 
   end
