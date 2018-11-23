@@ -30,7 +30,7 @@ Gretchen-G-MXK-5 also has some personal possessions - Project Gennuu (an Exploda
 
 Normal Missions -
 
-- The Team Hygiene Officer belngs to a rival secret society and is attempting to subvert the rest of the team. Prevent them from doing their job so that we can we can make sure that we don't have to fight *even* more enemies. (GM Note: Sierra Club also wants to interfere with the Hygiene Officer because they want the player's teammates to rediscover the joys of getting ‘down and dirty.’)
+- The Team Hygiene Officer belongs to a rival secret society and is attempting to subvert the rest of the team. Prevent them from doing their job so that we can we can make sure that we don't have to fight *even* more enemies. (GM Note: Sierra Club also wants to interfere with the Hygiene Officer because they want the player's teammates to rediscover the joys of getting ‘down and dirty.’)
 
 - Acquire three compromising pictures of Harmony-R-HGA-3 and send them to this address. Three!
 
