@@ -985,7 +985,7 @@ class MissionGenerator
                            "We suspect that {random_target} is an Internal Security plant spying on us. Dissuade them with extreme prejudice.",
                            "Field-test this standard-issue {weapon}.",
                            "Field-test this standard-issue {armor}.",
-                           "Field-test this weird 'thingy' we just built - {object}.",
+                           "Field-test this weird 'thingy' we just [built/found] - {object}.",
                            "Test new battle tactics in your next few combats and report back on results. (GM Note: Battle tactics may be standard Armed Forces tactics, in which case, it's just a matter of evaluating their effectiveness in the real-world...or they may be R&D experimental battle tactics, in which case, uh...)",
                            "Covertly help {random_target}, a shell-shocked veteran who had previous dealings with us, regain his confidence and loyalty.",
                            "{random_target} was a *former* officer in our secret society. Take away their hard-owned medals as a punishment for betraying our society.",
