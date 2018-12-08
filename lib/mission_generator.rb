@@ -575,7 +575,7 @@ class MissionGenerator
         "The {codename} (a Funball team who supports {@overdog_name}) is facing off against the {codename} (another Funball team who supports {@underdog_name}) today in the {@sector_name} Championship match. There's a lot of prestige/money/INFRARED morale on the line here, so we want you to make sure that {random_target}'s team loses this match. Concidentically, their Funball team is currently located at {@building_name}.", #my attempt at remembering MCM #2
         "A zombie has been spotted in {@building_name}. Terminate the zombie before it spreads the infection and starts a zombie apocalypse. (GM Note: {random_target} had stolen a high-clearance ME card and is currently using their identity as part of some greater scheme. The problem is that the high-clearance card belongs to a high-clearance citizen that has ran out of clones and is officially deceased. The Computer treats activities associated with that ME card as proof that the citizen has came back from the dead as a zombie.)",
         "Filesharers in {@building_name} are currently violating intellectual property laws and security regulations. Terminate the Filesharers before they spread unauthorized rumors! We suspect {random_target} might be involved in the situation.",
-        "We need you to infiltrate a suspected Commie base at {@building_name}. You must locate the base,get inside and then plant this homing beacon so our Warbot can eliminate it.",
+        "We need you to infiltrate a suspected Commie base at {@building_name}. You must locate the base, get inside and then plant this homing beacon so our Warbot can eliminate it.",
         "We’ve had to terminate the committee responsible for running {@building_name}. Even though you have no applicable skills or training and don’t have the Clearance to know what the committee does, we need you to take over.",
         "{@overdog_name} needs your help with their latest dinner party/round of UltraGolf/nefarious secret project.",
         "R&D needs to do certain...things...at {@building_name}. Escort the scholars. Don't pay attention to the Lovecraftian rantings. Let them do their occult ritual, then escort them back. (We suspect that {random_target} may want to interfere with the ritual.)",
@@ -634,7 +634,14 @@ class MissionGenerator
                   "The Troubleshooters who failed the last mission in {@sector_name} used {random_target} as the bogeyman to blame all their failures on.",
                   "A High Programmer or another senior official ({character_sheet}) is attempting to screw over their competitors and acquire some important item or information.",
                   "The whole incident is designed as a Loyalty Test, either for the Troubleshooters or for someone else.",
-                  "Citizens in {@sector_name} had all their memories erased; they're in the process of trying to get them back and figure out what went wrong." #my attempt at remembering 'Battlebot Potkemin'
+                  "Citizens in {@sector_name} had all their memories erased; they're in the process of trying to get them back and figure out what went wrong.", #my attempt at remembering 'Battlebot Potkemin'
+                  "There is currently a violent schism taking place in {@overdog_name}'s secret society. {@overdog_name} is currently deciding which faction to back.",
+                  "The {secret_society} secret society is 'de facto' tolerated in {@sector_name} and is allowed to operate freely.",
+                  "The {secret_society} secret society is currently being persecuted in {@sector_name}; they are resorting to violence to defend themselves.",
+                  "{@underdog_name}'s secret society was previously damaged in a purge conducted by {@overdog_name} - but now they're recovering.",
+                  "The {$secret_society} secret society is currently waging a brutal and bloody war against the {$secret_society} secret society.",
+                  "{@underdog_name} just secured some {interesting_items} that they plan to use against {@overdog_name}.",
+                  "Most of the secret societies in {@sector_name} are secretly controlled by Internal Security."
 
       interesting_items "nuclear warheads",
                         "warbot parts",

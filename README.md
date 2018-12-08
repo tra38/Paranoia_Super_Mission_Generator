@@ -72,7 +72,7 @@ If we cannot generate a mission with your search term within ~30 seconds, we sim
 In addition to writing out my own material, I used the following supplements from the PARANOIA XP line:
 
  - The Paranoia XP GM's Screen, specifically the Mission Blender (almost all of it)
- - The Traitor's Manual, specifically the "Illuminati Motivation Table of Doom" (provides additional motivation to the NPCs as well as complications to the mission)
+ - The Traitor's Manual - the "Illuminati Motivation Table of Doom" (provides additional motivation to the NPCs as well as complications to the mission) and the "Screwing with secret societies table" (complications)
  - Criminal Histories (the different "job types" in Alpha Complex)
  - Internal Security (missions, complications, locations, floaters)
  - The Thin Green Line (missions, complications)
