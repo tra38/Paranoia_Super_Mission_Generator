@@ -250,9 +250,33 @@ class MissionGenerator
                       "Sadistic Hinderance",
                       "Mental Threat"
 
+      secret_project "Project {codename} (an attempt to {loyal_action})"
+
+      loyal_action "increase happiness throughout {@sector_name}",
+                    "decrease the number of traitors in {@sector_name}",
+                    "make {@sector_name} more efficient",
+                    "identify and classify mutants throughout {@sector_name}",
+                    "invent new, more exciting flavours of Bouncy Bubble Beverage",
+                    "build a new type of warbot, more powerful than ever before",
+                    "improve surveillance throughout {@sector_name}",
+                    "implement more rationing programs",
+                    "impose budget cuts throughout {@sector_name} as part of an austerity scheme",
+                    "improve security screening procedures in {@sector_name}"
+
+      cause_of_feud "{@building_name} is a key cornerstone in {secret_project} - and both {@overdog_name} and {@underdog_name} was assigned to work on this project. However, both clones realize that the project is about to fail horribly...and that there needs to be a scapegoat to blame the failure on. Both citizens are They are now looking for scapegoats to blame the failure on -- and are planning to blame each other.",
+      "{@building_name} is a key cornerstone in {secret_project} - and {@overdog_name} was assigned to work on this project. The project was a complete success, and The Computer plans on rolling it out across the rest of the complex. However, {@underdog_name} is suspicious, thinking that this project's 'success' is actually due to support from treasonous elements. {@underdog_name} is verifying his suspicions and hopes to bring down the traitorous scum {@overdog_name}.",
+      "{@building_name} is a key cornerstone in {secret_project} - and {@overdog_name} was assigned to work on this project. However, {@underdog_name} is concerned that this project might undermine their own goals. As a result, {@underdog_name} is attempting to undermine the project through covert sabotage. {@overdog_name} wants to stop this sabotage and allow their project to be completed, without any interruption.",
+      "{@underdog_name} is a prime supporter of {secret_project}, however this project is quickly running of resources. To ensure that the project can be successfully completed, {@underdog_name} is attempting to take resources away from {@overdog_name} and {@building_name}. {@overdog_name}, however, is resisting {@underdog_name}'s schemes, as they do not want to lose resources to support such a dubious endeavour.",
+      "{@building_name} is a very strategic location in {@sector_name}, and so {@overdog_name} and {@underdog_name} wants to to take over this building for their own devious purposes. {@overdog_name} had recently took over this place from the previous occupants, and does not want to lose their new prize so easily.",
+      "{@building_name} is a very strategic location in {@sector_name}, and both {@overdog_name} and {@underdog_name} ran this location on behalf of a common VIOLET-clearance patron. That patron's clone template was just erased for treason, meaning that there's no more common ground between {@overdog_name} and {@underdog_name}. All the minor grudges and covert dealings are now exposed, and a brief and bloody power struggle is about to begin...",
+      "{@building_name} is a very strategic location in {@sector_name}, so both {@overdog_name} and {@underdog_name} worked together to take over this building for themselves, thereby throwing out the previous occupants out. {@overdog_name} then betrayed the power-sharing agreement, seizing full control over {@building_name} and kicking {@underdog_name} out. {@underdog_name} wants payback.",
+      "{@building_name} is a very strategic location in {@sector_name}, so {@overdog_name} decided to take over this location by framing its previous owner ({@underdog_name}) for treason. The scheme was a complete success, but now {@underdog_name} wants revenge."
+
       background %{The mission will take place in {@building_name}, {location.indefinite_article} in Sector {@sector_name}. {@overdog_name} ({character_sheet}) currently controls {@building_name} with an iron fist. {@overdog_name}'s ultimate goal is to {$secret_agenda}.
 
         {@overdog_name} has a problem though. And that problem is {@underdog_name} ({character_sheet}), who wants to {do_evil_scheme}, and they want to do so out of {deadly_sin}. {@underdog_name}'s ultimate goal is to {$secret_agenda}.
+
+        {cause_of_feud}
 
         It is this conflict between {@overdog_name} and {@underdog_name} that the Troubleshooters must deal with if they are to complete the mission successfully.
 
