@@ -574,7 +574,7 @@ class MissionGenerator
         "A Troubleshooter team has gone rogue and is currently conducting an unauthorized Troubleshooting mission (mission: {$mission}). Stop this mission from succeeding.",
         "{@underdog_name} is a loyal and competent clone who deserves a promotion! Help them get that promotion.",
         "Replace the batteries in {@overdog_name}'s equipment.",
-        "Carry around these huge batteries and drain any aunthorized power source you find in {@building_name}.",
+        "Carry around these huge batteries and drain any unauthorized power source you find in {@building_name}.",
         "Escort {@overdog_name} over to {building_name} ({public_location.indefinite_article}) where we can engage in Sanity Correction.",
         "Capture (but don't harm) {@overdog_bot_codename}, a bot that has gone frankenstein. The bot just needs some therapy, just all.",
         "{@building_name} just got destroyed, right after someone field-tested {experimental_object}. Please provide a retrospective field-test report to sastify the R&D techies.",
