@@ -75,6 +75,7 @@ In addition to writing out my own material, I used the following supplements fro
  - The Traitor's Manual - the "Illuminati Motivation Table of Doom" (provides additional motivation to the NPCs as well as complications to the mission) and the "Screwing with secret societies table" (complications)
  - Criminal Histories (the different "job types" in Alpha Complex)
  - Internal Security (missions, complications, locations, floaters)
+ - High Programmer (mission background)
  - The Thin Green Line (missions, complications)
  - Mandatory Mission Pack (missions, locations)
  - Troubleshooters/XP Rulebook (misisons, complications, floaters)
