@@ -9,4 +9,4 @@ The program is focused on generating a "table-facing document", as opposed to a 
  - A "table-facing document" is one that is focused on improving gameplay on the table, and directly entertains the PCs. (Examples: The GM's cribbed notes from a professional mission.)
  - A "GM-facing document" is one that is focused on giving ideas to GMs (which is useful when GMs wants to come up with missions on their own or conduct some improv lessons) and directly entertains GMs. (Examples: The injokes and artwork of a professional mission.)
 
-While GM-facing documents are incredibly important (and fun to read), they do not directly help someone run a game, so my main emphasis is on generating table-facing" material, such as the floaters.
+While GM-facing documents are incredibly important (and fun to read), they do not directly help someone run a game, so my main emphasis is on generating table-facing" material, such as the floaters and the extremely sparse background info.
