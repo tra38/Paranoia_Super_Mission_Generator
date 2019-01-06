@@ -78,6 +78,8 @@ When you run ```custom_names.rb``` (either by selecting ```custom_names.rb``` if
 
 Once you are satisfied with the names, you can then continue onward with the mission generation process.
 
+You can ues ```custom_names.rb``` in conjunction with ```railroad.rb```. First, run railroad.rb to find a mission with your ideal search term. Save the generated title. Then use that title as the word prompt for ```custom_names.rb```, and then change the names of the two main characters in that mission.
+
 ## Credits
 In addition to writing out my own material, I used the following supplements from the PARANOIA XP line:
 
