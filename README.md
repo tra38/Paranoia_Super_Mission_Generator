@@ -1,13 +1,13 @@
 ## Paranoia_Super_Mission_Generator
 
 ## Table of Contents
-
   - [Instructions](#instructions)
     - [Online](#online)
     - [Locally](#locally)
   - [main.rb](#mainrb)
   - [Itty.Bitty.Site](#ittybittysite)
   - [railroad.rb](#railroadrb)
+  - [```custom_names.rb```](#custom_namesrb)
   - [Credits](#credits)
   - [Dev Notes](#dev-notes)
     - [Background](#background)
