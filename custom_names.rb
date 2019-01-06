@@ -23,14 +23,14 @@ puts "Now, already generated two names for the mission. Let us know if you like 
 
 keep_looping = true
 
-def menu
+def custom_names_menu
   puts "1 - Change the 'overdog' name (currently #{@overdog_name}) [The overdog is a high-clearance authority figure who the players must interact with while completing the mission]"
   puts "2 - Change the 'underdog' name (currently #{@underdog_name}) [The underdog is a low-clearance citizen rebelling against the authority figure...and players must also interact with this figure as well]"
   puts "3 - Continue mission generation..."
 end
 
 while (keep_looping)
-  menu
+  custom_names_menu
   input = gets.to_i
   if input == 1
     puts "Let's change the overdog name then. Type in the new name."
