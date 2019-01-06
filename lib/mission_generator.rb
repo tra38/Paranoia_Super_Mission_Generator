@@ -961,6 +961,11 @@ class MissionGenerator
           1. {$floating_evidence}
           2. {$floating_evidence}
           3. {$floating_evidence}
+
+        Rumors
+          1. {$floating_rumor}
+          2. {$floating_rumor}
+          3. {$floating_rumor}
       }
 
       secret_society_mission "Deliver {object} to {random_target}, as payment for 'service rendered'.",
@@ -1040,6 +1045,28 @@ class MissionGenerator
                            "A rival secret society is organizing INFRARED riots at {@building_name} targeted against us. Quell the riot until we can send reinforcements.",
                            "Comprehensively recon {@building_name}, building up a dossier on it.",
                            "Spread the wonders and ideals of Old Reckoning times by acting like [character from a popular book, TV show, movie, comic or cartoon]. (GM Note: This character is sympathetic to the player's secret society, and is thus a covert attempt at spreading secret society propaganda.)"
+
+        floating_rumor "{random_target} is a Commie Mutant Traitor in {@sector_name} who already beaten a dozen Troubleshooter teams sent to chase them down.  No-one’s willing to try again, so they’re sending teams off on nonsense missions in the hope that they’ll run into the Mutant and get lucky.",
+                        "Your mission’s just a cover for a much more important mission (mission: {$mission}). They don’t care if you succeed or not.",
+                        "{random_target} has a spy in CPU – they know you’re coming. They know what the mission is.",
+                        "The Computer has tagged your mission under the heading ‘LIZARD INCURSION’. I don’t know why.",
+                        "It’s a suicide mission. One of your team is a traitor but IntSec doesn’t know who, so they’re going to kill you all!",
+                        "The mission’s going to be filmed! You’ll be on the news tonightcycle!",
+                        "The mission’s going to be filmed! It’s an instructional video for Troubleshooter training classes.",
+                        "They were supposed to announce this month’s Hero of our Complex but the candidate failed the loyalty screening. They’ve got to find a new one before the end of the day, so it’ll probably be one of your team!",
+                        "They’re banning travel between sectors todaycycle, except for Troubleshooters on missions. I wonder why.",
+                        "Your mission is a lie. If you want to survive debriefing, find out what your *actual* mission is and accomplish it.",
+                        "The Armed Forces won't tell you this, but the War Against Communism is going really badly in {@sector_name}. Be careful.",
+                        "The Armed Forces won't tell you this, but the War Against Communism is going really well in {@sector_name}. Be incredibly scared of the Armed Forces goons in the area.",
+                        "Your breiefing officer is a complete psychopath, who terminates any Troubleshooters who annoy them.",
+                        "Your briefing officer is a complete idiot, who will believe anything that is told to them and rationalize any inconsistencies between contradictory testimonies. You're one lucky sod.",
+                        "Outfitting will try to sell you dud laser barrels. You'll need to look elsewhere if you want working laser barrels.",
+                        "This mission is a loyalty test. The enemies and obstacles are all simulated; it’s just to see how you respond.",
+                        " Anyone who goes to debriefing always gets terminated. Don’t even bother showing up.",
+                        "Your briefing officer really likes B3 – bring them a can and they'll think you’re the best clone ever.",
+                        "Your Troubleshooter mission is aimed at fixing problems caused by other Troubleshooter missions.",
+                        "Your Troubleshooter mission is faked – it’s all shot in a studio. It’s just television.",
+                        "My friend’s workmate’s boss’s printer repairman’s clone told him that 90% of the cameras in this sector are dummies."
     end
 
   end
