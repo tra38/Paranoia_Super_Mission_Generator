@@ -1047,7 +1047,7 @@ class MissionGenerator
                            "Spread the wonders and ideals of Old Reckoning times by acting like [character from a popular book, TV show, movie, comic or cartoon]. (GM Note: This character is sympathetic to the player's secret society, and is thus a covert attempt at spreading secret society propaganda.)"
 
         floating_rumor "{random_target} is a Commie Mutant Traitor in {@sector_name} who already beaten a dozen Troubleshooter teams sent to chase them down.  No-one’s willing to try again, so they’re sending teams off on nonsense missions in the hope that they’ll run into the Mutant and get lucky.",
-                        "Your mission’s just a cover for a much more important mission (mission: {$mission}). They don’t care if you succeed or not.",
+                        "Your mission’s just a cover for a much more important mission. They don’t care if you succeed or not.",
                         "{random_target} has a spy in CPU – they know you’re coming. They know what the mission is.",
                         "The Computer has tagged your mission under the heading ‘LIZARD INCURSION’. I don’t know why.",
                         "It’s a suicide mission. One of your team is a traitor but IntSec doesn’t know who, so they’re going to kill you all!",
