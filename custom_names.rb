@@ -45,7 +45,7 @@ while (keep_looping)
   end
 end
 
-# 4 - Generate the mission using the word prompt that we got from Step 2.
+# 4 - Generate the mission using the word prompt that we got from Step 1.
 
 generated_mission = Controller.generate_mission(word, seed, @overdog_name, @underdog_name)
 
