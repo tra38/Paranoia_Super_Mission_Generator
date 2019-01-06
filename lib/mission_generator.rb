@@ -852,9 +852,9 @@ class MissionGenerator
                     "A photo of an important location that the suspect liked.",
                     "A talkative AutoHack bot gives the PCs a clue. ‘That guy? Had him in the back of my cab last twosday. Fuhgeddaboutit’.",
                     "A clearly drawn map with a line going from where the PCs are now to the next scene.",
-                    "The Troopers take a wrong turn and end up where they’re supposed to be.",
+                    "The Troubleshooters take a wrong turn and end up where they’re supposed to be.",
                     "A matchbook that belong to the suspect.",
-                    "The Troopers hear a scream coming from the next scene.",
+                    "The Troubleshooters hear a scream coming from the next scene.",
                     "Minutes from a briefing in a particular location.",
                     "A witness cooperates with the PCs but only really can provide directions on where the PCs should go next.",
                     "Tracing the suspect’s PDC via The Computer."
