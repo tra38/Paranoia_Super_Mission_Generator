@@ -962,7 +962,7 @@ class MissionGenerator
           2. {$floating_evidence}
           3. {$floating_evidence}
 
-        Rumors
+        Rumors (Are they true? What is Truth™ anyway?)
           1. {$floating_rumor}
           2. {$floating_rumor}
           3. {$floating_rumor}
@@ -1066,7 +1066,19 @@ class MissionGenerator
                         "Your briefing officer really likes B3 – bring them a can and they'll think you’re the best clone ever.",
                         "Your Troubleshooter mission is aimed at fixing problems caused by other Troubleshooter missions.",
                         "Your Troubleshooter mission is faked – it’s all shot in a studio. It’s just television.",
-                        "My friend’s workmate’s boss’s printer repairman’s clone told him that 90% of the cameras in this sector are dummies."
+                        "My friend’s workmate’s boss’s printer repairman’s clone told him that 90% of the cameras in this sector are dummies.",
+                        "All bots in {@sector_name} are actually remote-controlled by The Computer. They only have simulated individual personalities but not all of them actually know this.",
+                        "The stuff in the {@sector_name} food vats isn’t made in Alpha Complex. They bring it in from Outdoors.",
+                        "If you say you’re a Troubleshooter on a mission, you get a 20% discount on all {@sector_name} vending machine purchases.",
+                        "The algae chips in {@sector_name} are actually algae *computer* chips. They’re building a computer network in our digestive systems to control us!",
+                        "The {@sector_name} High Programmers aren’t human. They’re lizards. Or maybe aliens.",
+                        "The {@sector_name} CompNode is crashing. Every day, another subsector goes dark.",
+                        "At nightcycle, all the transbots in {@sector_name} go somewhere no human citizen has ever seen... except those brave enough to stow away.",
+                        "The MemoMax chips in your brain automatically create a computer simulation of your mind inside the {@sector_name} CompNode. He knows what you are thinking, he knows when you’re awake...",
+                        "The INFRAREDs in {@sector_name} are actually mostly fungal growths that just look human.",
+                        "{random_target} has a machine that can copy ME cards. I know they once copied a High Programmer's card as well.",
+                        "The High Programmers in {@sector_name} are just figureheads – no-one actually knows how the {@sector_name} CompNode works.",
+                        "There are Commies working at every cafeteria in {@sector_name}."
     end
 
   end
