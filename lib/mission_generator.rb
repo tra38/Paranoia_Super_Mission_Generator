@@ -477,6 +477,8 @@ class MissionGenerator
                                 'booby-trapped' => 16..18,
                                 'smouldering wreckage' => 19..20
 
+      presidency_scope "Sector", "Happiness", "Hygiene", "Aesthetics", "Election", "Cafeteria", "Efficiency"
+
       briefing_room "Briefing officers behind opaque bulletproof glass, voices electronically filtered.",
       "Briefing officers undercover; wary, paranoid; speak in evasive code-phrases.",
       "Briefing officer is weird invalid (e.g., suspended in sound-dampening gel in a swimming pool communicating through a bizarre array of tubing).",
@@ -658,7 +660,7 @@ class MissionGenerator
                   "Due to budget cutbacks in {@sector_name}, the service groups have taken drastic actions to secure future fundings.",
                   "{secret_society} has privately declared war on {@sector_name} and is conducting an campaign of sabotage.",
                   "Most citizens in {@sector_name} are genuinely loyal to The Computer and its regime. They will do whatever it takes to defend it against all forms of treason.",
-                  "An 'election' (glorified popularity contest) is being held for the {@sector_name} Sector Presidency. The VIOLET incumbent ({character_sheet}) has hired {@overdog_name} to serve as head of their security staff (to protect against assassinations and terrorist attacks), while {@underdog_name} is covertly working for the VIOLET challenger ({character_sheet}).", #my attempt at remembering 'The Petbot Vote'
+                  "An 'election' (glorified popularity contest) is being held for the {@sector_name} {$presidency_scope} Presidency. The VIOLET incumbent ({character_sheet}) has hired {@overdog_name} to serve as head of their security staff (to protect against assassinations and terrorist attacks), while {@underdog_name} is covertly working for the VIOLET challenger ({character_sheet}).", #my attempt at remembering 'The Petbot Vote'
                   "The whole mission is secretly an Internal Security sting operation designed to uncover non-existent traitors.",
                   "The actual problem has been exaggerated hundreds of times over, attracting the attention of far more important and powerful agencies than it deserved.",
                   "The Troubleshooters who failed the last mission in {@sector_name} used {random_target} as the bogeyman to blame all their failures on.",
