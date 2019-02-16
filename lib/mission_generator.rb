@@ -498,7 +498,9 @@ class MissionGenerator
       "Briefing officer wears {armor} and fiddles with an exotic-looking {weapon}; expects attack at any moment.",
       "Given in a transtube, on a recording with a folder of documents; recording self-destructs 5 seconds after stopping.",
       "Briefing officer is dead on arrival and no one comes to replace him. May have notes on their body that describe the PCs’ mission.",
-      "The Computer conducts the briefing."
+      "The Computer conducts the briefing.",
+      "The briefing room is cordoned off with police who is currently interrogating the briefing officer (the officer himself doesn't know why he's being interrogated, what crime he's being accused of, or if he's being used as evidence to bring down some other criminal). Halfway through the interrogation, the briefing officer makes a break for it.", #'inspired' by OpenAI's limited machine learning algos
+      "Briefing room is incredibly popular (known in 55 sectors as the 'best place to socialize'), with lots of conversations and discussions. However, it is also only capable for holding people for 15 minutes at a time, so expect a lot of conversations for 14 minutes followed by a 1-minute stampede as everyone runs for the door." #laso 'inspired'
 
       outfitting "PLC: {plc}" => 1..10,
                   "IR Market: {ir_market}" => 11..20
