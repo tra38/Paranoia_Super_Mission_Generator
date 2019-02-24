@@ -98,6 +98,14 @@ The personality generator came from the [Cyberpunk City Generator](http://orteil
 
 The fake word generator (which I used to come up with random names to objects, including R&D devices) came from anticoders' [fake-words](https://github.com/anticoders/fake-words/blob/master/index.js).
 
+Some mission briefings were "inspired" by [OpenAI's public text generator, released on February 14, 2019](https://blog.openai.com/better-language-models/) - after generating the text, I then edited them to be a bit more human-readable.
+
+I also managed to get some PARANOIA missions from the following online sources:
+
+- [25 Futuristic City Adventure Seeds](https://readytorole.com/2019/02/20/25-futuristic-city-adventure-seeds/)
+- [Paranoia RPG Mission Brainstorming Thread](https://forums.spacebattles.com/threads/paranoia-paranoia-rpg-mission-brainstorming-thread.517831/#post-34539292)
+- ["(pointlessly) [a]bove and beyond the call of duty"](http://archive.is/daswo)
+
 ## Dev Notes
 
 This program is my take on the famous "Mission Blender". There is already [an online version of the Mission Blender](http://www.highprogrammer.com/cgi-bin/mission_blender) when I started work on this project, but that project required me to "think" how to merge all the randomly-generated items together. What I wanted is a system that automates as much of the mission-generation process possible. Some human effort is still needed at the end of the day (because the goal of a tabletop RPG session is to entertain humans, not bots), but will be used more efficently - curating and refining the generated output.
