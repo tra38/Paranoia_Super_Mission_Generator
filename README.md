@@ -105,6 +105,7 @@ I also managed to get some PARANOIA missions from the following online sources:
 - [25 Futuristic City Adventure Seeds](https://readytorole.com/2019/02/20/25-futuristic-city-adventure-seeds/)
 - [Paranoia RPG Mission Brainstorming Thread](https://forums.spacebattles.com/threads/paranoia-paranoia-rpg-mission-brainstorming-thread.517831/#post-34539292)
 - ["(pointlessly) [a]bove and beyond the call of duty"](http://archive.is/daswo)
+- ["Cut Content" from the Mission Blender, recovered from archive.org](https://web.archive.org/web/20070818025444/http://www.paranoia-live.net/forum/viewtopic.php?t=643&sid=c277f51b326b84e5be1d607c2949d773)
 
 ## Dev Notes
 
