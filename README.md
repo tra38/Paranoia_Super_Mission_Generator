@@ -21,7 +21,7 @@
 
 1. Go to [https://repl.it/@tra38/PARANOIASuperMissionGenerator](https://repl.it/@tra38/PARANOIASuperMissionGenerator).
 2. Click on "run" to start up the program.
-3. When it's fully loaded, you can choose between ```main.rb``` or ```railroad.rb```.
+3. When it's fully loaded, you can choose between ```main.rb```, ```railroad.rb```, or ```custom_names.rb```.
 
 ### Local Machine
 
@@ -29,7 +29,7 @@
 
 2. ```bundle install```
 
-3. If you want to run ```main.rb```, type ```ruby main.rb```. If you want to run ```railroad.rb```, type ```ruby railroad.rb```.
+3. If you want to run ```main.rb```, type ```ruby main.rb```. If you want to run ```railroad.rb```, type ```ruby railroad.rb```. And, if you want to run ```custom_names.rb```, type ```ruby custom_names.rb```.
 
 ## ```main.rb```
 
@@ -37,7 +37,7 @@ You will receive a prompt to "name" your mission. That name will serve as a seed
 
 The generated mission also includes a URL to a website hosted on [https://itty.bitty.site/](https://itty.bitty.site/edit). You can view, edit, and share the generated mission using that URL as well.
 
-Look at EXAMPLE.md to see how an example generated mission might look like. I recommend generating multiple missions and picking and choosing what elements you want (customizing it to match your own purposes). Secret society missions are pretty generic and will probably require some major customizations (or even to be re-written from scratch) to match the mood and style of your mission.
+Look at [EXAMPLE.md](EXAMPLE.md) to see how an example generated mission might look like. I recommend generating multiple missions and picking and choosing what elements you want (customizing it to match your own purposes). Secret society missions are pretty generic and will probably require some major customizations (or even to be re-written from scratch) to match the mood and style of your mission.
 
 ## Itty.Bitty.Site
 
