@@ -1,0 +1,19 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    calyx (0.18.0)
+    progressbar (1.10.0)
+    redcarpet (3.4.0)
+    ruby-lzma (0.4.3)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  calyx (= 0.18.0)
+  progressbar
+  redcarpet
+  ruby-lzma
+
+BUNDLED WITH
+   2.1.4
