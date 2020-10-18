@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem "calyx", '0.18.0'
+gem "calyx", '~> 0.20.0'
 
 gem "ruby-lzma"
 
