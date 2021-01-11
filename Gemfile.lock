@@ -3,7 +3,7 @@ GEM
   specs:
     calyx (0.20.0)
     progressbar (1.10.0)
-    redcarpet (3.4.0)
+    redcarpet (3.5.1)
     ruby-lzma (0.4.3)
 
 PLATFORMS
