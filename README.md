@@ -100,6 +100,8 @@ The fake word generator (which I used to come up with random names to objects, i
 
 Some mission briefings were "inspired" by [OpenAI's public text generator, released on February 14, 2019](https://blog.openai.com/better-language-models/) - after generating the text, I then edited them to be a bit more human-readable.
 
+Some rumors were "inspired" by [AI Dungeon](https://play.aidungeon.io) (which uses a more advanced version of OpenAI's text generator) - after generating the text, I then edited them to be a bit more human-readable.
+
 I also managed to get some PARANOIA missions from the following online sources:
 
 - [25 Futuristic City Adventure Seeds](https://readytorole.com/2019/02/20/25-futuristic-city-adventure-seeds/)
