@@ -653,7 +653,7 @@ class MissionGenerator
         "Investigate an inexplicable drop in the Happiness Quota in {@building_name}.",
         "Single-handedly stop an invasion by a Rival Complex coming from {@building_name}. You have 500 credits to spend on gear & supplies. You are Alpha Complex's only hope! (GM Note: Is this invasion real or imaginary? If it is imaginary, then why do people believe it to be happening? If it's real, why *is* the rival complex invading?)",
         "A light bulb has blown at {@building_name}. Take a replacement to the location and replace it, as without light no one will be able to identify the security clearance of the location. Manage any clearance violations that may arise during repair.",
-        "A pitched battle is taking place in {@building_name}, between {@underdog_name}'s hencepeople and {@overdog_name}'s hencepeople. Now, we don't know which side is loyal and which side is treasonous. We want you to conduct a fact-finding mission and then report back to us with your conclusions. {official_thugs} will then be sent to terminate the traitors and save the loyalists. No, you don’t need to be armed; it’s a simple fact-finding mission!"
+        "A pitched battle is taking place in {@building_name}, between {@underdog_name}'s hencepeople and {@overdog_name}'s hencepeople. Now, we don't know which side is loyal and which side is treasonous. We want you to conduct a fact-finding mission and then report back to us with your conclusions. {official_thugs} will then be sent to terminate the traitors and save the loyalists. No, you don’t need to be armed; it’s a simple fact-finding mission!", #no more Costin-U-MOR seeds
 
       complication "A service group feud between {two_rival_groups} have spun out of control in {@sector_name}. Assassinations and drive-by shootings are commonplace, and the sector is close to civil war.",
                   "A major malfunction has rendered {@sector_name} uninhabitable; the local environment kills an unprotected citizen in minutes if not seconds.",
@@ -1154,7 +1154,18 @@ class MissionGenerator
         "The INFRAREDs in {@sector_name} are actually mostly fungal growths that just look human.",
         "{random_target} has a machine that can copy ME cards. I know they once copied a High Programmer's card as well.",
         "The High Programmers in {@sector_name} are just figureheads – no-one actually knows how the {@sector_name} CompNode works.",
-        "There are Commies working at every cafeteria in {@sector_name}."
+        "There are Commies working at every cafeteria in {@sector_name}.", #below rumors generated/inspired by AI Dungeon and slightly modified by me
+        "I'm on my way to meet up with {random_target}. I should have time to get there and ask a few questions, before a Communist hit squad arrive to kill us all. But will *you* make it there in time?",
+        "{random_target} is a high-ranking member of the Old Reckoning government. They claim to be an innocent, loyal clone...and managed to convince a lot of people. They haven't convinced The Computer though.",
+        "{random_target} is actually hiding in a secret base they built in an abandoned section of {@sector_name}. It'll be marked by with a 'RADIOACTIVE ZONE, DO NOT ENTER' warning sign on your map.",
+        "{random_target} is actually a close friend with the Communist menance. It's all goes deep guys. Thirty years deep.",
+        "The last time a Troubleshooter team was sent to hunt down {@underdog_name}, they didn't return. They didn't do anything for the last ten years. Why have they changed their minds now?",
+        "If you fail this mission, The Computer will panic and destroy the entire sector.",
+        "I heard about some alien invasion in {@sector_name} - could have been caused by a beacon placed there. Stay safe!",
+        "CPU is testing out a new mandate to boost mission effectiveness. Your team will have to work together as a unit to complete the mission successfully. If any member of your team dies, then the rest of you die with them.",
+        "{@overdog_name} recently experienced a munity yesterday and had to assume direct control. They've been trying to get rid of their incompetent crew ever since.",
+        "{random_target} is trying to write a novel about {@sector_name}. It's going be super-popular, assuming they actually finish it.",
+        "Citizens in {@sector_name} are slowly being replaced by Commie doppelgangers!"
     end
 
   end
