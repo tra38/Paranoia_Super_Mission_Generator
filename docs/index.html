@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Paranoia Super Mission Generator</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="app-header">
+      <div>
+        <p class="kicker">PARANOIA XP</p>
+        <h1>Super Mission Generator</h1>
+      </div>
+      <div class="header-actions" aria-label="Mission actions">
+        <button id="copyMarkdown" type="button">Copy Markdown</button>
+        <button id="copyHtml" type="button">Copy HTML</button>
+        <button id="copyLink" type="button">Copy Link</button>
+        <button id="downloadHtml" type="button">Download HTML</button>
+        <button id="printMission" type="button">Print</button>
+      </div>
+    </header>
+
+    <main class="app-shell">
+      <aside class="controls" aria-label="Generator controls">
+        <div class="mode-tabs" role="tablist" aria-label="Generator mode">
+          <button id="tabBasic" class="active" type="button" role="tab" aria-selected="true" data-mode="basic">Prompt</button>
+          <button id="tabCustom" type="button" role="tab" aria-selected="false" data-mode="custom">Custom</button>
+          <button id="tabRailroad" type="button" role="tab" aria-selected="false" data-mode="railroad">Railroad</button>
+        </div>
+
+        <section class="control-panel active" id="panelBasic" data-panel="basic" aria-labelledby="tabBasic">
+          <label for="basicPrompt">Mission name</label>
+          <input id="basicPrompt" type="text" value="Trust The Computer!" autocomplete="off">
+          <button id="generateBasic" class="primary" type="button">Generate Mission</button>
+        </section>
+
+        <section class="control-panel" id="panelCustom" data-panel="custom" aria-labelledby="tabCustom" hidden>
+          <label for="customPrompt">Mission name</label>
+          <input id="customPrompt" type="text" value="Trust The Computer!" autocomplete="off">
+
+          <div class="name-row">
+            <div>
+              <label for="overdogName">Overdog</label>
+              <input id="overdogName" type="text" autocomplete="off">
+            </div>
+            <div>
+              <label for="underdogName">Underdog</label>
+              <input id="underdogName" type="text" autocomplete="off">
+            </div>
+          </div>
+
+          <div class="button-row">
+            <button id="suggestNames" type="button">Suggest Names</button>
+            <button id="generateCustom" class="primary" type="button">Generate Mission</button>
+          </div>
+        </section>
+
+        <section class="control-panel" id="panelRailroad" data-panel="railroad" aria-labelledby="tabRailroad" hidden>
+          <label for="searchTerm">Search term</label>
+          <input id="searchTerm" type="search" value="rogue" autocomplete="off">
+
+          <label for="maxAttempts">Attempts</label>
+          <input id="maxAttempts" type="number" min="1" max="10000" step="1" value="1000">
+
+          <button id="generateRailroad" class="primary" type="button">Find Mission</button>
+          <progress id="railroadProgress" max="1000" value="0"></progress>
+          <output id="railroadStatus">Ready</output>
+        </section>
+
+        <section class="mission-meta" aria-label="Mission metadata">
+          <dl>
+            <div>
+              <dt>Seed</dt>
+              <dd id="seedLabel">Trust The Computer!</dd>
+            </div>
+            <div>
+              <dt>Overdog</dt>
+              <dd id="overdogLabel">-</dd>
+            </div>
+            <div>
+              <dt>Underdog</dt>
+              <dd id="underdogLabel">-</dd>
+            </div>
+            <div>
+              <dt>Words</dt>
+              <dd id="wordCount">0</dd>
+            </div>
+          </dl>
+        </section>
+      </aside>
+
+      <section class="workspace" aria-label="Generated mission">
+        <div class="workspace-toolbar">
+          <div class="view-tabs" role="tablist" aria-label="Mission view">
+            <button id="viewEdit" class="active" type="button" role="tab" aria-selected="true" data-view="edit">Edit</button>
+            <button id="viewPreview" type="button" role="tab" aria-selected="false" data-view="preview">Preview</button>
+          </div>
+          <p id="statusLine" role="status">Ready</p>
+        </div>
+
+        <div class="mission-views">
+          <textarea id="missionText" class="mission-editor" spellcheck="true" aria-label="Mission markdown"></textarea>
+          <article id="missionPreview" class="mission-preview" aria-label="Mission preview"></article>
+        </div>
+      </section>
+    </main>
+
+    <script src="grammar-data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
