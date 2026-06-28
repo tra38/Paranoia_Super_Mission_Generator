@@ -15,9 +15,12 @@
       <div class="header-actions" aria-label="Mission actions">
         <button id="copyMarkdown" type="button">Copy Markdown</button>
         <button id="copyHtml" type="button">Copy HTML</button>
+        <button id="copyIttyLink" type="button">Copy Itty Link</button>
+        <button id="openIttyLink" type="button">Open Itty</button>
         <button id="copyLink" type="button">Copy Link</button>
         <button id="downloadHtml" type="button">Download HTML</button>
         <button id="printMission" type="button">Print</button>
+        <button id="showDisclosure" type="button">Disclosure</button>
       </div>
     </header>
 
@@ -88,6 +91,14 @@
             </div>
           </dl>
         </section>
+
+        <section id="aiContentPanel" class="ai-content-panel" hidden aria-live="polite">
+          <div>
+            <h2>AI-Origin Entries</h2>
+            <p>Marked source-table content appeared in this mission.</p>
+          </div>
+          <ul id="aiContentList"></ul>
+        </section>
       </aside>
 
       <section class="workspace" aria-label="Generated mission">
@@ -106,6 +117,22 @@
       </section>
     </main>
 
+    <dialog id="disclosureDialog" class="disclosure-dialog" aria-labelledby="disclosureTitle">
+      <form method="dialog">
+        <div class="dialog-header">
+          <h2 id="disclosureTitle">Disclosure</h2>
+          <button type="submit" aria-label="Close disclosure">Close</button>
+        </div>
+        <div class="disclosure-copy">
+          <p>The original Ruby Paranoia Super Mission Generator was written by human author(s) in the upstream project.</p>
+          <p>This single-page HTML/CSS/JS conversion was made using OpenAI Codex. Model: GPT-5. Effort level: default Codex effort for this session.</p>
+          <p>The source tables include a small number of entries whose comments say they were inspired by OpenAI's 2019 public text generator or by AI Dungeon, then edited by the human author. When one of those entries appears in a generated mission, the app discloses it beside the controls and offers a targeted regenerate button for that entry only.</p>
+          <p>The itty.bitty.site export uses the MIT-licensed LZMA-JS compressor vendored in <code>vendor/lzma</code>.</p>
+        </div>
+      </form>
+    </dialog>
+
+    <script src="vendor/lzma/lzma_worker-min.js"></script>
     <script src="grammar-data.js"></script>
     <script src="app.js"></script>
   </body>

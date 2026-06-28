@@ -9,7 +9,50 @@
     overdog: "",
     underdog: "",
     generatedText: "",
+    memo: {},
+    aiRecords: [],
   };
+
+  const AI_ORIGIN_CHOICES = [
+    {
+      ruleName: "briefing_room",
+      source: "OpenAI public text generator, February 14, 2019 release",
+      note: "The Ruby source comments mark this briefing-room entry as inspired by OpenAI's early public text generator and then human-edited.",
+      values: [
+        "The briefing room is cordoned off with police who is currently interrogating the briefing officer (the officer himself doesn't know why he's being interrogated, what crime he's being accused of, or if he's being used as evidence to bring down some other criminal).  Halfway through the interrogation, the briefing officer makes a break for it using a nearby Autocar. Internal Security agents will later find his (abandoned) Autocar at a nearby hotel.",
+        "Briefing room is incredibly popular (known in 55 sectors as the 'best place to socialize'), with lots of conversations and discussions. However, it is also only capable for holding people for 15 minutes at a time, so expect a lot of conversations for 14 minutes followed by a 1-minute stampede as everyone runs for the door.",
+        "The briefing officer is richly informed and obsessively doting on the subject, but when he reads a detailed account of the mission briefing (which could give the Troubleshooters useful information about their mission), an Armed Forces stalker goes to confront the briefing officer and take him away for questioning.",
+        "The briefing officer is also on the 'field' completing a Troubleshooting mission (mission: {$mission}). He is delivering the mission briefing while under heavy fire from traitors.",
+        "After going through various improbable security and distraction systems, the Troubleshooters meet their briefing officer, who pretends to be a robotic time traveller from the future.",
+        "The briefing room is a 'hostile action zone', with two service groups ({two_rival_groups}) pitched on opposite sides of the room, arguing over who gets to control this area. There may be a shoot-out involved. Troubleshooters need to sneak past both groups and look at the 'mission briefing' folder that lie on top of the central desk that is within 'no man's land'.",
+      ],
+    },
+    {
+      ruleName: "floating_rumor",
+      source: "AI Dungeon",
+      note: "The Ruby source comments mark the final rumor entries as generated or inspired by AI Dungeon and then human-edited.",
+      values: [
+        "I'm on my way to meet up with {random_target}. I should have time to get there and ask a few questions, before a Communist hit squad arrive to kill us all. But will *you* make it there in time?",
+        "{random_target} is a high-ranking member of the Old Reckoning government. They claim to be an innocent, loyal clone...and managed to convince a lot of people. They haven't convinced The Computer though.",
+        "{random_target} is actually hiding in a secret base they built in an abandoned section of {@sector_name}. It'll be marked by with a 'RADIOACTIVE ZONE, DO NOT ENTER' warning sign on your map.",
+        "{random_target} is actually a close friend with the Communist menance. It's all goes deep guys. Thirty years deep.",
+        "The last time a Troubleshooter team was sent to hunt down {@underdog_name}, they didn't return. They didn't do anything for the last ten years. Why have they changed their minds now?",
+        "If you fail this mission, The Computer will panic and destroy the entire sector.",
+        "I heard about some alien invasion in {@sector_name} - could have been caused by a beacon placed there. Stay safe!",
+        "CPU is testing out a new mandate to boost mission effectiveness. Your team will have to work together as a unit to complete the mission successfully. If any member of your team dies, then the rest of you die with them.",
+        "{@overdog_name} recently experienced a munity yesterday and had to assume direct control. They've been trying to get rid of their incompetent crew ever since.",
+        "{random_target} is trying to write a novel about {@sector_name}. It's going be super-popular, assuming they actually finish it.",
+        "Citizens in {@sector_name} are slowly being replaced by Commie doppelgangers!",
+      ],
+    },
+  ];
+
+  const AI_ORIGIN_LOOKUP = new Map();
+  AI_ORIGIN_CHOICES.forEach((origin) => {
+    origin.values.forEach((value) => {
+      AI_ORIGIN_LOOKUP.set(choiceKey(origin.ruleName, value), origin);
+    });
+  });
 
   const els = {
     basicPrompt: document.getElementById("basicPrompt"),
@@ -23,6 +66,9 @@
     missionText: document.getElementById("missionText"),
     missionPreview: document.getElementById("missionPreview"),
     missionViews: document.querySelector(".mission-views"),
+    aiContentPanel: document.getElementById("aiContentPanel"),
+    aiContentList: document.getElementById("aiContentList"),
+    disclosureDialog: document.getElementById("disclosureDialog"),
     statusLine: document.getElementById("statusLine"),
     seedLabel: document.getElementById("seedLabel"),
     overdogLabel: document.getElementById("overdogLabel"),
@@ -31,11 +77,13 @@
   };
 
   class GrammarEngine {
-    constructor(grammar, random, memo = {}) {
+    constructor(grammar, random, memo = {}, options = {}) {
       this.grammar = grammar;
       this.random = random;
       this.memo = { ...memo };
       this.unique = new Map();
+      this.onChoice = options.onChoice || null;
+      this.excludeChoice = options.excludeChoice || null;
     }
 
     generate(ruleName = "start", options = {}) {
@@ -49,6 +97,9 @@
 
       const choice = this.pickChoice(ruleName, Boolean(options.unique));
       const output = this.expand(choice.value, 0);
+      if (this.onChoice) {
+        this.onChoice({ ruleName, rawValue: choice.value, output });
+      }
       if (options.memoize) {
         this.memo[ruleName] = output;
       }
@@ -62,6 +113,12 @@
       }
 
       let indexes = choices.map((_, index) => index);
+      if (this.excludeChoice) {
+        const filtered = indexes.filter((index) => !this.excludeChoice(ruleName, choices[index].value));
+        if (filtered.length) {
+          indexes = filtered;
+        }
+      }
       if (unique) {
         const used = this.unique.get(ruleName) || new Set();
         indexes = indexes.filter((index) => !used.has(index));
@@ -142,6 +199,7 @@
 
   function generateMission(prompt, customNames) {
     const names = customNames || generateNames(prompt);
+    const aiRecords = [];
     const engine = new GrammarEngine(
       DATA.mission,
       randomFromText(prompt, "mission"),
@@ -149,10 +207,24 @@
         mission_name: prompt,
         overdog_name: names.overdog,
         underdog_name: names.underdog,
+      },
+      {
+        onChoice: (choice) => {
+          const origin = getAiOrigin(choice.ruleName, choice.rawValue);
+          if (origin) {
+            aiRecords.push({
+              id: `ai-${aiRecords.length}-${choice.ruleName}`,
+              ruleName: choice.ruleName,
+              output: choice.output,
+              source: origin.source,
+              note: origin.note,
+            });
+          }
+        },
       }
     );
     const text = normalizeMissionText(engine.generate("start"));
-    return { text, names, prompt };
+    return { text, names, prompt, aiRecords, memo: { ...engine.memo } };
   }
 
   function generateNames(prompt) {
@@ -322,7 +394,11 @@
   }
 
   function inlineFormat(value) {
-    return escapeHtml(value)
+    return inlineFormatEscaped(escapeHtml(value));
+  }
+
+  function inlineFormatEscaped(value) {
+    return value
       .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>")
       .replace(/\*([^*]+)\*/g, "<em>$1</em>");
   }
@@ -341,9 +417,12 @@
     state.overdog = result.names.overdog;
     state.underdog = result.names.underdog;
     state.generatedText = result.text;
+    state.memo = result.memo || {};
+    state.aiRecords = result.aiRecords || [];
     els.missionText.value = result.text;
     updatePreview();
     updateMeta();
+    updateAiContentPanel();
     setStatus(`Generated "${result.prompt}"`);
   }
 
@@ -353,10 +432,108 @@
     els.wordCount.textContent = String(words);
   }
 
+  function syncAiRecordsToText() {
+    const currentText = els.missionText.value;
+    const remaining = state.aiRecords.filter((record) => currentText.includes(record.output));
+    if (remaining.length !== state.aiRecords.length) {
+      state.aiRecords = remaining;
+      updateAiContentPanel();
+    }
+  }
+
   function updateMeta() {
     els.seedLabel.textContent = state.prompt || "-";
     els.overdogLabel.textContent = state.overdog || "-";
     els.underdogLabel.textContent = state.underdog || "-";
+  }
+
+  function updateAiContentPanel() {
+    els.aiContentPanel.hidden = state.aiRecords.length === 0;
+    els.aiContentList.innerHTML = "";
+    state.aiRecords.forEach((record) => {
+      const item = document.createElement("li");
+      const title = document.createElement("strong");
+      title.textContent = labelForAiRule(record.ruleName);
+      const source = document.createElement("span");
+      source.textContent = `${record.source}. ${record.note}`;
+      const button = document.createElement("button");
+      button.type = "button";
+      button.textContent = "Regenerate This Entry";
+      button.dataset.aiRecordId = record.id;
+      item.append(title, source, button);
+      els.aiContentList.appendChild(item);
+    });
+  }
+
+  function labelForAiRule(ruleName) {
+    if (ruleName === "briefing_room") {
+      return "Mission briefing";
+    }
+    if (ruleName === "floating_rumor") {
+      return "Floating rumor";
+    }
+    return ruleName.replace(/_/g, " ");
+  }
+
+  function regenerateAiEntry(recordId) {
+    const record = state.aiRecords.find((entry) => entry.id === recordId);
+    if (!record) {
+      return;
+    }
+
+    const currentText = els.missionText.value;
+    const index = currentText.indexOf(record.output);
+    if (index === -1) {
+      setStatus("That entry was edited; regenerate the mission or replace it manually");
+      return;
+    }
+
+    const replacementRecords = [];
+    const engine = new GrammarEngine(
+      DATA.mission,
+      randomFromText(`${state.prompt}:${record.id}:${Date.now()}`, "ai-replacement"),
+      {
+        ...state.memo,
+        mission_name: state.prompt,
+        overdog_name: state.overdog,
+        underdog_name: state.underdog,
+      },
+      {
+        excludeChoice: isAiOriginChoice,
+        onChoice: (choice) => {
+          const origin = getAiOrigin(choice.ruleName, choice.rawValue);
+          if (origin) {
+            replacementRecords.push({
+              id: `ai-r-${Date.now()}-${replacementRecords.length}-${choice.ruleName}`,
+              ruleName: choice.ruleName,
+              output: choice.output,
+              source: origin.source,
+              note: origin.note,
+            });
+          }
+        },
+      }
+    );
+
+    const replacement = normalizeMissionText(engine.generate(record.ruleName));
+    els.missionText.value = `${currentText.slice(0, index)}${replacement}${currentText.slice(index + record.output.length)}`;
+    state.memo = { ...state.memo, ...engine.memo };
+    state.aiRecords = state.aiRecords.filter((entry) => entry.id !== recordId).concat(replacementRecords);
+    updatePreview();
+    updateAiContentPanel();
+    setStatus(`${labelForAiRule(record.ruleName)} regenerated`);
+  }
+
+  function getAiOrigin(ruleName, value) {
+    return AI_ORIGIN_LOOKUP.get(choiceKey(ruleName, value));
+  }
+
+  function isAiOriginChoice(ruleName, value) {
+    return AI_ORIGIN_LOOKUP.has(choiceKey(ruleName, value));
+  }
+
+  function choiceKey(ruleName, value) {
+    return `${ruleName}\u0000${value}`;
   }
 
   function setStatus(message) {
@@ -536,6 +713,65 @@ ${body}
 </html>`;
   }
 
+  function renderIttyHtml() {
+    const escapedWithBreaks = escapeHtml(normalizeMissionText(els.missionText.value)).replace(/\n/g, "<br />\n");
+    return `<p>${inlineFormatEscaped(escapedWithBreaks)}</p>\n`;
+  }
+
+  async function buildIttyBittyUrl() {
+    if (!window.LZMA || typeof window.LZMA.compress !== "function") {
+      throw new Error("LZMA compressor is unavailable");
+    }
+
+    const compressed = await new Promise((resolve, reject) => {
+      window.LZMA.compress(
+        renderIttyHtml(),
+        9,
+        (result, error) => {
+          if (error) {
+            reject(error);
+          } else {
+            resolve(result);
+          }
+        },
+        () => {}
+      );
+    });
+
+    return `https://itty.bitty.site/#/?${signedBytesToBase64(compressed)}`;
+  }
+
+  function signedBytesToBase64(bytes) {
+    let binary = "";
+    const chunkSize = 8192;
+    for (let index = 0; index < bytes.length; index += chunkSize) {
+      const chunk = bytes.slice(index, index + chunkSize).map((byte) => byte & 255);
+      binary += String.fromCharCode.apply(null, chunk);
+    }
+    return btoa(binary);
+  }
+
+  async function copyIttyBittyLink() {
+    try {
+      setStatus("Compressing itty.bitty link");
+      const url = await buildIttyBittyUrl();
+      await copyText(url, "Itty link copied");
+    } catch (error) {
+      setStatus(`Itty link failed: ${error.message || error}`);
+    }
+  }
+
+  async function openIttyBittyLink() {
+    try {
+      setStatus("Compressing itty.bitty link");
+      const url = await buildIttyBittyUrl();
+      window.open(url, "_blank", "noopener,noreferrer");
+      setStatus("Itty link opened");
+    } catch (error) {
+      setStatus(`Itty link failed: ${error.message || error}`);
+    }
+  }
+
   function downloadHtml() {
     const blob = new Blob([exportHtmlDocument()], { type: "text/html;charset=utf-8" });
     const link = document.createElement("a");
@@ -607,9 +843,12 @@ ${body}
       state.overdog = names.overdog;
       state.underdog = names.underdog;
       state.generatedText = "";
+      state.memo = { mission_name: prompt, overdog_name: names.overdog, underdog_name: names.underdog };
+      state.aiRecords = [];
       els.missionText.value = decodeBase64(text);
       updatePreview();
       updateMeta();
+      updateAiContentPanel();
       setStatus("Loaded shared mission");
       return true;
     }
@@ -651,13 +890,31 @@ ${body}
     document.getElementById("generateRailroad").addEventListener("click", runRailroadSearch);
 
     els.customPrompt.addEventListener("change", suggestNames);
-    els.missionText.addEventListener("input", updatePreview);
+    els.missionText.addEventListener("input", () => {
+      updatePreview();
+      syncAiRecordsToText();
+    });
 
     document.getElementById("copyMarkdown").addEventListener("click", () => copyText(els.missionText.value, "Markdown copied"));
     document.getElementById("copyHtml").addEventListener("click", () => copyText(exportHtmlDocument(), "HTML copied"));
+    document.getElementById("copyIttyLink").addEventListener("click", copyIttyBittyLink);
+    document.getElementById("openIttyLink").addEventListener("click", openIttyBittyLink);
     document.getElementById("copyLink").addEventListener("click", () => copyText(buildShareLink(), "Link copied"));
     document.getElementById("downloadHtml").addEventListener("click", downloadHtml);
     document.getElementById("printMission").addEventListener("click", printMission);
+    document.getElementById("showDisclosure").addEventListener("click", () => {
+      if (typeof els.disclosureDialog.showModal === "function") {
+        els.disclosureDialog.showModal();
+      } else {
+        setStatus("Original Ruby by humans; this web app made with OpenAI Codex, GPT-5, default effort");
+      }
+    });
+    els.aiContentList.addEventListener("click", (event) => {
+      const button = event.target.closest("button[data-ai-record-id]");
+      if (button) {
+        regenerateAiEntry(button.dataset.aiRecordId);
+      }
+    });
   }
 
   function init() {
