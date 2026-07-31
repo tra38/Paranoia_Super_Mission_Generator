@@ -207,6 +207,7 @@
   function generateMission(prompt, customNames) {
     const names = customNames || generateNames(prompt);
     const aiRecords = [];
+    const choiceCounts = {};
     const engine = new GrammarEngine(
       DATA.mission,
       randomFromText(prompt, "mission"),
@@ -217,6 +218,7 @@
       },
       {
         onChoice: (choice) => {
+          choiceCounts[choice.ruleName] = (choiceCounts[choice.ruleName] || 0) + 1;
           const origin = getAiOrigin(choice.ruleName, choice.rawValue);
           if (origin) {
             aiRecords.push({
@@ -225,6 +227,7 @@
               output: choice.output,
               source: origin.source,
               note: origin.note,
+              occurrence: choiceCounts[choice.ruleName],
             });
           }
         },
@@ -466,7 +469,7 @@
     state.aiRecords.forEach((record) => {
       const item = document.createElement("li");
       const title = document.createElement("strong");
-      title.textContent = labelForAiRule(record.ruleName);
+      title.textContent = labelForAiRecord(record);
       const source = document.createElement("span");
       source.textContent = `${record.source}. ${record.note}`;
       const button = document.createElement("button");
@@ -486,6 +489,13 @@
       return "Floating rumor";
     }
     return ruleName.replace(/_/g, " ");
+  }
+
+  function labelForAiRecord(record) {
+    if (record.ruleName === "floating_rumor" && record.occurrence) {
+      return `Floating rumor #${record.occurrence}`;
+    }
+    return labelForAiRule(record.ruleName);
   }
 
   function regenerateAiEntry(recordId) {
@@ -514,7 +524,7 @@
     state.aiRecords = state.aiRecords.filter((entry) => entry.id !== recordId);
     updatePreview();
     updateAiContentPanel();
-    setStatus(`${labelForAiRule(record.ruleName)} regenerated`);
+    setStatus(`${labelForAiRecord(record)} regenerated`);
   }
 
   function generateNonAiReplacement(record) {
@@ -845,7 +855,7 @@ ${body}
       if (typeof els.disclosureDialog.showModal === "function") {
         els.disclosureDialog.showModal();
       } else {
-        setStatus("Original Ruby by humans; this web app made with OpenAI Codex, GPT-5, default effort");
+        setStatus("Original Ruby written by Tariq Ali; this web app made with OpenAI Codex");
       }
     });
     els.aiContentList.addEventListener("click", (event) => {
