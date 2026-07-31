@@ -761,17 +761,6 @@ ${body}
     }
   }
 
-  async function openIttyBittyLink() {
-    try {
-      setStatus("Compressing itty.bitty link");
-      const url = await buildIttyBittyUrl();
-      window.open(url, "_blank", "noopener,noreferrer");
-      setStatus("Itty link opened");
-    } catch (error) {
-      setStatus(`Itty link failed: ${error.message || error}`);
-    }
-  }
-
   function downloadHtml() {
     const blob = new Blob([exportHtmlDocument()], { type: "text/html;charset=utf-8" });
     const link = document.createElement("a");
@@ -801,81 +790,6 @@ ${body}
     setStatus("Print view opened");
   }
 
-  function buildShareLink() {
-    const params = new URLSearchParams();
-    params.set("mode", state.mode);
-    params.set("prompt", state.prompt || "");
-    params.set("overdog", state.overdog || "");
-    params.set("underdog", state.underdog || "");
-    if (els.missionText.value && els.missionText.value !== state.generatedText) {
-      params.set("text", encodeBase64(els.missionText.value));
-    }
-
-    const base = window.location.href.split("#")[0];
-    return `${base}#${params.toString()}`;
-  }
-
-  function loadFromHash() {
-    if (!window.location.hash.slice(1)) {
-      return false;
-    }
-
-    const params = new URLSearchParams(window.location.hash.slice(1));
-    const prompt = params.get("prompt") || "Trust The Computer!";
-    const mode = params.get("mode") || "basic";
-    const overdog = params.get("overdog") || "";
-    const underdog = params.get("underdog") || "";
-    const text = params.get("text");
-
-    els.basicPrompt.value = prompt;
-    els.customPrompt.value = prompt;
-    if (overdog) {
-      els.overdogName.value = overdog;
-    }
-    if (underdog) {
-      els.underdogName.value = underdog;
-    }
-    setMode(["basic", "custom", "railroad"].includes(mode) ? mode : "basic");
-
-    if (text) {
-      const names = { overdog: overdog || "-", underdog: underdog || "-" };
-      state.prompt = prompt;
-      state.overdog = names.overdog;
-      state.underdog = names.underdog;
-      state.generatedText = "";
-      state.memo = { mission_name: prompt, overdog_name: names.overdog, underdog_name: names.underdog };
-      state.aiRecords = [];
-      els.missionText.value = decodeBase64(text);
-      updatePreview();
-      updateMeta();
-      updateAiContentPanel();
-      setStatus("Loaded shared mission");
-      return true;
-    }
-
-    if (overdog && underdog) {
-      setMission(generateMission(prompt, { overdog, underdog }), mode);
-    } else {
-      setMission(generateMission(prompt), mode);
-    }
-    return true;
-  }
-
-  function encodeBase64(value) {
-    const bytes = new TextEncoder().encode(value);
-    let binary = "";
-    bytes.forEach((byte) => {
-      binary += String.fromCharCode(byte);
-    });
-    return btoa(binary);
-  }
-
-  function decodeBase64(value) {
-    const binary = atob(value);
-    const bytes = Uint8Array.from(binary, (char) => char.charCodeAt(0));
-    return new TextDecoder().decode(bytes);
-  }
-
   function bindEvents() {
     document.querySelectorAll(".mode-tabs button").forEach((button) => {
       button.addEventListener("click", () => setMode(button.dataset.mode));
@@ -896,10 +810,7 @@ ${body}
     });
 
     document.getElementById("copyMarkdown").addEventListener("click", () => copyText(els.missionText.value, "Markdown copied"));
-    document.getElementById("copyHtml").addEventListener("click", () => copyText(exportHtmlDocument(), "HTML copied"));
     document.getElementById("copyIttyLink").addEventListener("click", copyIttyBittyLink);
-    document.getElementById("openIttyLink").addEventListener("click", openIttyBittyLink);
-    document.getElementById("copyLink").addEventListener("click", () => copyText(buildShareLink(), "Link copied"));
     document.getElementById("downloadHtml").addEventListener("click", downloadHtml);
     document.getElementById("printMission").addEventListener("click", printMission);
     document.getElementById("showDisclosure").addEventListener("click", () => {
@@ -924,9 +835,7 @@ ${body}
     }
     bindEvents();
     setView("edit");
-    if (!loadFromHash()) {
-      generateBasic();
-    }
+    generateBasic();
   }
 
   init();
