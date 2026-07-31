@@ -11,6 +11,7 @@
     generatedText: "",
     memo: {},
     aiRecords: [],
+    nameSuggestionCounter: 0,
   };
 
   const AI_ORIGIN_CHOICES = [
@@ -115,17 +116,23 @@
       let indexes = choices.map((_, index) => index);
       if (this.excludeChoice) {
         const filtered = indexes.filter((index) => !this.excludeChoice(ruleName, choices[index].value));
-        if (filtered.length) {
-          indexes = filtered;
+        if (!filtered.length) {
+          throw new Error(`No non-AI choices are available for ${ruleName}`);
         }
+        indexes = filtered;
       }
       if (unique) {
         const used = this.unique.get(ruleName) || new Set();
         indexes = indexes.filter((index) => !used.has(index));
         if (!indexes.length) {
           used.clear();
-          indexes = choices.map((_, index) => index);
+          indexes = choices
+            .map((_, index) => index)
+            .filter((index) => !this.excludeChoice || !this.excludeChoice(ruleName, choices[index].value));
         }
+      }
+      if (!indexes.length) {
+        throw new Error(`No choices are available for ${ruleName}`);
       }
 
       const total = indexes.reduce((sum, index) => sum + choices[index].weight, 0);
@@ -227,13 +234,14 @@
     return { text, names, prompt, aiRecords, memo: { ...engine.memo } };
   }
 
-  function generateNames(prompt) {
+  function generateNames(prompt, variant = "") {
+    const seedPrompt = variant ? `${prompt}::${variant}` : prompt;
     const engines = {
-      names: new GrammarEngine(DATA.names, randomFromText(prompt, "names")),
-      sector: new GrammarEngine(DATA.sector, randomFromText(prompt, "sector")),
-      cloneNumber: new GrammarEngine(DATA.cloneNumber, randomFromText(prompt, "clone-number")),
-      highClearance: new GrammarEngine(DATA.highClearance, randomFromText(prompt, "high-clearance")),
-      lowClearance: new GrammarEngine(DATA.lowClearance, randomFromText(prompt, "low-clearance")),
+      names: new GrammarEngine(DATA.names, randomFromText(seedPrompt, "names")),
+      sector: new GrammarEngine(DATA.sector, randomFromText(seedPrompt, "sector")),
+      cloneNumber: new GrammarEngine(DATA.cloneNumber, randomFromText(seedPrompt, "clone-number")),
+      highClearance: new GrammarEngine(DATA.highClearance, randomFromText(seedPrompt, "high-clearance")),
+      lowClearance: new GrammarEngine(DATA.lowClearance, randomFromText(seedPrompt, "low-clearance")),
     };
 
     const overdog = generateClone(engines, false);
@@ -419,6 +427,11 @@
     state.generatedText = result.text;
     state.memo = result.memo || {};
     state.aiRecords = result.aiRecords || [];
+    state.nameSuggestionCounter = 0;
+    els.basicPrompt.value = result.prompt;
+    els.customPrompt.value = result.prompt;
+    els.overdogName.value = result.names.overdog;
+    els.underdogName.value = result.names.underdog;
     els.missionText.value = result.text;
     updatePreview();
     updateMeta();
@@ -488,40 +501,52 @@
       return;
     }
 
-    const replacementRecords = [];
-    const engine = new GrammarEngine(
-      DATA.mission,
-      randomFromText(`${state.prompt}:${record.id}:${Date.now()}`, "ai-replacement"),
-      {
-        ...state.memo,
-        mission_name: state.prompt,
-        overdog_name: state.overdog,
-        underdog_name: state.underdog,
-      },
-      {
-        excludeChoice: isAiOriginChoice,
-        onChoice: (choice) => {
-          const origin = getAiOrigin(choice.ruleName, choice.rawValue);
-          if (origin) {
-            replacementRecords.push({
-              id: `ai-r-${Date.now()}-${replacementRecords.length}-${choice.ruleName}`,
-              ruleName: choice.ruleName,
-              output: choice.output,
-              source: origin.source,
-              note: origin.note,
-            });
-          }
-        },
-      }
-    );
+    let replacementResult;
+    try {
+      replacementResult = generateNonAiReplacement(record);
+    } catch (error) {
+      setStatus(`Could not find a non-AI replacement: ${error.message || error}`);
+      return;
+    }
 
-    const replacement = normalizeMissionText(engine.generate(record.ruleName));
-    els.missionText.value = `${currentText.slice(0, index)}${replacement}${currentText.slice(index + record.output.length)}`;
-    state.memo = { ...state.memo, ...engine.memo };
-    state.aiRecords = state.aiRecords.filter((entry) => entry.id !== recordId).concat(replacementRecords);
+    els.missionText.value = `${currentText.slice(0, index)}${replacementResult.replacement}${currentText.slice(index + record.output.length)}`;
+    state.memo = { ...state.memo, ...replacementResult.memo };
+    state.aiRecords = state.aiRecords.filter((entry) => entry.id !== recordId);
     updatePreview();
     updateAiContentPanel();
     setStatus(`${labelForAiRule(record.ruleName)} regenerated`);
+  }
+
+  function generateNonAiReplacement(record) {
+    const maxAttempts = 80;
+    for (let attempt = 1; attempt <= maxAttempts; attempt += 1) {
+      const detectedAiRecords = [];
+      const engine = new GrammarEngine(
+        DATA.mission,
+        randomFromText(`${state.prompt}:${record.id}:${Date.now()}:${attempt}`, "ai-replacement"),
+        {
+          ...state.memo,
+          mission_name: state.prompt,
+          overdog_name: state.overdog,
+          underdog_name: state.underdog,
+        },
+        {
+          excludeChoice: isAiOriginChoice,
+          onChoice: (choice) => {
+            const origin = getAiOrigin(choice.ruleName, choice.rawValue);
+            if (origin) {
+              detectedAiRecords.push({ ruleName: choice.ruleName, output: choice.output });
+            }
+          },
+        }
+      );
+      const replacement = normalizeMissionText(engine.generate(record.ruleName));
+      if (!detectedAiRecords.length) {
+        return { replacement, memo: { ...engine.memo } };
+      }
+    }
+
+    throw new Error(`tried ${maxAttempts} replacements`);
   }
 
   function getAiOrigin(ruleName, value) {
@@ -576,13 +601,14 @@
 
   function suggestNames() {
     const prompt = els.customPrompt.value.trim() || "Untitled Mission";
-    const names = generateNames(prompt);
+    state.nameSuggestionCounter += 1;
+    const names = generateNames(prompt, `suggestion-${state.nameSuggestionCounter}`);
     els.overdogName.value = names.overdog;
     els.underdogName.value = names.underdog;
     state.overdog = names.overdog;
     state.underdog = names.underdog;
     updateMeta();
-    setStatus("Names suggested");
+    setStatus(`Names suggested for "${prompt}"`);
   }
 
   function generateCustom() {
@@ -803,7 +829,9 @@ ${body}
     document.getElementById("generateCustom").addEventListener("click", generateCustom);
     document.getElementById("generateRailroad").addEventListener("click", runRailroadSearch);
 
-    els.customPrompt.addEventListener("change", suggestNames);
+    els.customPrompt.addEventListener("input", () => {
+      state.nameSuggestionCounter = 0;
+    });
     els.missionText.addEventListener("input", () => {
       updatePreview();
       syncAiRecordsToText();
