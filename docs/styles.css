@@ -215,6 +215,10 @@ label {
   gap: 8px;
 }
 
+.button-row.three-actions {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 progress {
   width: 100%;
   height: 12px;
@@ -534,7 +538,8 @@ output,
   }
 
   .mission-meta dl,
-  .button-row {
+  .button-row,
+  .button-row.three-actions {
     grid-template-columns: 1fr;
   }
 

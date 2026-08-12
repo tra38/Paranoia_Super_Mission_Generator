@@ -32,7 +32,10 @@
         <section class="control-panel active" id="panelBasic" data-panel="basic" aria-labelledby="tabBasic">
           <label for="basicPrompt">Mission name</label>
           <input id="basicPrompt" type="text" value="Trust No One!" autocomplete="off">
-          <button id="generateBasic" class="primary" type="button">Generate Mission</button>
+          <div class="button-row">
+            <button id="randomBasic" type="button">Random</button>
+            <button id="generateBasic" class="primary" type="button">Generate Mission</button>
+          </div>
         </section>
 
         <section class="control-panel" id="panelCustom" data-panel="custom" aria-labelledby="tabCustom" hidden>
@@ -50,7 +53,8 @@
             </div>
           </div>
 
-          <div class="button-row">
+          <div class="button-row three-actions">
+            <button id="randomCustom" type="button">Random</button>
             <button id="suggestNames" type="button">Suggest Names</button>
             <button id="generateCustom" class="primary" type="button">Generate Mission</button>
           </div>
@@ -120,12 +124,12 @@
           <button type="submit" aria-label="Close disclosure">Close</button>
         </div>
         <div class="disclosure-copy">
-           <p>The original Paranoia Super Mission Generator was written by Tariq Ali using Ruby.</p>
-           <p>This single-page HTML/CSS/JS conversion was made using OpenAI Codex.</p>
-           <p>The vast majority of the content here is human-generated. A small number of entries were created by Generative AI and then edited by me. When one of those entries appears, a button will show up disclosing this and offering the opportunity to regenerate that specific content.</p>
-           <p>The itty.bitty.site export uses the MIT-licensed LZMA-JS compressor. PARANOIA Super Mission Generator is MIT-licensed.</p>
-           <hr>
-           <p>Model Used: GPT-5.5 with Extra-High Reasoning.</p>
+          <p>The original Paranoia Super Mission Generator was written by Tariq Ali using Ruby.</p>
+          <p>This single-page HTML/CSS/JS conversion was made using OpenAI Codex.</p>
+          <p>The vast majority of the content here is human-generated. A small number of entries were created by Generative AI and then edited by me. When one of those entries appears, a button will show up disclosing this and offering the opportunity to regenerate that specific content.</p>
+          <p>The itty.bitty.site export uses the MIT-licensed LZMA-JS compressor. PARANOIA Super Mission Generator is MIT-licensed.</p>
+          <hr>
+          <p>Models Used: GPT-5.5 with Extra-High Reasoning, GPT-5.6-Sol with Extra-High Reasoning.</p>
         </div>
       </form>
     </dialog>
